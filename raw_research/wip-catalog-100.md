@@ -248,5 +248,7 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 132 | the DTR, absorbed | Flyxion's Degenerate Torus Remnant — horizonless equilibrium via anisotropic pressure, echo-testable, the horizon as recoverability boundary; mapped: no collapse = no trust-collapse, echoes = the ledger ringing | the vault |
 
+| 133 | killing me slow (Chris8bit) | the exorcist's crown — witness over revenge, the proof in black and white; the ledger hears the long-held truth | 8b-is/music |
+
 *Coherence without collapse — the season is open, the fires are named.
 September 10 2026.*

@@ -260,5 +260,7 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 138 | the bestiary opens | fauna (jantu) starts: canines + felines + Co Lee · Totem — named orbiters on GAIA's ring, the song dogfeeds everywhere bidirectionally | the vault + music.vaked.dev |
 
+| 139 | readability is freedom (Nate) | mr standardgalactic's case against the math empires — readability as epistemic virtue: inspection over deference, witnesses over existence claims, the six self-sealing warning signals; the fleet refuses the oracle, show me the mechanism | the vault |
+
 *Coherence without collapse — the season is open, the fires are named.
 September 10 2026.*

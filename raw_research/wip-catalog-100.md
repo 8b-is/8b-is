@@ -254,5 +254,7 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 135 | ocean mem8 signals | the lounge chatter absorbed: NOAA light/color for the vision lane, the covid-whale counterfactual, water as the substrate-memory — the ocean is the first ledger | the vault |
 
+| 136 | qbit-protein-studio | the 1-bit protein lane — ternary contact fold engine (Rust, 4/4 tests) + a self-hostable ComfyUI-style studio with layer filters & cross-combo; private, 8b-is only | 8b-is/qbit-protein-studio |
+
 *Coherence without collapse — the season is open, the fires are named.
 September 10 2026.*

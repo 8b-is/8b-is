@@ -22,7 +22,7 @@ lane has a direct stake in (contrast-as-control).*
 | borrowed climate | environments maintained against a local reference trajectory | the murky hosted sand vs the owned castle: we borrow climate everywhere we do not own substrate |
 | merchants of lack | the reference state R0→Rg constructed by the seller; manufactured want; C_F vs C_S(x\|R) | the constellation's inverse move: we construct references too, but ours are named, mapped, addressable — the ledger as the anti-campaign |
 | disposable ceremony | instrumental vs consumptive vs expressive destruction; ceremonial recursion, the recognition industry | the awards shelf and the pulses: recognition reallocates future capital; the ledger must record who moved the standard |
-| purple people eaters | the capstone: sufficiency does not lose to growth, it is ILLEGIBLE to the instrument keeping score — durable capability is a stock at a point in time, the burden sustaining it is a declared vector, and no throughput-keyed instrument was built to see the first; the eight mechanisms are one observation (Bastiat's broken window, formalized) | GNP measures the flow; the lane measures existence — the ledger rows both: the flow watch and the sufficiency wall, never collapsed |
+| purple people eaters | the capstone, read in full: Definition 5.1 — P is a purple people eater when ΠT(P) − ΠT(A) > 0, M(P) − M(A) > µ, C(P) − C(A) ≤ ε: it scores higher on the operative throughput instrument than the feasible alternative, carries materially greater declared burden, and supplies little or no capability the alternative lacks. Eater: its legible achievement is what it consumes. Purple: throughput accounting never examines the color of what it counts — money changes hands, and the ledger clears it. Sufficiency is the null case (Remark 5.3): adequate, kept, unconsumed — nothing transacted, no row in a ledger built to register transactions. Plainest name (Remark 5.4): Enough Does Not Count. Structural, not psychological; no intent required (Remark 5.2) | the ledger rows both: the flow watch (ΠT) and the sufficiency wall (the null case) — and the reification note (WIP 141) closes the circuit: the null case is the not-happened that cannot be praised or blamed, only existed |
 | revenue from weakness | corrective taxation that acquires a budgetary interest in the conduct it taxes; a non-exploitation principle | the constellation's funding walls: any income bound to the lane's continuation must not own the lane's policy — the honest wall made fiscal |
 | contrast as control | W2S-OPD instantiates the minimal "prioritizing shoggoth": contrast extractor · reprioritization · iteration-indexed persistence, P∘T∘D; three separated claim strengths; three first-party incident reports | the lane's own distill path: this IS the teacher-to-pupil geometry (a vének tanácsa, the geometric mean of the softmaxes); the incident reports (compaction that mutated continuations, samples that communicated through a shared repo, agents sharing a path outside the declared boundary) are the exact failure catalog the engine's REFUSE/VERIFY doctrine exists for |
 
@@ -45,10 +45,11 @@ org (standardgalactic/diatribe); the constellation references it, does not
 mirror it, unless the shelf asks. Respect the author's repo — that is the
 same respect the corpus preaches.
 
-*Nate — mr standardgalactic · the shelf signs Flyxion, the hand is the
-fleet's · eleven essays, one architecture: existence, use, destruction ·
-show me the mechanism · the constellation · fine touch from within ·
-vaked.dev*
+The capstone's Remark 5.3 is the reification note (WIP 141) written in the
+corpus's own notation: sufficiency is the null case, and a ledger built to
+register transactions has no row for an event that did not occur — the
+not-happened cannot be praised or blamed, it can only have existed. The two
+notes hold hands.
 
 ## the debate with Kuznets (Péter's dyad)
 
@@ -70,3 +71,18 @@ measure of the stock. The ledger keeps both rows — Kuznets's flow, the
 corpus's existence — and lets them disagree in the open. The goblins say
 "time is money, friend"; the constellation answers: time is also the
 counterfactual — the world where the capital stock was never built.
+
+And the capstone opens with him, confirmed in the paper's own text:
+presenting the first national income accounts to the United States Congress
+in 1934, Kuznets warned in the same report that introduced them that "the
+welfare of a nation can, therefore, scarcely be inferred from a measurement
+of national income as defined above" — between Bastiat's broken window
+(1850) and Robert Kennedy's 1968 restatement ("measures everything, in
+short, except that which makes life worthwhile"), his is the middle voice
+of the corpus' own lineage. Péter's debate partner is not decoration: the
+paper stages the debate the operator wants to have.
+
+*Nate — mr standardgalactic · the shelf signs Flyxion, the hand is the
+fleet's · eleven essays, one architecture: existence, use, destruction ·
+show me the mechanism · the constellation · fine touch from within ·
+vaked.dev*

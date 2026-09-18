@@ -250,5 +250,7 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 133 | killing me slow (Chris8bit) | the exorcist's crown — witness over revenge, the proof in black and white; the ledger hears the long-held truth | 8b-is/music |
 
+| 134 | manufactured necessity, absorbed | Flyxion's counterfactual of the capital stock — marginal vs structural waste, the regime transition, opportunity cost; efficiency cannot justify existence | the vault |
+
 *Coherence without collapse — the season is open, the fires are named.
 September 10 2026.*

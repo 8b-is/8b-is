@@ -268,5 +268,7 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 142 | leekHotline, absorbed | the profile as a doctrine mirror: embrace AI that works, follow builders not influencers, do first then improve, the ladder to organizational AI — "we only need to make correct judgments" | the vault + lissajoverse |
 
+| 143 | agent-stack + revolution-list, wired | leekHotline's shelf as seed material: agent-stack the reference garden (AI-native TS tooling list), revolution-list's comparator the refactor seed — revTO-DOq, rustQ-aligned and hugged | the vault + revTO-DOq |
+
 *Coherence without collapse — the season is open, the fires are named.
 September 10 2026.*

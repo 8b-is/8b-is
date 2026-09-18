@@ -18,6 +18,7 @@ shelf, these are the shelves that matter.*
 | `rustybox` | the sandbox — the constrained room |
 | `smart-tree` | the decision tree — the needs/goals arbiter |
 | `bodh` | awakening — the observer's own layer |
+| `ultrawild` | the macro layer — Wild-linker tricks + demoscene bit hacks (engine crate, wired into vaked-lsp's frame path) |
 | `goonj` | resonance — the sound/music lane |
 | `libro` | book — the text/document lane |
 

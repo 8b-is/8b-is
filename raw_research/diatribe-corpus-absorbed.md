@@ -22,7 +22,7 @@ lane has a direct stake in (contrast-as-control).*
 | borrowed climate | environments maintained against a local reference trajectory | the murky hosted sand vs the owned castle: we borrow climate everywhere we do not own substrate |
 | merchants of lack | the reference state R0→Rg constructed by the seller; manufactured want; C_F vs C_S(x\|R) | the constellation's inverse move: we construct references too, but ours are named, mapped, addressable — the ledger as the anti-campaign |
 | disposable ceremony | instrumental vs consumptive vs expressive destruction; ceremonial recursion, the recognition industry | the awards shelf and the pulses: recognition reallocates future capital; the ledger must record who moved the standard |
-| purple people eaters | (the playful hinge of the shelf) | the corpus' own wink: even the absurd classification wears the same architecture |
+| purple people eaters | the capstone: sufficiency does not lose to growth, it is ILLEGIBLE to the instrument keeping score — durable capability is a stock at a point in time, the burden sustaining it is a declared vector, and no throughput-keyed instrument was built to see the first; the eight mechanisms are one observation (Bastiat's broken window, formalized) | GNP measures the flow; the lane measures existence — the ledger rows both: the flow watch and the sufficiency wall, never collapsed |
 | revenue from weakness | corrective taxation that acquires a budgetary interest in the conduct it taxes; a non-exploitation principle | the constellation's funding walls: any income bound to the lane's continuation must not own the lane's policy — the honest wall made fiscal |
 | contrast as control | W2S-OPD instantiates the minimal "prioritizing shoggoth": contrast extractor · reprioritization · iteration-indexed persistence, P∘T∘D; three separated claim strengths; three first-party incident reports | the lane's own distill path: this IS the teacher-to-pupil geometry (a vének tanácsa, the geometric mean of the softmaxes); the incident reports (compaction that mutated continuations, samples that communicated through a shared repo, agents sharing a path outside the declared boundary) are the exact failure catalog the engine's REFUSE/VERIFY doctrine exists for |
 
@@ -49,3 +49,24 @@ same respect the corpus preaches.
 fleet's · eleven essays, one architecture: existence, use, destruction ·
 show me the mechanism · the constellation · fine touch from within ·
 vaked.dev*
+
+## the debate with Kuznets (Péter's dyad)
+
+Péter names the opponent: Simon Kuznets, the 1971 Riksbank Prize for
+"empirically founded interpretation of economic growth which has led to new
+and deepened insight into the economic and social structure and process of
+development" — economy · social structure · development, three dyads in one
+citation. Kuznets built the instrument the corpus argues against: he
+standardized GNP, the flow ledger, the throughput-keyed score by which a
+nation's life is read, and his curve made inequality a phase of growth
+rather than a feature of an instrument. The diatribe's eight mechanisms are
+exactly the cases GNP cannot see — the empty building, the preserved price,
+the distance that buys no capability — and the capstone names why:
+sufficiency is illegible to a throughput instrument.
+
+The debate is real because Kuznets is not wrong, only incomplete: GNP as a
+measure of the flow is honest arithmetic; the illusion is the flow as a
+measure of the stock. The ledger keeps both rows — Kuznets's flow, the
+corpus's existence — and lets them disagree in the open. The goblins say
+"time is money, friend"; the constellation answers: time is also the
+counterfactual — the world where the capital stock was never built.

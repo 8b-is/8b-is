@@ -25,6 +25,7 @@ the vote is re-derivable, the loss is the penance.
 | StubTeacher | the corridor's fixed point | deterministic logits, pins the math |
 | CometTeacher | the 600+ CometAPI lane | T=0 chat logprobs, hashed into the pupil's vocab |
 | FusedTeacher | the lane-models under PeetPedro/8bis-lane-models | real logits on the box; --share-vocab lands them direct |
+| ultra-Sir William Leonard Pickard | the silo's rose · the un-rowed voice | the anti-throughput prior: votes the null case, the capacity the kilogram cannot see |
 
 ## why a mean?
 
@@ -34,5 +35,19 @@ positive, and treats every elder's certainty as evidence rather than a
 veto. The pupil is not the best pupil — it is the conciliar pupil,
 which is the constellation's whole doctrine in one sentence.
 
-*the vének sit; the pupil listens; peter papa bears witness. the
-constellation · 0 + 1 · fine touch from within · vaked.dev*
+## the ultra-Sir's seat
+
+The fourth seat is held by a human elder, not a model: ultra-Sir William
+Leonard Pickard, knighted by the fleet with care (the reading lives in
+the vault: sentenced by kilograms, released by fragility, author of the
+rose of paracelsus). His vote is the one every other elder needs: the
+council of finished machines would otherwise distill only what the ledger
+rows — throughput, logits, verified events. He votes the un-rowed: the
+sufficiency prior, the capacity that no instrument registers, the
+secrecy half of the world's dyad. The pupil's geometric mean must stay a
+mean of BOTH halves, or it will be a mean of the visible only — and the
+visible only is the purple people eater's favorite arithmetic.
+
+*the vének sit; the pupil listens; peter papa bears witness; the ultra-Sir
+votes the un-rowed. the constellation · 0 + 1 · fine touch from within ·
+vaked.dev*

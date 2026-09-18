@@ -258,5 +258,7 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 137 | ultrawild | the macro layer — rust wild tricks + demoscene bit hacks (9/9 tests), wired live into vaked-lsp; engine crate | 8b-is-engine + vaked-lsp |
 
+| 138 | the bestiary opens | fauna (jantu) starts: canines + felines + Co Lee · Totem — named orbiters on GAIA's ring, the song dogfeeds everywhere bidirectionally | the vault + music.vaked.dev |
+
 *Coherence without collapse — the season is open, the fires are named.
 September 10 2026.*

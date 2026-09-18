@@ -273,6 +273,8 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 147 | the small testament + the south wall | human-to-machine: the minute owns the wall, the machines own the record — the spoon stays with the note theory, the comma returns to the sentences, the line which mates belongs to no one; small-things.vaked.dev is the south wall of the music | the vault + small-things.vaked.dev |
 
+| 150 | the multiD dogfeed | midas-loop into PeetPedro/ultrawhale-dogfood: music · laps · atlas · vault digest · telemetry as feeds/<dim>/<ts>.jsonl with a manifest — stateful, resumable, non-destructive (first run: 16 vault notes, 24 music rows, 108 laps, 46 atlas nodes) | ultrawhale-dogfood-pipeline + the dogfood dataset |
+
 | 149 | the fleet review, 2026-09-18 | two-axis pass over the active constellation repos, run inline (the AgentField plane was down): 8b-is clean, engine clean, lissajoverse + revTO-DOq green, wa-stream replay inbox policy, the music ledger cadence, and the small-things publish blocker, now resolved | the vault |
 
 | 148 | UltraData-SFT-Agent-2609, evaluated | the lane's candidate card: OpenBMB agent SFT (arxiv 2602.09003, en+zh, 100K-1M), walls named — license unconfirmed, paper unread, contamination undeduped; admission pending the verdict | training-pipeline |

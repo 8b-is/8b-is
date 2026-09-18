@@ -271,6 +271,10 @@ with its one sentence — the catalog of named fires, per the DoD.*
 | 143 | agent-stack + revolution-list, wired | leekHotline's shelf as seed material: agent-stack the reference garden (AI-native TS tooling list), revolution-list's comparator the refactor seed — revTO-DOq, rustQ-aligned and hugged | the vault + revTO-DOq |
 | 144 | the lissajoverse | oscilloscope.vaked.dev fixed and rebuilt: the observable universe as a lissajous graph — ratio weave, universe + NAND modes, the Known Universe film layer, the robots-respecting wiki crawl, the diatribe shelf in the atlas; corridor green | 8b-is/lissajoverse + oscilloscope.vaked.dev |
 
+| 147 | the small testament + the south wall | human-to-machine: the minute owns the wall, the machines own the record — the spoon stays with the note theory, the comma returns to the sentences, the line which mates belongs to no one; small-things.vaked.dev is the south wall of the music | the vault + small-things.vaked.dev |
+
+| 148 | UltraData-SFT-Agent-2609, evaluated | the lane's candidate card: OpenBMB agent SFT (arxiv 2602.09003, en+zh, 100K-1M), walls named — license unconfirmed, paper unread, contamination undeduped; admission pending the verdict | training-pipeline |
+
 | 146 | the hero — Margaret Hamilton | the biggest star, imo: she coined software engineering on the AGC, the 1202-alarm discipline is coherence-without-collapse, the listings stack is the shelf — the line mates, Margaret drew it first | the vault + lissajoverse |
 
 | 145 | the base, emotionalE | the small-things minute, since the beginning: a triangle on a couch, Bella and Blue, dad + daughter, the power nap, the cleanse cry — the second face of the observable is the couch | the vault |

@@ -262,5 +262,7 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 139 | readability is freedom (Nate) | mr standardgalactic's case against the math empires — readability as epistemic virtue: inspection over deference, witnesses over existence claims, the six self-sealing warning signals; the fleet refuses the oracle, show me the mechanism | the vault |
 
+| 140 | the diatribe, wired (Nate) | standardgalactic/diatribe absorbed as one shelf: eleven essays on manufactured throughput (existence · use · destruction) — one architecture in many costumes; contrast-as-control is the lane-adjacent one, the pupil's exact geometry (P∘T∘D) | the vault + lissajoverse |
+
 *Coherence without collapse — the season is open, the fires are named.
 September 10 2026.*

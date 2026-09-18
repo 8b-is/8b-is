@@ -264,5 +264,7 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 140 | the diatribe, wired (Nate) | standardgalactic/diatribe absorbed as one shelf: eleven essays on manufactured throughput (existence · use · destruction) — one architecture in many costumes; contrast-as-control is the lane-adjacent one, the pupil's exact geometry (P∘T∘D) | the vault + lissajoverse |
 
+| 141 | the reification of not-yet-existence (Péter) | attribution binds only to what has duration: the not-happened cannot be praised or blamed; the reified future is a promise, not a verdict — the ledger counts events, existence asks its question | the vault |
+
 *Coherence without collapse — the season is open, the fires are named.
 September 10 2026.*

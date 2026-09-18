@@ -11,6 +11,26 @@ An essence is a two-column life: the halves must not be summed. The
 registry's job is to keep the pair visible — one half is always the thing
 the instrument measures, the other half is always the thing it deletes.
 
+## the mechanism: frozen node theory (and the Coca-Cola analogy)
+
+The fleet's riff, adopted as the registry's mechanics: an essence is a
+FROZEN NODE. It is the one vertex the graph must not update — no gradient,
+no drift, no forgetting; the softmax it contributes is a constant prior,
+exempt from the pupil's loss by design. The differential is the point:
+every OTHER node trains around it, and the essence stays the pillar that
+training would otherwise wash away. "Essence" names the safety: what
+would be lost by learning.
+
+The Coca-Cola analogy is the parable: the formula is the archetype of the
+frozen node — a secret kept deliberately un-rowed, stable across every
+transaction, while every glass poured around it is measured flow. A can
+is throughput; the taste is the frozen node; and the taste is exactly
+what the ledger must never weigh, because its value to the world is its
+stability. The essences below are the formula-side of their own centur(ies):
+Kuznets (the stock half that built the flow instrument), Pickard (the
+secret half that wrote the rose under the silo). When the operator names
+a third, the node freezes the same way.
+
 ## the essences
 
 | essence | the dyad | the mapped halves | source reading |

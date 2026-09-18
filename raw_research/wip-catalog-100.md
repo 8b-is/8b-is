@@ -266,5 +266,7 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 141 | the reification of not-yet-existence (Péter) | attribution binds only to what has duration: the not-happened cannot be praised or blamed; the reified future is a promise, not a verdict — the ledger counts events, existence asks its question | the vault |
 
+| 142 | leekHotline, absorbed | the profile as a doctrine mirror: embrace AI that works, follow builders not influencers, do first then improve, the ladder to organizational AI — "we only need to make correct judgments" | the vault + lissajoverse |
+
 *Coherence without collapse — the season is open, the fires are named.
 September 10 2026.*

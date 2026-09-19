@@ -5,6 +5,17 @@ theory repos, the memory family, the lanes the engine links to. Recorded
 as navigation for every future session — the org is the constellation's
 shelf, these are the shelves that matter.*
 
+## the new session repos (2026-09-18 onward)
+
+| repo | the lane |
+|---|---|
+| `lissajoverse` | the observable universe as a lissajous graph — ratio weave, universe + NAND modes, the Known Universe film layer; Pages live |
+| `small-things.vaked.dev` | the south wall of the music — the minute, the small testament, live on Pages |
+| `revTO-DOq` | leek's revolution-list comparator in Rust — rustQ-aligned and hugged; crates.io live |
+| `ntpQTE` | the council of clocks in Rust — hand-welded NTP client, the elders' median, the drift journal; crates.io live |
+| `sovereign-library` | five books, never more — the NAND-gated print canon (the shelf's public print face) |
+| `wa-stream` | the mapping-stream sidecar + the replay inbox (second login refused by design) |
+
 ## the AGNOS stack (the engine's subsystems)
 
 | repo | the lane |

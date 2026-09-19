@@ -49,6 +49,43 @@ corrupt; our job is to keep the 5V rail alive and witness the recovery.*
    second, regulator third. Never skip steps 1-5 before opening board
    components.
 
+## the RED "reset detected" message — what it is and the ladder
+
+The banner is the CPU's own witness statement: it recorded an
+UNEXPECTED reset — the processor lost +5V for a moment, or its reset
+line wiggled, or a coil slam drowned the board. It is not a fault code
+for one part; it is the input to a decision tree. Work the ladder only
+as deep as the symptom demands.
+
+**0. Clear it first.** Operator menu → clear the reset message. Then
+classify the event: one event at power-up, game runs perfect → often a
+soft switch-on dip; recurring during play → the rail or a coil.
+
+**1. The +5V under load.** At the CPU (J21-4/5 vs J21-1): 5.0–5.25V
+idle, and never into the low 4s while both flippers cycle and a coil
+bank fires. Any dip → the debrowning ladder first (J101/J103/J21/J114),
+then the filter caps, then the regulator. Never skip to the CPU.
+
+**2. The resets and the ribbons.** Reseat the CPU↔driver ribbon, the
+ROMs, the display data paths. A half-seated ribbon reads as the exact
+same phantom reset.
+
+**3. Rails perfect, resets anyway.** The CPU's own reset circuitry: the
+WPC reset filter (cap/resistor on the reset line), then the battery
+holder corrosion (corrosion on the board grounds = phantom resets —
+the battery-clean is the vinegar+rinse+dry ladder), then the CPU
+crystal.
+
+**4. Resets ONLY during a specific feature.** That is not the rail —
+that is the coil: a stuck-on coil, an arcing flipper EOS switch, a
+short on the coil driver transistor. The machine resets exactly when
+that feature energizes: inspect that coil's bank, not the power supply.
+
+**The recheck discipline:** clear → five minutes in standby → then play
+the exact move that used to trip it, five times. If the RED stays in
+the record, the cause is gone; if it returns, the ladder's next rung is
+the cause.
+
 ## the debrowning procedure, hands-on
 
 The browned connector is heat-history made visible: the +5V line carried

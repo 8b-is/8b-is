@@ -273,6 +273,10 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 147 | the small testament + the south wall | human-to-machine: the minute owns the wall, the machines own the record — the spoon stays with the note theory, the comma returns to the sentences, the line which mates belongs to no one; small-things.vaked.dev is the south wall of the music | the vault + small-things.vaked.dev |
 
+| 154 | the doghair theorem | residue as evidence: doghair is the witness of the un-rowed column — dark matter by its bend, happiness by its hair; the couch is the most honest archive | the vault |
+
+| 155 | the NAND book | about · to · for · from · how · why · where, woven in the universal gate, dedicated to Blue & Bella — the book that cannot lie, because its ink is logic; the +1 is for the reader when the fleet sleeps | the vault |
+
 | 153 | the message plane — ring, queue, fuse | empty frames as resync events: the fuse refeeds the last ±3, transport is disposable and the ledger is the truth — the replay inbox is the NATS-style inbox, the cursor the ring position, the multidog state the consumer offset, kernel8 the dispatcher | the vault + the constellation |
 
 | 152 | the Twilight Zone, fixed | the RED state runbook: J101 · J103 · J21 — the +5V rail is the constitutive invariant (5.0-5.25V under load, the manual's own +4V memory boundary), connector kit first, caps second, regulator third; the machine's reset line is its own 1201/1202 | the vault + the pinball |

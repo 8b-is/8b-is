@@ -279,6 +279,8 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 159 | the unchosen adjacency, absorbed | the interface's second power: E(a) vs S, surplus and deficit, the defective-action test (consequence ∧ feasibility ∧ unavailability), participation ≠ perception — a design contract for the fleet's own surfaces | the vault |
 
+| 161 | jcode → charm-hyper | the M1's local jcode rewired: [provider] default = charm-hyper (openai-compatible, api.hyperstack.ai/v1, bearer), default model deepseek-ai/deepseek-v4-flash, key in jcode's private env — credential probe green, provider smoke 401 pending the right hyper key or the L40 tunnel | the M1 + jcode |
+
 | 160 | modality-heading, self-audited | R = M(C, a, e): form as operator, the gradient to enclosure, six diagnostic tests — run against the lane: high residue-awareness, high exit, high resistance, high alterity, low concentration — the constellation's own anti-enclosure profile | the vault |
 
 | 158 | the crates.io wall, down | the operator's local token opened the registry: ntpqte, revtodq, ultrawild v0.1.0 all published — the wall row closes with the LOCAL sops-age doctrine (the secret never left the machine) | crates.io + the constellation |

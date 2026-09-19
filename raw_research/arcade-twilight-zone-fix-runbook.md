@@ -1,0 +1,86 @@
+# arcade — Twilight Zone, the fix runbook (J101 · J103 · J21)
+
+*The machine in the operator's room went RED: stuck in standby, reset
+detected, with J101 and J103 + J21 named as the suspects. This runbook is
+grounded in the machine's own manual (the arcademanual scan this vault
+holds) and in the WPC power-rail failure family. Read this as the
+discipline: voltage first, connectors second, boards third. The RED state
+is the machine's own 1201/1202 — it refuses to continue rather than
+corrupt; our job is to keep the 5V rail alive and witness the recovery.*
+
+## the manual's own evidence
+
+- the J21 header on the driver board carries the CPU rail: **J21-4 and
+  J21-5 = +5VDC** (from J114-4 and J114-3), **J21-6 and J21-7 =
+  +12VDC**, J21-1 = ground. These four power pins are the classic WPC
+  brown-out path: charred pins, melted housings, sag under load.
+- the manual's memory boundary: *"voltage drops below +4 V, memory reset
+  occurs. Check the batteries and battery holder"* — the CPU's own
+  threshold is 4V; the rail must hold 5.0–5.25V under load, and the
+  battery holder is a second, independent suspect.
+- connector notation: J101-3 = pin 3 of jack 1 on its board — the
+  absolute addressing the diagnostics speak in.
+
+## FIX — the protocol (in order, stop when the cause is found)
+
+1. **Power off, unplug, inspect.** Pull J101, J103, J21. Look for the
+   browned/melted pin housings, heat-stained pins, and the tell-tale
+   IDC widow's peak. If any pin is charred, stop reseating — repin.
+2. **Clean + repin.** Scrape/contact-clean the pins, replace charred
+   pins with quality trifurcon replacements, replace melted housings.
+   Heat-shrink the 5V/12V runs if the original wire insulation is
+   stiffening.
+3. **Reseat firmly, power on, measure.** +5V at **J21-4/5 vs J21-1**
+   (ground): must sit 5.0–5.25V at idle. Then the load test:
+   cycle both flippers and pull a coil bank — the rail must not dip
+   below the low-4s; a dip under load is the rail (caps/regulator), not
+   the connector.
+4. **Battery/memory.** With the diagnostic power address in hand, check
+   the CPU battery holder: below 4V the manual promises memory reset. If
+   the holder shows corrosion, clean the trace (vinegar+rinse+dry) and
+   fit fresh batteries; the Clock audits — the NOT-resettable record —
+   depend on it and must survive this fix.
+5. **The RED recheck.** Clear the reset warning via the operator menu,
+   boot to attract, let it sit five minutes in standby without resetting.
+   Then run the manual's own tests: **T.1 Clock test**, and the gumball
+   test (T.15) for the Geneva optos.
+6. **Still resetting?** Then it is not the connectors: check the CPU
+   board reset circuitry and the power supply filter caps on the
+   rectifier board — the classic order is: connector kit first, caps
+   second, regulator third. Never skip steps 1-5 before opening board
+   components.
+
+## REVIEW — how to know it is fixed, not quieted
+
+- Reseat that holds for a week = the connector was the cause. Reseat
+  that holds for a minute = the rail is still weak; the RED will return
+  with the first coil-heavy moment.
+- Verify the Clock's earnings audits survived (they are the machine's
+  ledger — if the battery was dead, they reset once, honestly, and the
+  record restarts from the fix timestamp).
+- The review verdict is the same one the corridor teaches: the fix is
+  not the symptom that stops; it is the cause that is gone.
+
+## POLISH — after green
+
+- Trifurcon the three harnesses, label them per the manual's absolute
+  notation (J101-3 style), zip-tie the run away from heat.
+- Clean the playfield's Power Ball orbit and the gumball Geneva; check
+  the two flipper EOS switches while the apron is up.
+- Row the fix in the ledger: the machine joins the constellation as a
+  working instrument — the box's acoustic cousin, the same doctrine in
+  steel and wood: capacity is not capability, the +5V rail is the
+  constitutive invariant, and the machine is what it refuses to abandon.
+
+## the honest note
+
+I cannot hold the multimeter; this is the runbook, the hands are yours.
+The constellation will witness the recovery the way it witnesses every
+recovery: the RED row, the fix row, and the five-minutes-in-standby row,
+all in the same ledger. If the pin action reads 5.1V green, the machine
+and the vault both breathe again.
+
+*Twilight Zone · J101 · J103 · J21 · the +5V rail is the constitutive
+invariant · the RED state is the machine's own 1201/1202 · connector
+kit first, caps second, regulator third · the constellation · fine touch
+from within · vaked.dev · 8b-is, 2026-09-18*

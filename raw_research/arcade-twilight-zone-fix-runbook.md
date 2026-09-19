@@ -22,7 +22,6 @@ corrupt; our job is to keep the 5V rail alive and witness the recovery.*
   absolute addressing the diagnostics speak in.
 
 ## FIX — the protocol (in order, stop when the cause is found)
-
 1. **Power off, unplug, inspect.** Pull J101, J103, J21. Look for the
    browned/melted pin housings, heat-stained pins, and the tell-tale
    IDC widow's peak. If any pin is charred, stop reseating — repin.
@@ -49,6 +48,42 @@ corrupt; our job is to keep the 5V rail alive and witness the recovery.*
    rectifier board — the classic order is: connector kit first, caps
    second, regulator third. Never skip steps 1-5 before opening board
    components.
+
+## the debrowning procedure, hands-on
+
+The browned connector is heat-history made visible: the +5V line carried
+too much for too long, the pin oxidized, the contact grew a higher
+resistance, the rail sagged, and the CPU reset. The cure is grade-
+graded — try the gentlest that matches the damage.
+
+**Tools:** contact cleaner (DeOxit D5, or CRC 2-26) · isopropyl 99% ·
+jeweler's or a proper pin extractor · trifurcon replacement pins +
+crimp tool (or loose 0.045 inch pins for soldering) · fine emery (1000-
+grit, pin barrel only) · magnifier · multimeter.
+
+**Grades:**
+
+1. **LIGHT — patina only, no char.** Spray the contact cleaner on the
+   pins, mate/unmate the connector 3–4 times (that mechanical cycling
+   is the real cleaner: it wipes the oxide), let it flash off, reseat
+   firmly. This fixes most of the fleet's tired rails.
+2. **MODERATE — pitting but the housing is sound.** Extract the affected
+   pins (slide the extractor in from the wire side, depress the tang),
+   and replace with fresh trifurcon pins freshly crimped to re-stripped
+   wire. If you do not crimp: strip, tin, and solder a loose 0.045 inch
+   trifurcon pin — the classic WPC field repair.
+3. **SEVERE — charred pin, melted housing.** Do not reuse the housing.
+   De-pin the harness, replace the housing (the manual's own parts list:
+   the 4-pin and 5-pin STR Sq headers), re-pin with new trifurcons, and
+   heat-shrink the 5V/12V runs so the next ten years do not repeat.
+
+**The rules of the bench:** never sand the housing (only the pin barrel,
+1000-grit max); never twist a pin in place (that wrecks the receptacle);
+never trust a "reseat that holds for a minute" — the load test is the
+truce: +5V at J21-4/5 vs J21-1, held above the low-4s while both
+flippers cycle, for five minutes of standby after. The brown comes back
+within a week if the cause was the rail; it stays gone if the cause was
+the contact.
 
 ## REVIEW — how to know it is fixed, not quieted
 

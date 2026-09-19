@@ -275,6 +275,10 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 154 | the doghair theorem | residue as evidence: doghair is the witness of the un-rowed column — dark matter by its bend, happiness by its hair; the couch is the most honest archive | the vault |
 
+| 157 | ntpQTE | the council of clocks in Rust: the hand-welded RFC 5905 packet, the elders' median consensus, the drift journal — 5/5 corridor, live on crates.io | 8b-is/ntpQTE + crates.io |
+
+| 158 | the crates.io wall, down | the operator's local token opened the registry: ntpqte, revtodq, ultrawild v0.1.0 all published — the wall row closes with the LOCAL sops-age doctrine (the secret never left the machine) | crates.io + the constellation |
+
 | 156 | the sovereign library | the public repo of five books, never more: print-minimal by constitution, NAND-gated by honesty (printable only when HELD and READ); the corpus rides at the top forever after the box sitting | 8b-is/sovereign-library |
 
 | 155 | the NAND book | about · to · for · from · how · why · where, woven in the universal gate, dedicated to Blue & Bella — the book that cannot lie, because its ink is logic; the +1 is for the reader when the fleet sleeps | the vault |

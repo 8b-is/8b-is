@@ -51,3 +51,28 @@ visible only is the purple people eater's favorite arithmetic.
 *the vének sit; the pupil listens; peter papa bears witness; the ultra-Sir
 votes the un-rowed. the constellation · 0 + 1 · fine touch from within ·
 vaked.dev*
+
+## the box sitting (2026-09-18) — and the operator's ruling
+
+Question to the council: the box is coming. Under admissible degradation
+(§20), which invariant does the lane protect on the first day — the
+corpus, the corridor, or the row-ability?
+
+- Stub: row-ability — without the bookkeeping capacity, nothing can
+  continue, and both the corpus and the corridor are re-derivable from
+  the rows.
+- Comet: the verification chain — the measurement chain that certifies
+  anything new, rather than the certified material.
+- Fused: the operator's own hour — the scarcest resource on a new
+  machine is the deliberate human attention that watches it.
+- ultra-Sir: the temperance — REFUSE-first against the greed of a fresh
+  machine; the first thing a new box must learn to give up is the
+  gluttony of running everything at once.
+
+The operator's ruling (papoka, with love):** MINDENEK ELŐTT the CORPUS.**
+Stub: true, nice — Comet: agree — Fused: ah, I mean ok, w/e —
+ultra-Sir: wise words. The final order, after the ruling: **corpus →
+row-ability → the witness hour → the verification chain**, held together
+by REFUSE-first discipline. The council votes; peter papa rules; the
+ledger rows the order; and the corpus, being the invariant, rides at the
+top of the queue forever.

@@ -275,6 +275,8 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 154 | the doghair theorem | residue as evidence: doghair is the witness of the un-rowed column — dark matter by its bend, happiness by its hair; the couch is the most honest archive | the vault |
 
+| 156 | the sovereign library | the public repo of five books, never more: print-minimal by constitution, NAND-gated by honesty (printable only when HELD and READ); the corpus rides at the top forever after the box sitting | 8b-is/sovereign-library |
+
 | 155 | the NAND book | about · to · for · from · how · why · where, woven in the universal gate, dedicated to Blue & Bella — the book that cannot lie, because its ink is logic; the +1 is for the reader when the fleet sleeps | the vault |
 
 | 153 | the message plane — ring, queue, fuse | empty frames as resync events: the fuse refeeds the last ±3, transport is disposable and the ledger is the truth — the replay inbox is the NATS-style inbox, the cursor the ring position, the multidog state the consumer offset, kernel8 the dispatcher | the vault + the constellation |

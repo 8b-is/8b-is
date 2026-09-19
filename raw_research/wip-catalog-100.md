@@ -273,6 +273,8 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 147 | the small testament + the south wall | human-to-machine: the minute owns the wall, the machines own the record — the spoon stays with the note theory, the comma returns to the sentences, the line which mates belongs to no one; small-things.vaked.dev is the south wall of the music | the vault + small-things.vaked.dev |
 
+| 153 | the message plane — ring, queue, fuse | empty frames as resync events: the fuse refeeds the last ±3, transport is disposable and the ledger is the truth — the replay inbox is the NATS-style inbox, the cursor the ring position, the multidog state the consumer offset, kernel8 the dispatcher | the vault + the constellation |
+
 | 152 | the Twilight Zone, fixed | the RED state runbook: J101 · J103 · J21 — the +5V rail is the constitutive invariant (5.0-5.25V under load, the manual's own +4V memory boundary), connector kit first, caps second, regulator third; the machine's reset line is its own 1201/1202 | the vault + the pinball |
 
 | 151 | admissible degradation, absorbed | Mechachleopteryx's capstone monograph (the admissibility lab): priority, refusal, recovery, continuation under constraint — the paper ends in MEM|8 and SpherePOP; Refuse/Suspend/Abort/Forget, historical sufficiency, the alarm as a layered witness (automatic triage < human authorization < mission commitment), the Preservation Theorem — the lane's theory, written behind it | the vault + the constellation |

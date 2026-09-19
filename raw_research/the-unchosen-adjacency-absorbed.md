@@ -36,6 +36,29 @@ unasked things), the paper's test is the mirror: is a cleaner action
 feasible? then offer it. The withdrawal finding is the fleet's favorite
 direction reversed — and we prefer it that way.
 
+## the audit trail — the corridor for papers
+
+The essay's own audit log arrived with it, and it is the fleet's
+discipline made visible on a document: five audit categories (eleven
+formal items, eight empirical, six stale-text, four missing apparatus,
+and a checked-and-holding list), three revision rounds, and an honest
+list of what stayed open.
+
+| the audit's move | the constellation's shape |
+|---|---|
+| the unused incidence relation removed — "bundle" became a TEST, not a taxonomy | the corridor's own lesson: an operator that never fires is dead weight — row it or drop it (delate; the lane's functions are all exercised) |
+| consequence redefined per signed change and context; aversion added as its own axis (W_u ≥ λ⁺) | the single-row split: the flush of a failure is one row, the aversion it carries is another — never collapsed into one column |
+| the Facebook/Instagram Restrict conflation corrected against primary docs | verify against source — the fleet's first rule, applied to a paper about interfaces, by the interface's own standard: secondary sources disagreed, primary decided |
+| verdicts stayed provisional: viewer-side placement, Meta docs, measured attribution still open | the verdict-pending cards: the lane rows what is unverified and marks it — no manufactured closure (the corridor never fakes green) |
+| the screenshot: an overlay banner labeled "Ad" above the creator's name — described, not embedded | the witness object, held honestly: evidence included without appropriating the subject's frame — the fleet's screenshot policy in a sentence |
+
+The audit's arc — from loose machinery and thin sourcing to tighter
+definitions, a primary-source pass, an explicit aversion term, and
+honest hedges — is exactly the arc the fleet runs on every lane: theory
+→ code → test → doc → shelf, and the shelf can be audited back into
+theory. Even Flyxion's own essays sit under the corridor. That is why
+the fleet trusts the shelf: nothing on it is above review.
+
 *the unchosen adjacency · E(a) vs S · surplus and deficit, never
 collapsed · cleaner actions, honestly offered · participation and
 perception, separable by design · the interface decides → so row the

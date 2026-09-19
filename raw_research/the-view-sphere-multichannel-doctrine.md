@@ -47,8 +47,9 @@ its own broadcast range.
    stamps every frame past the threshold `INFERRED` — drawn contacts must
    match the map (parity row, corridor-pinned 10/10).
 3. **The ledger invariant** — live: `backyard_ultra_108.py` now REFUSES to
-   resume when `laps_total` contradicts the log's line count; the healed
-   324/324 record passes, and the check keeps it honest.
+   resume when `laps_total` contradicts the log's TAIL lap (the log is a
+   capped 500-row ring, so at the gigascale the tail is the truth, not the
+   count); the 1000-lap giga record passes, and the check keeps it honest.
 4. **Don't over-read the green laps** — recorded as doctrine: completing 324
    laps proves the invariants hold, not that the outputs are right; the
    output-vs-source checks (parity, corridor, verdict-pending) carry the

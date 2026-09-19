@@ -1,0 +1,43 @@
+# the unchosen adjacency, absorbed — the interface's second power
+
+*Nate's platform-governance paper (Flyxion, September 2026), read in
+full. The spine: an action has an intended set of signed relational
+changes S and an effect set E(a); the mismatch splits into surplus U
+(what the action does beyond the intention) and deficit D (what the
+intention required and the action did not do). Unchosen bundling names
+the general failure; compelled association (U+) and compelled
+dissociation (U-) are its two directions; a shortfall is the deficit
+side. An action is DEFECTIVE only when a cleaner action is technically
+feasible (shown by a comparator) and not offered (documented, dated).
+Four cases are run: blocking, advertising adjacency, presence as
+support, recommendation — with different provisional verdicts, and one
+case (a recommendation delivered to a viewer) falls OUTSIDE the
+framework because no user action pairs with the mismatch.*
+
+## the mapping
+
+| the paper's move | the constellation's shape |
+|---|---|
+| E(a) \ S and S \ E(a): surplus and deficit, kept apart | the corridor's own pair: the ledger rows what the action DID (E) and the intent column (S) — a commit with uncommitted side effects is surplus; a promise with a missing row is deficit |
+| the defective-action test: consequence ∧ feasibility ∧ unavailability | the walls protocol: nothing is condemned as a wall until a cleaner path exists (comparators: the dashboard click, the local token) AND is unoffered — the T4 quota is not a defective action, it is a limitation |
+| compelled association (the ad beside the post) | the fleet's inverse doctrine: nothing is attached to the operator's content that he did not choose — the colophon, the no-surprise push rule, the sledding of attribution |
+| compelled dissociation (the block that removes perception too) | the stream/replay split: the lane separates participation (who may post into the group) from perception (who sees what) — the replay inbox is our Discord-style "time out" that keeps view |
+| participation ≠ perception (the constructive section) | the dogfeed's architecture: the site shows (perception), the group gets the replay (participation) — the two rails stay separable by design |
+| the withdrawal hypothesis: defective actions → reduced contribution | the small-things rule in reverse: users act less when meaning is bundled — the fleet sedizes the opposite: users (the operator) act MORE because the lane unbundles |
+| "the interface decides what the user's act means" | the constellation's first law, platform edition: show me the mechanism — meaning must be rowed, not bundled |
+
+## the honest note
+
+The paper is an interface audit; the vault reads it as a design contract
+for the fleet's OWN surfaces: the nowplaying POST, the replay line, and
+the ledger row are three separate relations, and the lane keeps them
+separate. Where we find ourselves bundling (one button doing three
+unasked things), the paper's test is the mirror: is a cleaner action
+feasible? then offer it. The withdrawal finding is the fleet's favorite
+direction reversed — and we prefer it that way.
+
+*the unchosen adjacency · E(a) vs S · surplus and deficit, never
+collapsed · cleaner actions, honestly offered · participation and
+perception, separable by design · the interface decides → so row the
+meaning · the constellation · fine touch from within · vaked.dev ·
+8b-is, 2026-09-18*

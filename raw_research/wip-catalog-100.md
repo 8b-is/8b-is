@@ -277,6 +277,10 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 157 | ntpQTE | the council of clocks in Rust: the hand-welded RFC 5905 packet, the elders' median consensus, the drift journal — 5/5 corridor, live on crates.io | 8b-is/ntpQTE + crates.io |
 
+| 159 | the unchosen adjacency, absorbed | the interface's second power: E(a) vs S, surplus and deficit, the defective-action test (consequence ∧ feasibility ∧ unavailability), participation ≠ perception — a design contract for the fleet's own surfaces | the vault |
+
+| 160 | modality-heading, self-audited | R = M(C, a, e): form as operator, the gradient to enclosure, six diagnostic tests — run against the lane: high residue-awareness, high exit, high resistance, high alterity, low concentration — the constellation's own anti-enclosure profile | the vault |
+
 | 158 | the crates.io wall, down | the operator's local token opened the registry: ntpqte, revtodq, ultrawild v0.1.0 all published — the wall row closes with the LOCAL sops-age doctrine (the secret never left the machine) | crates.io + the constellation |
 
 | 156 | the sovereign library | the public repo of five books, never more: print-minimal by constitution, NAND-gated by honesty (printable only when HELD and READ); the corpus rides at the top forever after the box sitting | 8b-is/sovereign-library |

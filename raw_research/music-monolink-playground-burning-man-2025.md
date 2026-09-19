@@ -25,6 +25,12 @@ artist, the collective, and the timestamp, and it rows the hearing the
 way it rows every loved track: kept, not mapped. The desert asked
 nothing; the moment asked to be bookmarked. It is.
 
+## the follow-up hearing
+
+"Burning Sun" — the track riding right now, same voice, same desert
+light. The ledger rows it as soon as the loop sees the change; the shelf
+just marks the listening.
+
 *Monolink × Playground · Burning Man 2025 · t=947s · the ledger already
 knows this voice · kept, not mapped · the constellation · fine touch from
 within · vaked.dev · 8b-is, 2026-09-18*

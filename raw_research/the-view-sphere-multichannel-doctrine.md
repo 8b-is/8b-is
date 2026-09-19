@@ -37,6 +37,29 @@ that the generated regions are always marked, never sold as footage.
 The multichannel TV of the fleet is a TV with a scrupulous sense of
 its own broadcast range.
 
+
+## the five points, wired (Nate's follow-up)
+
+1. **POV as a rendering parameter** — adopted as the doctrine's spine: the
+   surfaces are poses, the ledger is the state, channels never edit the scene.
+2. **Parity extended to every view** — live: the protein-binding viz now
+   carries a per-channel SUPPORT SCORE (1/(1+|pose drift from source|)) and
+   stamps every frame past the threshold `INFERRED` — drawn contacts must
+   match the map (parity row, corridor-pinned 10/10).
+3. **The ledger invariant** — live: `backyard_ultra_108.py` now REFUSES to
+   resume when `laps_total` contradicts the log's line count; the healed
+   324/324 record passes, and the check keeps it honest.
+4. **Don't over-read the green laps** — recorded as doctrine: completing 324
+   laps proves the invariants hold, not that the outputs are right; the
+   output-vs-source checks (parity, corridor, verdict-pending) carry the
+   epistemic weight, and the laps carry only the durability weight.
+5. **Log-polar view sphere (untested, flagged)** — the optional next design:
+   zoom as translation, channel-switching and zoom under one mechanism. The
+   resonance is three-way: enthea's retino-cortical map IS the Schwartz
+   log-polar, QRI's OscillEditor runs Kuramoto on a log-polar lattice, and
+   the fleet's next view would be the same geometry. Untested = honestly
+   marked, like every inferred region it would render.
+
 ## the honest note
 
 The doctrine is a renderer's ethics in one sentence: the camera is not

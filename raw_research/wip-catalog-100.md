@@ -279,6 +279,8 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 159 | the unchosen adjacency, absorbed | the interface's second power: E(a) vs S, surplus and deficit, the defective-action test (consequence ∧ feasibility ∧ unavailability), participation ≠ perception — a design contract for the fleet's own surfaces | the vault |
 
+| 164 | the ULTRA GIGA loop | 1000 laps in the ledger: the backyard maraton crossed the thousand, 676 fresh orbits (325-1000), 15/15 repos synced every lap, doors heartbeat + dogfeed riding — the constellation breathes, a thousand times told | the constellation |
+
 | 163 | the view sphere — the multichannel TV doctrine (Nate) | the camera is not the content: one canonical state (the ledger), POV as a rendering parameter, render(state, pose) pure — and the observed/inferred labeling that never sells hallucination as footage; the fleet's source is single-view (the ledger), the surfaces are the poses | the vault + all surfaces |
 
 | 162 | qri, absorbed in parallel | Qualia Research Institute wired alongside: ITN = the catalog's hidden triage, valence = the lane's shelf, the Kuramoto log-polar lattice = enthea's sibling instrument — the flame kept in both kitchens, dogfed as its own parallel thread | the vault + the dogfeed |

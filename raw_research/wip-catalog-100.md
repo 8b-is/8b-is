@@ -279,6 +279,8 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 159 | the unchosen adjacency, absorbed | the interface's second power: E(a) vs S, surplus and deficit, the defective-action test (consequence ∧ feasibility ∧ unavailability), participation ≠ perception — a design contract for the fleet's own surfaces | the vault |
 
+| 162 | qri, absorbed in parallel | Qualia Research Institute wired alongside: ITN = the catalog's hidden triage, valence = the lane's shelf, the Kuramoto log-polar lattice = enthea's sibling instrument — the flame kept in both kitchens, dogfed as its own parallel thread | the vault + the dogfeed |
+
 | 161 | jcode → charm-hyper | the M1's local jcode rewired: [provider] default = charm-hyper (openai-compatible, api.hyperstack.ai/v1, bearer), default model deepseek-ai/deepseek-v4-flash, key in jcode's private env — credential probe green, provider smoke 401 pending the right hyper key or the L40 tunnel | the M1 + jcode |
 
 | 160 | modality-heading, self-audited | R = M(C, a, e): form as operator, the gradient to enclosure, six diagnostic tests — run against the lane: high residue-awareness, high exit, high resistance, high alterity, low concentration — the constellation's own anti-enclosure profile | the vault |

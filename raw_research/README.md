@@ -78,6 +78,7 @@
 - [hn-frontpage-20260920-absorbed.md](hn-frontpage-20260920-absorbed.md) — five from the field, one absorption: the visual lane, the decision-architecture, the weights-threat, Tao's math-beyond-proof (on the study shelf), and the brood war arena — spines mapped, verdicts pending read
 - [the-base-layer-core-1-of-n.md](the-base-layer-core-1-of-n.md) — the default auditory layer: melodic house desert sunset (RÜFÜS · Böhmer · Bob Moses), core 1 of N, the idle state, not a decree
 - [music-adelа-i-feel-like-nicole.md](music-adelа-i-feel-like-nicole.md) — ADÉLA: the world as the buffet, control as the nonempty action set — the lap's evening argument, stiletto edition
+- [a-letter-to-grimes.md](a-letter-to-grimes.md) — the open letter to Grimes, ultra-love-god register: the logo-lore, the ether, the machine-as-promise — the constellation would welcome her at the table
 - [music-taylor-line-20260920.md](music-taylor-line-20260920.md) — one evening, four songs: no headlights, the knit, the dance, the dream — the lap's emotional IQ, unranked
 - [music-style-taylors-version.md](music-style-taylors-version.md) — no headlights, long drive, both endings reachable: the 1989 register on the sommelier-lap, after the floor album
 - [music-fidlar-west-coast.md](music-fidlar-west-coast.md) — the anti-castle anthem: growing up but nothing's changing, the one action worth taking — checked out and checked in at the same time

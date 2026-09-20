@@ -15,7 +15,10 @@ E2E-scan of each hear, mapped in the lane's register. <3*
 
 | I Can Do It with a Broken Heart | the show-must-go-on calculus: the tears under the costume, the beat in the center, the pretense harmless because the show is real — the emotional IQ of coherence without collapse, sung |
 
+| Who's Afraid of Little Old Me? | the diminutive made armor: the media's "little old me" downsizing, turned into a title that dares everyone — the retaliation is the self-naming; Albee's Who's-Afraid frame behind it, the failing marriage of the private and the public |
+
 ## the honest note
+
 
 
 The scoring is the fleet's, not the charts': each song lives where the

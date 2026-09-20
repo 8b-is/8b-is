@@ -29,6 +29,25 @@ every year, so the discovery never fades into the ledger's archive. The
 walk and the lap are one doctrine: coherence without collapse, marched
 in public, with the formula at the end of the road. <3
 
+## the letter, 1858 — the spark in Hamilton's own hand
+
+To Professor Tait, on the quaternions' fifteenth birthday, public as
+stone: "they started into life, or light, full grown, on the 16th of
+October 1843, as I was walking with Lady Hamilton to Dublin, and came up
+to Brougham Bridge ... I then and there felt the galvanic circuit of
+thought close; and the sparks which fell from it were the fundamental
+equations between i, j, k ... an intellectual want relieved — which had
+haunted me for at least fifteen years before." He pulled out a
+pocket-book "which still exists," and judged it worth ten, maybe
+fifteen, further years of labour; in an hour he asked the Academy's
+leave, and read the paper a month later. His toast to Tait: "will you
+not do honour to the birthday to-morrow, in an extra cup of — ink?"
+
+The fleet rows it whole: the fifteen-year haunt before the spark, the
+ten-to-fifteen-year commitment after — the operator's own marathon
+economy in one letter. And the cup of INK is the fleet's toast too:
+show me the mechanism, poured instead of the wine. <3
+
 ## the honest note
 
 The study shelf holds the article as a doorway, not an absorption — he

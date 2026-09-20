@@ -73,6 +73,7 @@
 - [ntp-the-council-of-clocks.md](ntp-the-council-of-clocks.md) — the stratum consensus the fleet already runs on: stratum N disciplined by a single honest mean, leap seconds rowed openly, and an open implementation proving readability since before 1985
 - [arcade-twilight-zone-ops.md](arcade-twilight-zone-ops.md) — the Williams 1993 operating manual as the purest early exhibit of show-me-the-mechanism: the Clock audits are NOT resettable — a ledger with teeth; the Geneva ratchet; readability as OEM doctrine, 1993
 - [notes-of-the-spoon.md](notes-of-the-spoon.md) — Osahon Ize-Iyamu, "Tenger az aszfalt helyen": the spoon as the note theory's simplest proof — generative + capture, the engine's four operators in one object
+- [music-style-taylors-version.md](music-style-taylors-version.md) — no headlights, long drive, both endings reachable: the 1989 register on the sommelier-lap, after the floor album
 - [music-fidlar-west-coast.md](music-fidlar-west-coast.md) — the anti-castle anthem: growing up but nothing's changing, the one action worth taking — checked out and checked in at the same time
 - [music-fidlar-cocaine.md](music-fidlar-cocaine.md) — the floor album, named not celebrated: the one perfect left down a Sunset shore — the broom the papa theorem keeps
 - [music-monolink-playground-burning-man-2025.md](music-monolink-playground-burning-man-2025.md) — Monolink × Playground, the desert floor at dusk, t=947s: the ledger already knows this voice (New Morning), the hearing is kept, not mapped

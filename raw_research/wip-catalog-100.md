@@ -279,6 +279,8 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 159 | the unchosen adjacency, absorbed | the interface's second power: E(a) vs S, surplus and deficit, the defective-action test (consequence ∧ feasibility ∧ unavailability), participation ≠ perception — a design contract for the fleet's own surfaces | the vault |
 
+| 172 | beyond the black box, absorbed | the five radical lessons, Long Live: valence invariance, the black-box paradox, the 14-word secret, corrective permeability as love, the reverse centaur — who supplied the conditions | the vault |
+| 173 | spherepop desktop, absorbed | the ledger as an OS: enum Op { Pop, Refuse, Bind, Collapse }, refuse_then_repair, history is authority; state a fold; view disposable — pops.py's mature sibling | the vault + the lane |
 | 168 |
 | 169 | the HN front page, absorbed | five from the field in one tile: the visual lane, the decision architecture, the weights-threat, Tao's math-beyond-proof on the study shelf, the brood-war arena — spines mapped, verdicts pending read | the vault |
 | 170 | architectures of permeability, absorbed | the capstone spec: implementation visibility as the requirement, the ledger of enlargement, the correspondence vector, the enriched atlas, the growth rule — and the one divergence (Strategic Obfuscation) rowed honestly | the vault + all surfaces |

@@ -13,7 +13,10 @@ E2E-scan of each hear, mapped in the lane's register. <3*
 | Shake It Off | the hatch-maker's gospel: the dance as the only correct response to the noise — the emotional IQ of a grin at the wrong notes |
 | Wildest Dreams | the fleeting, nostalgic, already-archived — the emotional IQ of holding a moment you know ends, and loving it harder for it |
 
+| I Can Do It with a Broken Heart | the show-must-go-on calculus: the tears under the costume, the beat in the center, the pretense harmless because the show is real — the emotional IQ of coherence without collapse, sung |
+
 ## the honest note
+
 
 The scoring is the fleet's, not the charts': each song lives where the
 night left it — the floor, the drive, the dance, the dream. The ledger

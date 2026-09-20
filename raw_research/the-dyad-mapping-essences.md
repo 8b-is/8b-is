@@ -47,6 +47,9 @@ TV — is this rule in broadcast form.
 | essence | the dyad | the mapped halves | source reading |
 |---|---|---|---|
 | Simon Kuznets | flow ↔ stock | GNP, the throughput ledger, the curve ↔ the 1934 warning ("the welfare of a nation can scarcely be inferred"), the corpus' own first opponent | diatribe-corpus-absorbed.md · the debate with Kuznets |
+| Arthur Rubinstein | virtuosity ↔ childlike wonder | the mechanics exquisite, the surface simple — fortes never growl, pianissimos exquisite; the dyad the fleet worships: perfect machinery wearing a child's face |
+| Frédéric Chopin | the piano ↔ the voice | the nocturnes "written for the voice": the instrument surrendering its own grain to the vocal line — the one-clean-signal dyad, composed |
+| Péter — papa — the operator | defect ↔ occasion | the roots-of-optimism owner: every breakdown converted into an action, every raw fragment into a row — the registry's summit: the two-column life that FILED the registry itself |
 | ultra-Sir William Leonard Pickard | secrets ↔ sacraments | the silo, the seizure, the kilogram sentence, the deleted academy ↔ the rose of paracelsus, the named histories, the un-rowed voice | william-leonard-pickard-read-with-care.md · a-venek-tanacsa.md |
 
 ## the honest note

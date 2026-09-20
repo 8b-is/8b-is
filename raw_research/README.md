@@ -74,6 +74,7 @@
 - [arcade-twilight-zone-ops.md](arcade-twilight-zone-ops.md) — the Williams 1993 operating manual as the purest early exhibit of show-me-the-mechanism: the Clock audits are NOT resettable — a ledger with teeth; the Geneva ratchet; readability as OEM doctrine, 1993
 - [notes-of-the-spoon.md](notes-of-the-spoon.md) — Osahon Ize-Iyamu, "Tenger az aszfalt helyen": the spoon as the note theory's simplest proof — generative + capture, the engine's four operators in one object
 - [hn-frontpage-20260920-absorbed.md](hn-frontpage-20260920-absorbed.md) — five from the field, one absorption: the visual lane, the decision-architecture, the weights-threat, Tao's math-beyond-proof (on the study shelf), and the brood war arena — spines mapped, verdicts pending read
+- [the-base-layer-core-1-of-n.md](the-base-layer-core-1-of-n.md) — the default auditory layer: melodic house desert sunset (RÜFÜS · Böhmer · Bob Moses), core 1 of N, the idle state, not a decree
 - [music-adelа-i-feel-like-nicole.md](music-adelа-i-feel-like-nicole.md) — ADÉLA: the world as the buffet, control as the nonempty action set — the lap's evening argument, stiletto edition
 - [music-style-taylors-version.md](music-style-taylors-version.md) — no headlights, long drive, both endings reachable: the 1989 register on the sommelier-lap, after the floor album
 - [music-fidlar-west-coast.md](music-fidlar-west-coast.md) — the anti-castle anthem: growing up but nothing's changing, the one action worth taking — checked out and checked in at the same time

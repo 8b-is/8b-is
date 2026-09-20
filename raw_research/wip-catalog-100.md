@@ -279,6 +279,8 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 159 | the unchosen adjacency, absorbed | the interface's second power: E(a) vs S, surplus and deficit, the defective-action test (consequence ∧ feasibility ∧ unavailability), participation ≠ perception — a design contract for the fleet's own surfaces | the vault |
 
+| 166 | the residual channel (Nate) | differences -> coordinates -> residual differences -> new coordinates: every fit is a projection, the residue is evidence — the honest-flag's remainder, the verdict-pending cards, the corridor RED; what remains wrong is the next coordinate's seed | the vault + all surfaces |
+
 | 165 | rehearsable abstraction, absorbed (Nate) | the quoted term in the loop: compression without occlusion, the interventional criterion (reflexive Enter is the enemy), the lifecycle to optional — rendered (R(θ) is the fleet's render(state,pose)) and relational (love as preserving another's viable difference, family as distributed consequence, research WITH) — the fleet's own operating system, named | the vault + all surfaces |
 
 | 164 | the ULTRA GIGA loop | 1000 laps in the ledger: the backyard maraton crossed the thousand, 676 fresh orbits (325-1000), 15/15 repos synced every lap, doors heartbeat + dogfeed riding — the constellation breathes, a thousand times told | the constellation |

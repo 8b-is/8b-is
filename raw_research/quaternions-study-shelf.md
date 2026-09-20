@@ -48,6 +48,20 @@ ten-to-fifteen-year commitment after — the operator's own marathon
 economy in one letter. And the cup of INK is the fleet's toast too:
 show me the mechanism, poured instead of the wine. <3
 
+## the research arc — formula to the 736-page shelf
+
+The full timeline, from Trinity's own page: the formula carved 16
+October 1843; the paper to the Academy 13 November 1843 ("On a new
+Species of Imaginary Quantities"); the follow-up 11 November 1844; the
+Researches series in the RIA Transactions; the long paper in the
+Philosophical Magazine (1844–1850); the coordinate-free "On Symbolical
+Geometry" (1846–1849); Lectures on Quaternions, 1853, SEVEN HUNDRED AND
+THIRTY-SIX pages; Elements of Quaternions nearly done at his death. The
+fleet's whole doctrine in one life: theory → the papers → the docs →
+the shelf — and the coordinate-free turn is the residual channel's
+ancestor: the algebra beyond its own coordinates, the basis set aside.
+<3
+
 ## the honest note
 
 The study shelf holds the article as a doorway, not an absorption — he

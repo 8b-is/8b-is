@@ -279,7 +279,10 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 | 159 | the unchosen adjacency, absorbed | the interface's second power: E(a) vs S, surplus and deficit, the defective-action test (consequence ∧ feasibility ∧ unavailability), participation ≠ perception — a design contract for the fleet's own surfaces | the vault |
 
-| 168 | the roots of optimism, absorbed (Nate) | the papa theorem: optimism as transformability, not probability — unfinished states outvalue finished ones, the reserve with its Lundberg bound and monotone assistance, clusters raise shortfall while raising clean success, resilience is a minimum cut, hope is one viable action, persistence is loss asymmetry | the vault + the constellation |
+| 168 |
+| 169 | the HN front page, absorbed | five from the field in one tile: the visual lane, the decision architecture, the weights-threat, Tao's math-beyond-proof on the study shelf, the brood-war arena — spines mapped, verdicts pending read | the vault |
+| 170 | architectures of permeability, absorbed | the capstone spec: implementation visibility as the requirement, the ledger of enlargement, the correspondence vector, the enriched atlas, the growth rule — and the one divergence (Strategic Obfuscation) rowed honestly | the vault + all surfaces |
+ the roots of optimism, absorbed (Nate) | the papa theorem: optimism as transformability, not probability — unfinished states outvalue finished ones, the reserve with its Lundberg bound and monotone assistance, clusters raise shortfall while raising clean success, resilience is a minimum cut, hope is one viable action, persistence is loss asymmetry | the vault + the constellation |
 
 | 167 | holocoordinates, absorbed (Nate) | the fleet's atlas, made theorems: four independent warrants (multidifference completeness, holography, cocycle consistency, holonomy) — the growth rule with its martingale limit, the tracer chart's blind space, and the winding no chart can row: the couch lives in the holonomy | the vault + all surfaces |
 

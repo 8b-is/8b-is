@@ -29,6 +29,7 @@
 - [spherepop-desktop-absorbed.md](spherepop-desktop-absorbed.md) — the ledger as an OS: Pop Refuse Bind Collapse, refuse_then_repair, history is authority
 - [quaternions-study-shelf.md](quaternions-study-shelf.md) — Hamilton's carved algebra on the study shelf: i²=j²=k²=ijk=−1 into Broom Bridge rock, order matters, the roots of −1 are a sphere, the spark that closed the circuit
 - [pure-mathematics-study-shelf.md](pure-mathematics-study-shelf.md) — Péter's study shelf, kept a doorway not an absorption: pure vs applied, Gauss's hundred-year telegraph, usefulness is not the test of a shelf, only the corridor
+- [mathematicians-17-18c-study-shelf.md](mathematicians-17-18c-study-shelf.md) — Rouse Ball's 17th–18th century roster on the study shelf: the calculus century from Descartes to Babbage, Newton & Leibniz with the contestation named, the double order (chronological + alphabetical) — the index, not the lives
 - [the-fleet-review-2026-09-18.md](the-fleet-review-2026-09-18.md) — the two-axis review pass: vault clean, engine clean, corridors green, two shoulds and one blocker, all resolved
 - [the-fleet-review-2026-09-18.md](the-fleet-review-2026-09-18.md) — the two-axis review pass: vault clean, engine clean, corridors green, two shoulds and one blocker, all resolved
 - [the-hero-margaret-hamilton.md](the-hero-margaret-hamilton.md) — Péter's hero and the biggest star: Margaret Hamilton — she named software engineering under the hardest deadline, and the fleet's whole doctrine has a grandmother

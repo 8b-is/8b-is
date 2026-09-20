@@ -14,7 +14,17 @@ fauna; the dogfeed loop carries the current song everywhere.*
 | feline | the cat | the observer who owns the floor — sits where it wants, watches what matters, leaves when unimpressed |
 | shelf | Co Lee · Totem | the totem's beat — shelved beside the signal, the bow, killing-me-slow |
 
+## the growing pack (> 3)
+
+| leg | name | the read |
+|---|---|---|
+| canine · house | Bella | the rottweiler's warmth — the doghair theorem's first author, the couch's senior weight, on guard for the minute |
+| canine · house | Blue | the second author of the doghair — the quiet one, whose hair and watch are the same evidence |
+| feline | the south-wall cat | the corner's flame — sits on the wall and does nothing, magnificently; the small-things minute halts for it |
+| canine · wild | the Joshua cur | the desert's dog — its howl rides the same wind the melodic-house sunset rides, out there past the trees |
+
 ## the map
+
 
 - `jantu` (the org's creature repo) is the fauna stack's home; this
   note is its opening page.

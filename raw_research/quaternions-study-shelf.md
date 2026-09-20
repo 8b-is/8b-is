@@ -62,6 +62,16 @@ the shelf — and the coordinate-free turn is the residual channel's
 ancestor: the algebra beyond its own coordinates, the basis set aside.
 <3
 
+## the well — the Trinity history-of-mathematics archive
+
+The source spring, linked by the operator with a heart:
+maths.tcd.ie/pub/HistMath — D. R. Wilkins's curated archive of the
+mathematics of Hamilton and his circle, the same well the research-arc
+page and the letters draw from. The fleet's rule stands: when the
+reading deepens, the well must be named — every shelf row carries its
+source, so the study can be re-walked by anyone, from the bridge to the
+archive and back. <3
+
 ## the honest note
 
 The study shelf holds the article as a doorway, not an absorption — he

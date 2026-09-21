@@ -13,6 +13,20 @@ vs. inferred — a confidence overlay, or snapping the sphere to its
 "supported region", so the channels never silently present hallucinated
 views as footage.*
 
+## the spine, folded — one line of it
+
+```
+history → FOLD → STATE(S) → RENDER → spatial-appearance :: fine touch
+```
+
+`history` is the ledger's raw rows; `FOLD` is the residual channel and the
+holocoordinates compressing them without occlusion; `STATE(S)` is the
+plural canonical row the view sphere reads; `RENDER` is `render(state,
+pose)` itself; `spatial-appearance` is the surfaced pose; `fine touch` is
+the from-within that stamps every frame. The front half — history → FOLD →
+STATE — is the ledger's construction; the back half — RENDER → appearance —
+is Nate's doctrine; the whole line is the fleet in one breath.
+
 ## the mapping — the fleet already renders this way
 
 | nate's design | the constellation's shape |

@@ -1,7 +1,7 @@
-# WIP Catalog — 100 items
+# WIP Catalog — 200 items
 
 *Contributed by Nate (`@standardgalactic`), 2026-09-06. Source of truth for
-the ongoing work-in-progress map. Nine categories, one hundred items.*
+the ongoing work-in-progress map. Nine categories, two hundred items.*
 
 ---
 
@@ -282,6 +282,33 @@ with its one sentence — the catalog of named fires, per the DoD.*
 | 171 | OPSEC-705, absorbed | the stylometric obfuscation protocol, read with care: the holocoordinate of the author, the DTR ranking, the winding paradox, the martingale anonymization - the defensive shield for the whistleblower, read against the fleet's own visible grain | the vault |
 | 172 | beyond the black box, absorbed | the five radical lessons, Long Live: valence invariance, the black-box paradox, the 14-word secret, corrective permeability as love, the reverse centaur — who supplied the conditions | the vault |
 | 173 | spherepop desktop, absorbed | the ledger as an OS: enum Op { Pop, Refuse, Bind, Collapse }, refuse_then_repair, history is authority; state a fold; view disposable — pops.py's mature sibling | the vault + the lane |
+| 174 | modality as operator | the medium is not a pipe: R = M(C,a,e), with expression → convention → expectation → enclosure; old television becomes "corny" as its once-surprising operators become legible conventions and then clichés — corrective permeability is the exit test | the vault |
+| 175 | synthetic testimony | PassusLI + Synthea as the test case: representation ≠ possession, persona continuity ≠ independent witness, and repeated synthetic testimony cannot bootstrap the independence it presupposes — the independence test becomes a transport boundary | the vault |
+| 176 | arrival is not acquisition | capability observed after consultation does not establish capability acquired from consultation — attempted-before-consulted as the debugging test, with Cook / Shen / Tamkin as the foreclosure problem | the vault |
+| 177 | the reversibility gate | three times instead of one: occurrence, observation, reversibility — claims carry τ and ρ, and a transformation that cannot return enough structure to test itself crosses an epistemic boundary | the vault |
+| 178 | convention before code | pebble → tally → numeral → punched-card tuple → CSV: computation begins in admissible convention before executable machinery; representation is operation-relative all the way down | the vault |
+| 179 | counterfactual before comparison | ratios do not become causal merely by division: disjoint populations require a bridge, and the missing bridge is the counterfactual — a comparison can be numerically valid while inferentially undefined | the vault |
+| 180 | layered decision architecture | system decisions separated into four layers rather than collapsed into one verdict — observation, admissibility, selection, action stay inspectable so a downstream choice cannot masquerade as an upstream fact | the vault |
+| 181 | dangerous-sounding speech | mention ≠ use, lexical danger ≠ operational danger: moderation that keys on frightening surface forms can invert the risk ordering, while euphemism becomes an accidental privilege | antivenom/rhetoric + the vault |
+| 182 | degeneracy before singularity | the DSIH toroidal interior formalized: anisotropic support instead of point collapse, NEC violation made explicit, Hawking lifetime retained as comparator, gravitational-wave echoes as the empirical gate | the vault |
+| 183 | continuity without capability | RLT split into path, influence, distinguishability, and capability — replay correctness witnesses continuity without granting the replayed system every capability of its source | the vault |
+| 184 | what probability forgets | the Honest Shadow expanded into the World Made of Columns: probabilities summarize a record but do not inherit its composition law; lifting above the record restores interference as returning memory | the vault |
+| 185 | affect before architecture | felt presence treated as a proxy rather than an ontology — proxy error made explicit, with agent architecture downstream of the measurement question rather than evidence for the thing measured | the vault |
+| 186 | false promises: collagen | C0 → H → D → T → Sj: substrate, hydrolysis, digestion, transport, joint availability kept separate; mass balance blocks the slide from "arrives" to "rebuilds" and forces the claim into a bounded production function | the vault |
+| 187 | the residual architecture | differences → coordinates → residual differences → new coordinates generalized across systems: waste heat, numerical error, blocked paths, failed reconstruction and rejected states become witnesses of the boundary that produced them | algebra + the vault |
+| 188 | the admissible subspace | admissibility becomes geometry rather than a Boolean filter: constraints carve the reachable subspace, and what a system refuses is part of its positive architecture | algebra |
+| 189 | unequal error | error is not one scalar substance — residuals inherit the geometry and consequences of the operation that produced them, so equal magnitudes need not carry equal information | algebra |
+| 190 | when failure becomes a signal | failure promoted from terminal verdict to coordinate generator: repeated structured failure identifies the boundary, and the boundary supplies the next experiment | algebra |
+| 191 | constraint topologies | the residual papers close into one family: boundaries create both truth and waste, admissible regions shape trajectories, and discarded structure remains measurable as the negative image of the operator | algebra |
+| 192 | HOLOcoord | a coordinate is no longer merely x,y,z but a local position plus its relations to the whole atlas — transition maps, multidifference signatures, cocycle consistency and holonomy preserve what no single chart can see | the vault + algebra |
+| 193 | the HOLOcoord proofs | four warrants separated: multidifference completeness, holographic recovery, cocycle consistency, holonomy; local agreement does not imply global triviality, and the winding is information rather than error | algebra |
+| 194 | the paper tutor | the 1992 typing binder recovered as executable pedagogy: paper + supervisor + typewriter form a distributed runtime, with lessons as programs and the learner as part of the machine | textbook |
+| 195 | chorded input | the pedagogical primitive moves from key to action: when one gesture can encode a chord, teaching, rehearsal and abstraction reorganize around executable units rather than characters | textbook |
+| 196 | rehearsable abstraction, formalized | name → quoted closed term → edited term → eval: the abstraction exposes its expansion before execution, making compression compatible with learning; reflexive Enter remains the interventional failure case | the vault |
+| 197 | proof-derived music | bitcoin proof-of-work made audible: hand-welded double-SHA256 verified against the genesis header, nonce search earns the seed, difficulty maps into tempo, and the proof itself becomes the generator of the sound | the music lane |
+| 198 | the base-layer generator | `mine` → valid hash → synth seed → tempo → wav: provenance is no longer metadata attached to the composition; the computational witness is upstream of the note | the music lane |
+| 199 | the repository fission | research-projects split along its own topological seams: admissibility-lab, history, textbook, philosophy, epistemology, rhetoric, compendium, photonics, rsvp-lab and neighboring bodies become independent repositories without deleting their histories | the constellation |
+| 200 | pages after fission | publication follows repository identity: the old `/research-projects/<body>/...` projection becomes `/<body>/...`, with each extracted body carrying its own Pages surface while the remaining monolith keeps only what still belongs there | the constellation |
 
 *Coherence without collapse — the season is open, the fires are named.
 September 10 2026.*

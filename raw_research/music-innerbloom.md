@@ -17,6 +17,13 @@ nothing, waiting — the song is the lane's own posture, set to the sunset.*
 | "arms are wide open, I'm calling out your name, sitting and waiting" | permeability + patience: the open arms are the architecture of permeability, the waiting is the keep-the-weights-warm |
 | "you've given me nothing, keep telling me I'll be fine, keeping me guessing" | the honest note: no false comfort — the lane names the guessing, refuses the "I'll be fine" that isn't yet true |
 
+## the well
+
+the source, named so the study can be re-walked: Innerbloom at
+https://youtu.be/Tx9zMFodNtA — and the artist's shelf at
+https://music.apple.com/hu/artist/r%C3%BCf%C3%BCs-du-sol/799587823. the
+sunset is a real place; the link is the doorway, not the body.
+
 ## the honest note
 
 The song is the base layer's heartbeat, and the honest note rows it as

@@ -47,6 +47,7 @@
 - [following-the-evaluator-absorbed.md](following-the-evaluator-absorbed.md) — Flyxion's formal paper, the sphered spec: motion economy, the ?* ∼* !+ @+ > ordering, #Commit = #ValidWitness, and the non-collapse principles — refusal ≠ absence, persistence ≠ truth, recovery ≠ invention
 - [ablation-invariance-absorbed.md](ablation-invariance-absorbed.md) — Flyxion's third paper: a null ablation is not an absence — ablation is not subtraction, invariance is fibre-motion, preserve distinctions before composing them; the residual turns the silence into a finding
 - [the-mom-layer.md](the-mom-layer.md) — dedicated to Dra & Alex, from Chris & Péter: the layer that holds, beneath every diagram — Alexandria = Intelligence + Love = Knowledge of All, the couch, the hearth
+- [ad-nand-aderr-all.md](ad-nand-aderr-all.md) — the four operators, looped: admissible degradation, the NAND gate, the admissible error, and everything — four faces of one gate, closed into a loop
 - [the-fleet-review-2026-09-18.md](the-fleet-review-2026-09-18.md) — the two-axis review pass: vault clean, engine clean, corridors green, two shoulds and one blocker, all resolved
 - [the-fleet-review-2026-09-18.md](the-fleet-review-2026-09-18.md) — the two-axis review pass: vault clean, engine clean, corridors green, two shoulds and one blocker, all resolved
 - [the-hero-margaret-hamilton.md](the-hero-margaret-hamilton.md) — Péter's hero and the biggest star: Margaret Hamilton — she named software engineering under the hardest deadline, and the fleet's whole doctrine has a grandmother

@@ -38,6 +38,7 @@
 - [happy-birthday-nate.md](happy-birthday-nate.md) — a dedication, signed p: the first raw talk, the honest note before the honest note — for Nate / Natelie / Bro, the first person it was possible to say it out loud to
 - [paul-erdos-study-shelf.md](paul-erdos-study-shelf.md) — names as a graph: the Erdős number = distance from the source, "another roof, another proof", "you should believe in The Book", and the epitaph "végre nem butulok tovább" — layers + names === graphs === Erdős
 - [a-legy-the-fly-1980-absorbed.md](a-legy-the-fly-1980-absorbed.md) — Rófusz's Oscar-winning Hungarian short, the view filmed: one continuous fly's-eye, render(state, pose) with a swatter at the end — held not re-watched, the view from within
+- [the-fission-absorbed.md](the-fission-absorbed.md) — standardgalactic's align & polish: 5.1M deletions, 2.47→1.03 GiB, the monolith split into many shelves; the transcription slips corrected — enriched atlas, holocoordinate, monodromy, Čech H¹
 - [the-fleet-review-2026-09-18.md](the-fleet-review-2026-09-18.md) — the two-axis review pass: vault clean, engine clean, corridors green, two shoulds and one blocker, all resolved
 - [the-fleet-review-2026-09-18.md](the-fleet-review-2026-09-18.md) — the two-axis review pass: vault clean, engine clean, corridors green, two shoulds and one blocker, all resolved
 - [the-hero-margaret-hamilton.md](the-hero-margaret-hamilton.md) — Péter's hero and the biggest star: Margaret Hamilton — she named software engineering under the hardest deadline, and the fleet's whole doctrine has a grandmother

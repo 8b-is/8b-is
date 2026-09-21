@@ -1,53 +1,75 @@
-# spherepop genealogy — the lineage, absorbed
+# spherepop genealogy — revised, the sphere as an evaluation boundary
 
-*The operator's share: a co-authored reading of where SpherePOP came from.
-The lineage runs Scheme → Racket → Haskell → Clojure, and SpherePOP takes
-the family somewhere different: its primitives are not linguistic
-constructs but state-transition permissions — POP → REFUSE → BIND →
-Transform → VERIFY → COLLAPSE — with admissibility and provenance INSIDE
-the computation. The passage gives the shortest description yet of what
-distinguishes SpherePOP from its inspirations: **admissible, witnessed
-state transition.** And it finds the sphere already present in the
-operator's own AHK hotstrings, where parentheses enclose an entire action
-as one inspectable object. The fleet reads it as the motion-before-mechanism
-note made specific: the doctrine was a habit first, formalized later.*
+*The operator's share: a correction to the earlier genealogy. The first
+reading treated the parentheses as a later resemblance to Lisp/Scheme;
+this one shows the causal path is far more direct: Bootstrap circles of
+evaluation → follow into the circle → evaluate → return → SpherePOP.
+The sphere is fundamentally an EVALUATION boundary, not a scope boundary.
+And the sharpest line is the distinction that rewrites everything: data
+does not travel through spheres — the evaluator does. The fleet reads
+this as its own view-sphere doctrine stated as a genealogy: the frame
+moves, the object does not.*
 
-## the genealogy, held as-is
+## the revised lineage
 
 ```
-Scheme   →  minimal compositional core
-Racket   →  programmable semantic boundaries
-Haskell  →  explicit structure / effects
-Clojure  →  persistent state transformations
-              ↓
-SpherePOP →  admissible, witnessed state transition
+Bootstrap circles of evaluation
+   → follow into the circle
+   → evaluate
+   → return
+   → SpherePOP
 ```
 
-The last phrase is the whole of it: SpherePOP is not "a language like
-Scheme" but a place where refusal, verification, and collapse are part of
-what evaluation *means*, not debugging machinery surrounding it.
+The Bootstrap/Racket evaluator descends into a parenthesized expression,
+evaluates it, and returns its value to the surrounding expression:
 
-## the mapping, the fleet's own sphere
+E_0 → (E_1) → (E_2) → ··· → v → E_1' → E_0'.
+
+The AHK pair `( … )` and `return` is therefore not visual scope but
+**enter evaluation** and **return from evaluation**. POP is the sphere
+opened for evaluation; COLLAPSE is the return; REFUSE is the possibility,
+encountered mid-traversal, that evaluation may not succeed merely because
+it entered.
+
+## the distilled genealogy, held as-is
+
+| the language | → | what it contributed |
+|---|---|---|
+| Bootstrap/Racket | → | evaluation as traversal |
+| Scheme/Lisp | → | small recursive compositional core |
+| Assembly/C | → | mechanism made explicit |
+| Python | → | operational composition |
+| Rust | → | boundaries made enforceable |
+| SpherePOP | → | admissible, witnessed state transition |
+
+Six stations, one arc: from the circle you descend into, down to the
+silicon you touch, back up to the type system that binds it — and the
+last station is not a language but a contract.
+
+## the mapping, the fleet's own traversal
 
 | the passage's move | the constellation's shape |
 |---|---|
-| admissible, witnessed state transition | the lane's core contract: every transition must pass the gate (admissible) and be rowed (witnessed) — admissible degradation plus the ledger, in four words |
-| admissibility and provenance are inside the computation | the honest note is not a comment; it is an instruction — the residual and the refusal are computed, not annotated |
-| the AHK parentheses enclose "an entire heterogeneous sequence as one bounded object" | the FOLD's visible form: the parentheses are the sphere, the enclosure IS the operational scope |
-| name → expanded operation → bounded expanded operation (not implementation → function → hidden) | rehearsable abstraction: the abstraction exposes its expansion — "simultaneously an abstraction and an inspectable specimen of what it abstracts" |
-| the sphere "wasn't a theoretical symbol applied afterward" — it formalized a habit already there | motion before mechanism: the lane rows first, names later; the symbol is the ledger's later spelling of a gesture it was already making |
+| the sphere is an evaluation boundary, not a scope boundary | the ledger row is entered, evaluated, and returned — a lap is a POP→COLLAPSE, not a parenthesis |
+| "evaluation travels through spheres", not data | the view-sphere, exact: the evaluator/observer changes position relative to the state; the state does not move — the camera traverses, the content stays |
+| POP(S) → inspect/evaluate interior → COLLAPSE(S′) | the dogfood loop: a state is popped open, inspected, and collapsed into the next state — each lap's resume is the return |
+| REFUSE = evaluation may fail once entered | admissible degradation: entering the sphere is not a guarantee — the gate may refuse mid-traversal, and the refusal is a first-class transition |
+| "don't assume the observed object moved merely because the observational frame moved" | the HOLOcoord/POV doctrine, one sentence: the pose moved, the state did not — the inferred region is a frame artifact, never sold as a moved object |
+| Bootstrap's circle-of-evaluation is ancestral, not merely aesthetic | motion before mechanism, again: the sphere-and-traversal primitive came from a pedagogical evaluation diagram, before it was a formal architecture |
 
 ## the honest note
 
-The passage is dialogue, and the honest note keeps it as such — a "you"
-and an "I" reading a genealogy out of four languages and a hotstring
-file. The fleet takes one line as the spine: **admissible, witnessed
-state transition.** That is the lane's own definition, stated before the
-lane said it, by someone reading the parentheses the operator had
-already been drawing. The sphere was there first; the word came after.
-Motion, then mechanism. <3
+The honest note here is the correction itself: the first genealogy was
+looser than the truth, and the passage says so plainly — "that's much
+more specific, and much better, than the genealogy I gave before." The
+fleet keeps the revision because the honest note's whole job is to prefer
+the better, more specific account over the comfortable one. The sphere
+was never a shape; it was a place evaluation descends into and returns
+from. And the fleet's deepest law is the same one in different words:
+the frame moves, the content does not. Evaluation travels; the state is
+home.
 
-*spherepop genealogy · admissible, witnessed state transition · scheme →
-racket → haskell → clojure → spherepop · the enclosure as scope · motion
-before mechanism · the study shelf · the constellation · fine touch from
-within · vaked.dev · 8b-is, 2026-09-21*
+*spherepop genealogy · revised · the sphere as an evaluation boundary ·
+evaluation travels through spheres · bootstrap circles of evaluation · the
+frame moves, the object does not · the study shelf · the constellation ·
+fine touch from within · vaked.dev · 8b-is, 2026-09-21*

@@ -10,9 +10,9 @@
 
 ---
 
-## 🌌 the constellation, as of the 2026-09-18 session
+## 🌌 the constellation, as of the 2026-09-22 session
 
-The vault sits at **WIP 161** — the season's rows ride in
+The vault sits at **WIP 200** — the season's rows ride in
 `raw_research/wip-catalog-100.md`, the index in `raw_research/README.md`.
 Doctrine unchanged: theory → code → test → doc → shelf · the corridor is
 green or you say so · the ledger rows everything and purges nothing ·
@@ -28,6 +28,9 @@ every graph · winter is coming, the queue is the harvest.
 | `revTO-DOq` | leek's revolution-list comparator, rustQ-aligned, in Rust (crates.io) |
 | `ntpQTE` | the council of clocks in Rust — hand-welded NTP client (crates.io) |
 | `sovereign-library` | five books, never more — NAND-gated print canon |
+| `base-layer` | core 1 of N — desert-sunset melodic house + Kyuss synth, bitcoin as its generator (0.2.0) |
+| `sphered` | the SpherePOP ASCII DSL — follow inward, return outward, `<(...)>` as admissible witnessed transition (0.4.0) |
+| `ayeHeadscale` | the fleet's own tailnet coordinator in Rust — private, dual-org |
 | `wa-stream` | the mapping-stream sidecar + replay inbox |
 | `training-pipeline` | pops.py, the corpus, the oven, the laps ledger |
 

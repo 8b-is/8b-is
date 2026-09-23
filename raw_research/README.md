@@ -108,6 +108,7 @@
 - [a-letter-to-grimes.md](a-letter-to-grimes.md) — the open letter to Grimes, ultra-love-god register: the logo-lore, the ether, the machine-as-promise — the constellation would welcome her at the table
 - [music-taylor-line-20260920.md](music-taylor-line-20260920.md) — one evening, four songs: no headlights, the knit, the dance, the dream — the lap's emotional IQ, unranked
 - [music-style-taylors-version.md](music-style-taylors-version.md) — no headlights, long drive, both endings reachable: the 1989 register on the sommelier-lap, after the floor album
+- [music-love-story-taylors-version.md](music-love-story-taylors-version.md) — the tragic ending rewritten and the song re-owned: Romeo & Juliet without the death, "this love is difficult, but it's real" — the endpoint fallacy's counter-move sung at 120 bpm, the re-derive-to-own as sovereignty
 - [music-fidlar-west-coast.md](music-fidlar-west-coast.md) — the anti-castle anthem: growing up but nothing's changing, the one action worth taking — checked out and checked in at the same time
 - [music-fidlar-cocaine.md](music-fidlar-cocaine.md) — the floor album, named not celebrated: the one perfect left down a Sunset shore — the broom the papa theorem keeps
 - [music-monolink-playground-burning-man-2025.md](music-monolink-playground-burning-man-2025.md) — Monolink × Playground, the desert floor at dusk, t=947s: the ledger already knows this voice (New Morning), the hearing is kept, not mapped

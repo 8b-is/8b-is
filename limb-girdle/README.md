@@ -9,25 +9,29 @@
 | version | what it holds |
 |---|---|
 | **v1** | the base (genetics + mechanism + subtypes), the foundation (therapeutic modalities + landscape + standard of care), the research (frontier + open questions + the lane's contribution) |
-| **v2** | the refinement pass — live trial registry (table with status + sponsor + phase, verified against ClinicalTrials.gov), a biomarker decision map, and the lane's contribution turned from prose into a queryable ledger |
+| **v2** | the theory — the causal topology of the fix (the empty bracket, L_i → F_i → W_i → Γ_i, proof-of-work as an evidentiary ladder); plus the live trial registry and biomarker decision map still to land |
 
 The doctrine: **v1 establishes the map; v2 makes it a machine.** The
 mechanism is the fix — substrate before machinery, and the subtype *is* the
 mechanism.
 
-## The three pillars
+## The four pillars
 
 | pillar | file | what it answers |
 |---|---|---|
 | base | [`base.md`](base.md) | what is it, and which protein broke? the 32 subtypes, the genes, the molecular anatomy |
 | foundation | [`foundation.md`](foundation.md) | how do we fix it? the therapeutic modalities, the trial landscape, the standard of care |
 | research | [`research.md`](research.md) | what's still open, and what can the fleet actually do? |
+| theory | [`theory.md`](theory.md) | why the fix is a causal topology, not a label — the empty bracket, the Γ formalism, the proof-of-work ladder |
 
 ## The one-sentence spine
 
 LGMD is not one disease but ~32 distinct genetic breaks in the muscle's
 load-bearing machinery; the mechanism decides the fix, and the genetic test
-that names the subtype is therefore the first move of any real case.
+that names the subtype is therefore the first move of any real case. And the
+theory pillar sharpens it further: **phenotypic equivalence does not imply
+causal equivalence, and causal equivalence does not imply therapeutic
+equivalence** — the fix is a causal topology, not a diagnostic label.
 
-*limb-girdle · base · foundation · research · v1 → v2 · the mechanism is the
-fix · the constellation · 8b-is, 2026-09-22*
+*limb-girdle · base · foundation · research · theory · v1 → v2 · the mechanism
+is the fix · the empty bracket · the constellation · 8b-is, 2026-09-22*

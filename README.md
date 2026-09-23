@@ -62,6 +62,11 @@ This repository hosts raw research papers, mathematical proofs, LaTeX blueprints
 │   ├── README.md                 # Contribution Guide for Researchers & Agents
 │   ├── paper_template.md         # Markdown / LaTeX research template
 │   └── 01-sample-blueprint.md   # Sample raw research document
+├── limb-girdle/                  # Deep-research foundation (v1): base · foundation · research
+│   ├── README.md                 # Index + version (v1 → v2)
+│   ├── base.md                   # Genetics, mechanism, the 32 subtypes
+│   ├── foundation.md             # Therapeutic modalities + trial landscape
+│   └── research.md               # The frontier + the lane's contribution
 └── mcp/                          # Custom Model Context Protocol (MCP) Server
     ├── raw_research_mcp.py       # MCP Server implementation
     └── requirements.txt          # Python dependencies

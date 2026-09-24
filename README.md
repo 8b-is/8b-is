@@ -70,6 +70,10 @@ This repository hosts raw research papers, mathematical proofs, LaTeX blueprints
 │   ├── theory.md                 # The causal topology of the fix (the empty bracket, Γ)
 │   ├── trials.md                 # Curated trial snapshot (ClinicalTrials.gov NCTs)
 │   └── biomarkers.md             # Biomarker decision map
+├── mechanical-inheritance/       # Collagen, prenatal movement, maternal matrix (Flyxion)
+│   ├── README.md                 # Index + tiers + the two proposals
+│   ├── paper.md                  # The full formal statement
+│   └── lipids.md                 # Twenty-one cold-pressed oils
 └── mcp/                          # Custom Model Context Protocol (MCP) Server
     ├── raw_research_mcp.py       # MCP Server implementation
     └── requirements.txt          # Python dependencies

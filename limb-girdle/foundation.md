@@ -2,8 +2,9 @@
 
 *The second pillar. Given a mechanism, how do we fix it? Four therapeutic
 modalities map onto the five functional classes established in the base
-pillar. Three of the four are already in human trials; one is already the
-documented treatment for a rare metabolic form.*
+pillar. Two of the four are in human trials (substrate for FKRP, AAV gene
+replacement); one has individual proof of mechanism (mevalonolactone); exon
+skipping and genome editing remain largely preclinical for LGMD.*
 
 ## 1. The floor — standard of care (what exists today)
 
@@ -24,28 +25,39 @@ support that buys the years the frontier needs:
 
 ### (a) Substrate / metabolite supplementation — *the metabolic fix*
 
-When the enzyme is present but starved of its substrate, supply the substrate.
-This is the cleanest fix in the whole family, and it is farthest along.
+When residual enzyme activity remains but the pathway output is insufficient,
+supplying more substrate can push the output back over the functional
+threshold. This is the cleanest *hypothesis* in the family, and it is the
+farthest along in testing.
 
-- **Ribitol (BBP-418)** for LGMD R9 (FKRP). FKRP is a ribitol-5-phosphate
-  transferase; its defect leaves α-dystroglycan under-glycosylated. Oral
-  **ribitol** (a natural pentose alcohol) restores the glycan coat and
-  laminin binding. *This is the lane's own law in molecular form: substrate
-  before machinery.* In late-stage trials (FORTIFY, Phase 3).
-- **Mevalonolactone** for the HMG-CoA-reductase metabolic LGMD. The enzyme is
-  the rate-limiting step of cholesterol synthesis; supplying the downstream
-  metabolite is the documented treatment.
+- **Ribitol (BBP-418)** for LGMD R9 (FKRP). Pathogenic FKRP variants impair
+  the CDP-ribitol pathway that adds ribitol-phosphate to α-dystroglycan.
+  Oral **ribitol** (a natural pentose alcohol) enlarges the available
+  substrate pool and can improve matriglycan formation where residual pathway
+  activity remains. *This is the lane's own law in molecular form: substrate
+  before machinery.* In a Phase 3 trial (FORTIFY, MLB-01-005), with
+  encouraging interim findings — but **investigational**, not an established
+  treatment.
+- **Mevalonolactone** for the HMG-CoA-reductase metabolic LGMD. Supplying the
+  downstream metabolite produced improvement in a reported individual case
+  with biallelic HMGCR disease, supported by cellular and mouse evidence — a
+  compelling proof of mechanism, but still experimental.
 
 ### (b) AAV gene replacement — *the structural fix*
 
-Deliver a working copy of the broken gene to muscle. Best-suited to the
-recessive, loss-of-function subtypes where one good copy suffices.
+Deliver a working copy of the broken gene to muscle. Most mature for the
+recessive, loss-of-function subtypes, where one functional copy can restore
+the missing protein.
 
-- **Sarcoglycanopathies (LGMD R3–R6)**: AAV carrying SGCA/SGCB/SGCG/SGCD.
-  Programs in/through clinical trials (e.g. Sarepta's SRP-9003 for SGCB /
-  LGMD R4, SRP-9004 for SGCA / LGMD R3; Genethon, Atamyo, AskBio/Bayer
-  programs).
-- **FKRP (LGMD R9)**: AAV gene therapy alone or combined with ribitol.
+- **Sarcoglycanopathies (LGMD R3–R6)**: human studies exist for β-sarcoglycan
+  deficiency (SRP-9003, which has produced β-sarcoglycan expression in
+  clinical research) and α-sarcoglycan (SRP-9004); Genethon, Atamyo, and
+  AskBio/Bayer programs span the field.
+- **FKRP (LGMD R9)**: AAV gene therapy (AB-1003 / LION-101, ATA-100) alone or
+  combined with ribitol — investigational.
+- **Dysferlin (LGMD R2)**: the ~7 kb coding sequence exceeds single-AAV
+  capacity, motivating dual-vector or shortened constructs; the SRP-6004
+  program was terminated.
 - **Vectors**: AAVrh74 or AAV9, muscle-specific promoters (MHCK7, SPc5-12),
   delivered systemically (IV) to reach skeletal muscle, heart, and diaphragm.
 
@@ -58,7 +70,8 @@ developed in Duchenne; in LGMD it is earlier-stage.
 ### (d) Gene editing (CRISPR / base editing) — *the in-situ fix*
 
 Correct the mutation in place rather than add a gene. The long-term aim; still
-preclinical for most LGMD, but the trajectory is clear.
+preclinical for most LGMD, facing delivery, immune, durability,
+mutation-eligibility, and off-target challenges.
 
 ## 3. The hard cases — where the fix is technically blocked
 
@@ -77,11 +90,11 @@ The foundation must name the walls, not just the doors:
 
 | item | status (as of training, verify against ClinicalTrials.gov) |
 |---|---|
-| ribitol (BBP-418) for LGMD R9/FKRP | Phase 3 (FORTIFY); the metabolic fix closest to approval |
-| AAV SGCB (LGMD R4) | Phase 1/2/3 programs (Sarepta SRP-9003 and others) |
+| ribitol (BBP-418) for LGMD R9/FKRP | Phase 3 (FORTIFY, MLB-01-005); investigational — the metabolic hypothesis farthest along |
+| AAV SGCB (LGMD R4) | Phase 1/3 programs (Sarepta SRP-9003); β-sarcoglycan expression shown in research |
 | AAV SGCA (LGMD R3) | clinical programs (Sarepta SRP-9004 and others) |
-| mevalonolactone (HMGCR LGMD) | documented treatment |
-| exon skipping / CRISPR for LGMD | preclinical to early clinical |
+| mevalonolactone (HMGCR LGMD) | individual proof of mechanism; experimental |
+| exon skipping / CRISPR for LGMD | predominantly preclinical / very early translational |
 
 **Honesty rule**: this table is from pre-training knowledge. Trial phase,
 sponsor, and approval status churn; the foundation's v2 pass must re-verify

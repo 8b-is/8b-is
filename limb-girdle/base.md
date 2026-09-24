@@ -22,8 +22,8 @@ has no single cure — because it is not one disease.
 
 ## 2. The nosology — D and R
 
-The Straub 2018 nomenclature names subtypes by inheritance and order of
-discovery: **LGMD D** (dominant) and **LGMD R** (recessive). The old
+The 2017 ENMC nomenclature (Straub et al.) names subtypes by inheritance and
+order of discovery: **LGMD D** (dominant) and **LGMD R** (recessive). The old
 "LGMD1X / LGMD2X" names are deprecated but still appear in the literature.
 
 | subtype | gene | protein | function | notes |
@@ -32,8 +32,8 @@ discovery: **LGMD D** (dominant) and **LGMD R** (recessive). The old
 | LGMD D2 | TNPO3 | transportin-3 | nuclear transport | dominant |
 | LGMD D3 | HNRNPDL | hnRNP D-like | RNA processing | dominant |
 | LGMD D4 | CAPN3 | calpain-3 | protease | dominant calpainopathy |
-| LGMD D5 | COL6A1/2/3, COL12A1 | collagen VI/XII | ECM scaffolding | Bethlem–Ullrich spectrum |
-| LGMD R1 | CAPN3 | calpain-3 | Ca²⁺ protease, sarcomere turnover | most common worldwide (calpainopathy) |
+| LGMD D5 | COL6A1/2/3 | collagen VI | ECM scaffolding | Bethlem–Ullrich spectrum |
+| LGMD R1 | CAPN3 | calpain-3 | Ca²⁺ protease, sarcomere turnover | among the commonest in many cohorts (calpainopathy) |
 | LGMD R2 | DYSF | dysferlin | membrane resealing | Miyoshi myopathy |
 | LGMD R3 | SGCA | α-sarcoglycan | DGC structural core | sarcoglycanopathy |
 | LGMD R4 | SGCB | β-sarcoglycan | DGC structural core | sarcoglycanopathy |
@@ -43,10 +43,11 @@ discovery: **LGMD D** (dominant) and **LGMD R** (recessive). The old
 | LGMD R8 | TRIM32 | E3 ubiquitin ligase | protein turnover | |
 | LGMD R9 | FKRP | fukutin-related protein | ribitol-5-P transferase, α-DG glycosylation | α-dystroglycanopathy |
 | LGMD R10 | TTN | titin | giant sarcomeric spring | |
-| LGMD R12 | ANO5 | anoctamin-5 | Cl⁻ channel / lipid scramblase | |
+| LGMD R12 | ANO5 | anoctamin-5 | Ca²⁺-activated phospholipid scramblase (membrane organization/repair) | |
 
 *(table is representative, not exhaustive — the full list runs past R30;
-new genes are still being named)*
+new genes are still being named. COL12A1, a collagen-XII myopathy, is
+distinct from the collagen-VI forms above and is not grouped with D5.)*
 
 ## 3. The molecular anatomy — where each break lives
 

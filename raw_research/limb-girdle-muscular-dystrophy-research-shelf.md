@@ -10,17 +10,20 @@ show me the mechanism, and the fix becomes a map, not a wish.*
 
 ## the mechanism, shown
 
-Every LGMD is a broken protein in the muscle's load-bearing machinery. The
-family splits by *which* protein, and each break has a different repair:
+Every LGMD begins with a pathogenic change affecting some part of the
+muscle-maintenance system — membrane repair, force transmission,
+glycosylation, the sarcomere, the extracellular matrix, or protein turnover.
+The family splits by *which* function is impaired, and each break has a
+different repair:
 
 | protein (gene) | subtype | what it does | what breaks |
 |---|---|---|---|
-| calpain-3 (CAPN3) | LGMD R1 / D4 | Ca²⁺-dependent protease; sarcomere turnover | most common worldwide — the muscle's janitor fails |
+| calpain-3 (CAPN3) | LGMD R1 / D4 | Ca²⁺-dependent protease; sarcomere turnover | among the commonest in many cohorts — the muscle's janitor fails |
 | dysferlin (DYSF) | LGMD R2 | Ca²⁺-triggered membrane resealing | tears in the sarcolemma stop being patched |
 | α/β/γ/δ-sarcoglycan (SGCA/SGCB/SGCG/SGCD) | LGMD R3–R6 | structural core of the dystrophin-glycoprotein complex | the membrane's anchor detaches from the ECM |
 | FKRP | LGMD R9 | ribitol-5-phosphate transferase; glycosylates α-dystroglycan | the sugar code that binds laminin goes unglycosylated |
 | titin (TTN) | LGMD R10 | the giant sarcomeric spring | the muscle's elastic backbone loses tension |
-| anoctamin-5 (ANO5) | LGMD R12 | Cl⁻ channel / lipid scramblase | membrane lipid asymmetry fails |
+| anoctamin-5 (ANO5) | LGMD R12 | Ca²⁺-activated phospholipid scramblase | membrane organization and repair fail |
 | collagen VI (COL6A1/2/3, COL12A1) | LGMD D5 / R22 | ECM scaffolding (Bethlem–Ullrich spectrum) | the matrix the muscle hangs on frays |
 | DNAJB6 / TNPO3 / HNRNPDL | LGMD D1–D3 | chaperone / nuclear transport / RNA processing | the dominant forms — folding and traffic fail |
 | HMG-CoA reductase | (metabolic LGMD) | rate-limiting step of cholesterol synthesis | a *metabolic* break, not a structural one |
@@ -32,17 +35,19 @@ one LGMD cure because there is no one LGMD mechanism.
 
 ## the frontier (where the fix already is)
 
-Three strategies map onto three break types, and all three are already in
-human trials or, in one case, already treatable:
+Mechanism-directed treatment is beginning to emerge, but the evidentiary
+stages differ sharply across the family:
 
-1. **Substrate / metabolite supplementation** — the cleanest fix. For the
-   FKRP dystroglycanopathy, the enzyme is still there but starved of its
-   sugar donor; supplying **ribitol** (the substrate, BBP-418) restores
-   α-dystroglycan glycosylation — the classic "give the missing piece" move,
-   in Phase 3 (FORTIFY). For HMG-CoA reductase LGMD, the downstream
-   metabolite **mevalonolactone** is already the documented treatment. This
-   is the lane's own doctrine in molecular form: when the substrate is the
-   bottleneck, add substrate, not machinery.
+1. **Substrate / metabolite supplementation** — the cleanest hypothesis. For
+   the FKRP dystroglycanopathy, pathogenic FKRP variants impair the
+   CDP-ribitol pathway; supplying **ribitol** (the substrate, BBP-418)
+   enlarges the substrate pool and can improve matriglycan where residual
+   activity remains — the "give the missing piece" move, in Phase 3 (FORTIFY,
+   MLB-01-005), still investigational. For HMG-CoA reductase LGMD, the
+   downstream metabolite **mevalonolactone** produced improvement in a
+   reported individual case — a proof of mechanism, not an established
+   treatment. This is the lane's own doctrine in molecular form: when the
+   substrate is the bottleneck, add substrate, not machinery.
 
 2. **AAV gene replacement** — the structural fix. For the sarcoglycanopathies
    (LGMD R3/R4/R5/R6) and FKRP, a working copy of the gene is delivered to
@@ -50,9 +55,10 @@ human trials or, in one case, already treatable:
    hard case: DYSF is near the AAV packaging ceiling, so it needs a
    minimized or dual-vector construct. This is where the field is most active.
 
-3. **Exon skipping / gene editing** — the targeted fix. Antisense
-   oligonucleotides to restore the reading frame, and CRISPR/base editing to
-   correct the mutation in situ. Earlier-stage, but the trajectory is clear.
+3. **Exon skipping / gene editing** — the targeted fix, still largely
+   preclinical for LGMD. Antisense oligonucleotides to restore the reading
+   frame, and CRISPR/base editing to correct the mutation in situ, remain
+   earlier-stage: a trajectory, not yet a human-trial reality for this family.
 
 4. **Supportive standard of care** — the floor that exists *today*: physical,
    occupational, and speech therapy; cardiac and respiratory surveillance

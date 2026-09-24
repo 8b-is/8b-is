@@ -12,8 +12,8 @@
 | **v2** | the theory — the causal topology of the fix (the empty bracket, L_i → F_i → W_i → Γ_i, proof-of-work as an evidentiary ladder); plus the two v2 lands now built — the live trial registry ([`trials.md`](trials.md)) and the biomarker decision map ([`biomarkers.md`](biomarkers.md)) |
 
 The doctrine: **v1 establishes the map; v2 makes it a machine.** The
-mechanism is the fix — substrate before machinery, and the subtype *is* the
-mechanism.
+mechanism partitions the admissible fixes — substrate when residual capacity
+allows, and the subtype constrains which mechanisms are plausible.
 
 ## The four pillars, plus the two v2 lands
 

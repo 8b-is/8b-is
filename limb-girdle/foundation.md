@@ -1,7 +1,7 @@
 # foundation — the therapeutic modalities, the landscape, the floor
 
 *The second pillar. Given a mechanism, how do we fix it? Four therapeutic
-modalities map onto the five functional classes established in the base
+modalities map onto the six functional classes established in the base
 pillar. Two of the four are in human trials (substrate for FKRP, AAV gene
 replacement); one has individual proof of mechanism (mevalonolactone); exon
 skipping and genome editing remain largely preclinical for LGMD.*

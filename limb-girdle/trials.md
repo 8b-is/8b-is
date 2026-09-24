@@ -30,11 +30,10 @@ by subtype, so the table can be read as *mechanism → what is being tried.*
 | [NCT04800874](https://clinicaltrials.gov/study/NCT04800874) · MLB-01-003 | R9 → 2I | FKRP | BBP-418 (ribitol) | ML Bio Solutions | 2 | Active, not recruiting |
 | [NCT04202627](https://clinicaltrials.gov/study/NCT04202627) | R9 → 2I | FKRP | biomarker development (no drug) | ML Bio Solutions | — | Completed |
 
-*This is the lane's own law in trial form — substrate before machinery.
-Pathogenic FKRP variants impair the CDP-ribitol pathway; the trial enlarges
-the substrate pool rather than repairing the enzyme. Investigational — the
-metabolic hypothesis farthest along in testing, not an established
-treatment.*
+*Substrate augmentation in trial form. Pathogenic FKRP variants impair the
+CDP-ribitol pathway; the trial enlarges the substrate pool rather than
+repairing the enzyme. Investigational — the metabolic hypothesis farthest
+along in testing, not an established treatment.*
 
 **The flagship — FORTIFY (MLB-01-005).** Phase 3, randomized 2:1,
 placebo-controlled, quadruple-blind, 112 enrolled, ages 12–60. Primary:

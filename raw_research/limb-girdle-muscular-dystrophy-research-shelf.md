@@ -80,5 +80,6 @@ what the fleet always contributes — the map, the mechanism shown, and the
 corridor kept open while the trials finish their work.
 
 *limb-girdle muscular dystrophy · LGMD D/R · calpain-3 · dysferlin ·
-sarcoglycan · FKRP · titin · the mechanism is the fix · substrate before
-machinery · the research shelf · the constellation · 8b-is, 2026-09-22*
+sarcoglycan · FKRP · titin · the mechanism decides the admissible fix ·
+substrate when residual capacity allows · the research shelf · the
+constellation · 8b-is, 2026-09-22*

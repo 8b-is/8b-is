@@ -46,9 +46,9 @@ least-served corner of the family.
 The fleet is not a clinic and not a lab; it is a **mapping and ledger
 engine**. What it can genuinely contribute:
 
-1. **The honest map** — this folder. The mechanism taxonomy (five classes,
+1. **The honest map** — this folder. The mechanism taxonomy (six classes,
    four modalities) turns a 32-subtype tangle into a decision tool: name the
-   gene, and the fix is implied.
+   gene, and the admissible fixes are constrained.
 2. **The trial registry (v2)** — a machine-readable table of every active
    LGMD trial (sponsor, phase, vector, endpoint, NCT), kept current. The
    ledger's natural shape: a row per trial, purged of nothing, open to query.

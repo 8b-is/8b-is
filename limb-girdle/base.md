@@ -1,8 +1,9 @@
 # base — the genetics, the mechanism, the subtypes
 
-*The first pillar. Before any fix, the base: what LGMD is, which protein
-broke, and how the ~32 subtypes are told apart. Every fix downstream is a
-consequence of what is established here.*
+*The first pillar. Before any fix, the base: what LGMD is, which part of the
+muscle-maintenance system is affected, and how the ~32 subtypes are told
+apart. Every admissible fix downstream is constrained by what is established
+here.*
 
 ## 1. What it is
 
@@ -51,8 +52,10 @@ distinct from the collagen-VI forms above and is not grouped with D5.)*
 
 ## 3. The molecular anatomy — where each break lives
 
-LGMD genes cluster into five functional classes. The class *is* the mechanism,
-and the mechanism *is* the fix.
+LGMD genes cluster into six functional classes. A class is a mechanistic
+grouping, not a verdict: variants within one gene can cause loss of function,
+mislocalization, residual activity, or dominant toxicity, with different
+therapeutic consequences.
 
 **a) Sarcolemmal structural — the anchor.** The dystrophin-glycoprotein
 complex (DGC) links the extracellular matrix to the actin cytoskeleton across
@@ -60,19 +63,22 @@ the muscle membrane. The **sarcoglycan subcomplex** (αβγδ) is its structural
 core; loss of any one destabilizes the whole anchor. → LGMD R3–R6.
 
 **b) Membrane repair — the patch.** **Dysferlin** is a large, Ca²⁺-sensing
-protein that reseals sarcolemmal tears after contraction. Lose it and every
-micro-tear accumulates into degeneration. → LGMD R2.
+protein thought to participate in calcium-dependent membrane repair; its loss
+is associated with progressive muscle degeneration (the "accumulating
+micro-tear" is an explanatory image, not a demonstrated linear account). → LGMD R2.
 
 **c) Glycosylation — the sugar code.** **α-dystroglycan** must carry a dense
 O-mannosyl glycan coat (matriglycan) to bind laminin in the ECM. **FKRP**
 transfers ribitol-5-phosphate onto the glycan core; without it the coat is
 thin, the laminin binding is weak, and the membrane detaches. → LGMD R9
 (an α-dystroglycanopathy). *This is the subtype with the cleanest metabolic
-fix — see the foundation pillar.*
+hypothesis — see the foundation pillar.*
 
 **d) Sarcomeric — the spring.** **Titin** (the giant elastic filament),
-**telethonin**, **myotilin** — the Z-disc and the elastic backbone. Lose
-tension and the contraction machinery frays. → LGMD R7, R10.
+**telethonin**, and **myotilin** — the Z-disc and the elastic backbone. Lose
+tension and the contraction machinery frays. → LGMD R7 (telethonin), R10
+(titin); myotilin-related disease sits on the LGMD/myofibrillar-myopathy
+boundary and is listed here with care, not as a settled R number.
 
 **e) Enzymatic / turnover — the janitor.** **Calpain-3** is a muscle-specific
 Ca²⁺ protease that clears damaged sarcomeric proteins. Lose the janitor and
@@ -81,23 +87,35 @@ the damage accumulates. → LGMD R1, D4.
 **f) Extracellular matrix / folding / traffic.** Collagen VI (ECM scaffold),
 DNAJB6 (chaperone), TNPO3 (nuclear import), HNRNPDL (RNA). → LGMD D1–D3, D5.
 
-## 4. Diagnosis — name the subtype
+## 4. Diagnosis — name the subtype, with epistemic care
 
-Because the subtype *is* the mechanism, diagnosis must reach the gene:
+Naming the molecular subtype constrains the plausible mechanisms; diagnosis
+reaches toward the gene but is not a single categorical step:
 
-- **Creatine kinase (CK)**: elevated 10–150× normal in dystrophic process
+- **Creatine kinase (CK)**: often elevated in a dystrophic process, but not
+  uniformly 10–150× normal — some subtypes, especially certain dominant
+  forms, show modest or even normal values
 - **EMG**: myopathic pattern
 - **Muscle MRI**: subtype-characteristic patterns of fatty replacement
-- **Muscle biopsy + immunohistochemistry**: shows which protein is missing
-  (e.g. absent sarcoglycans, reduced α-dystroglycan)
-- **Genetic testing** (panel / exome / genome): the definitive name — the
-  one step the whole foundation depends on
+- **Muscle biopsy + immunohistochemistry**: can point to a deficient protein,
+  but not always to "the one that is missing" — a causal defect may
+  secondarily reduce several interacting proteins, or produce dysfunctional
+  protein that remains detectable
+- **Genetic testing** (panel / exome / genome): usually decisive, but not
+  automatically definitive — results can be negative, reveal a variant of
+  uncertain significance, or require segregation, RNA, biochemical, or
+  pathological evidence before causality is established; in some people the
+  genetic cause remains unknown
 
 ## 5. The base's one rule
 
-**No subtype, no mechanism; no mechanism, no fix.** Everything in the
-foundation and research pillars follows from naming the gene.
+**Naming the molecular subtype constrains the plausible mechanisms and
+partitions the therapeutic search space; it does not by itself establish
+pathogenic mechanism, treatment eligibility, or clinical response.** Useful
+care — cardiac and respiratory surveillance, rehabilitation, contracture
+management, mobility support, symptom-directed treatment — does not depend on
+already resolving the genotype.
 
 *base · genetics · mechanism · D/R nosology · dystrophin-glycoprotein complex
 · sarcoglycan · dysferlin · FKRP · titin · calpain-3 · collagen VI · the
-subtype is the mechanism · v1 · the constellation · 8b-is, 2026-09-22*
+subtype partitions the therapeutic search space · v1 · the constellation · 8b-is, 2026-09-22*

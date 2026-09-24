@@ -26,6 +26,7 @@ allows, and the subtype constrains which mechanisms are plausible.
 | [`theory.md`](theory.md) | why the fix is a causal topology, not a label — the empty bracket, the Γ formalism, the proof-of-work ladder |
 | [`trials.md`](trials.md) | the curated trial snapshot — current and selected historical LGMD studies, provenance recorded |
 | [`biomarkers.md`](biomarkers.md) | the biomarker decision map — which readout answers which question, for each subtype |
+| [`corridor.md`](corridor.md) | the decision corridor — subtype → mechanism → fix → trial → biomarker → status |
 
 ## The one-sentence spine
 

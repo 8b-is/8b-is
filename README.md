@@ -68,7 +68,7 @@ This repository hosts raw research papers, mathematical proofs, LaTeX blueprints
 │   ├── foundation.md             # Therapeutic modalities + trial landscape
 │   ├── research.md               # The frontier + the lane's contribution
 │   ├── theory.md                 # The causal topology of the fix (the empty bracket, Γ)
-│   ├── trials.md                 # Live trial registry (ClinicalTrials.gov NCTs)
+│   ├── trials.md                 # Curated trial snapshot (ClinicalTrials.gov NCTs)
 │   └── biomarkers.md             # Biomarker decision map
 └── mcp/                          # Custom Model Context Protocol (MCP) Server
     ├── raw_research_mcp.py       # MCP Server implementation

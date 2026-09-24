@@ -49,9 +49,10 @@ engine**. What it can genuinely contribute:
 1. **The honest map** — this folder. The mechanism taxonomy (six classes,
    four modalities) turns a 32-subtype tangle into a decision tool: name the
    gene, and the admissible fixes are constrained.
-2. **The trial registry (v2)** — a machine-readable table of every active
-   LGMD trial (sponsor, phase, vector, endpoint, NCT), kept current. The
-   ledger's natural shape: a row per trial, purged of nothing, open to query.
+2. **The trial snapshot (v2)** — a curated, provenance-recorded table of
+   current and selected historical LGMD studies (sponsor, phase, vector,
+   endpoint, NCT), kept current. The ledger's natural shape: a row per study,
+   honestly scoped, open to query.
 3. **The biomarker decision map (v2)** — which readout answers which question,
    for each subtype. The lane's "show me the mechanism" applied to measurement.
 4. **The corridor** — publication here, in the open, so the map is forkable

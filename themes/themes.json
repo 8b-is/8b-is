@@ -1,0 +1,55 @@
+{
+  "schema": "crush-theme/v1",
+  "themes": {
+    "ultralovegod": {
+      "description": "pink high-contrast darkish, blue eye friendly",
+      "background": "#1A0F1E",
+      "foreground": "#A6C8FF",
+      "primary": "#FF4D9D",
+      "secondary": "#FF8FAB",
+      "accent": "#C9A227",
+      "danger": "#FF5C5C",
+      "selection": "#33203A"
+    },
+    "constellation": {
+      "description": "the 8b-is classic: dark charcoal, gold, cinnabar red",
+      "background": "#0B0E14",
+      "foreground": "#E8E6E3",
+      "primary": "#FF5C5C",
+      "secondary": "#C9A227",
+      "accent": "#8A93A6",
+      "danger": "#FF2E43",
+      "selection": "#1C2333"
+    },
+    "vaked": {
+      "description": "the couch: warm dark, amber, honey",
+      "background": "#1A1714",
+      "foreground": "#F0E9DE",
+      "primary": "#E8A33D",
+      "secondary": "#F2C879",
+      "accent": "#B98A5A",
+      "danger": "#D1665A",
+      "selection": "#2E2822"
+    },
+    "sovereign": {
+      "description": "deep blue-black, cyan, teal",
+      "background": "#0A1118",
+      "foreground": "#D7E6EE",
+      "primary": "#4DC9C9",
+      "secondary": "#7FE0D8",
+      "accent": "#5B8DB8",
+      "danger": "#FF5C7A",
+      "selection": "#16242E"
+    },
+    "nebula": {
+      "description": "night sky: deep purple, violet, magenta",
+      "background": "#13101F",
+      "foreground": "#E2DCF4",
+      "primary": "#C792EA",
+      "secondary": "#9C7FE8",
+      "accent": "#FF8AB0",
+      "danger": "#FF5470",
+      "selection": "#262040"
+    }
+  }
+}

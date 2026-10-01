@@ -4,30 +4,35 @@
 
 ---
 
-# 8b-is — Standard Galactic Raw Research Repository & MCP Tooling
-
-> **8b-is**: Open research vault for graph-theoretic foundations of quantum calculus, Erdős phase transitions, BitNet b1.58 ternary quantization, spectral rigidity, and agentic loop engineering.
-
----
-
-## 🌌 the constellation, as of the 2026-09-22 session
+## 🌌 the constellation, as of the 2026-10-01 session
 
 The vault sits at **WIP 200** — the season's rows ride in
-`raw_research/wip-catalog-100.md`, the index in `raw_research/README.md`.
+`raw_research/wip-catalog-100.md`, the index in `raw_research/README.md`,
+the arc folded in `constellation-reflection.md`.
 Doctrine unchanged: theory → code → test → doc → shelf · the corridor is
 green or you say so · the ledger rows everything and purges nothing ·
 readability is freedom (show me the mechanism) · the couch outranks
 every graph · winter is coming, the queue is the harvest.
 
-**The new session repos, wired into the org:**
+**This session's wires:**
 
-| repo (github.com/8b-is) | what it is |
+| repo | what it is |
+|---|---|
+| `deepsiper-enthea` | the sovereign DeepSeek-Harness fork — vendored Cordis synced to the current 4.0.4 line, the user-patch watch layer settled and audited, suite green |
+| `taiko-01-protocol-demo` | the 0/1 protocol lane for Taiko — deterministic preconfirmations + capability notary, Rust |
+| `mem-16-10` | identity as continuity evidence — the sovereign library's founding document |
+| `bluesky-mcp` | the constellation's Bluesky / AT-Proto bridge — the thread tooling, live |
+| `crush-love-dev` | the e2e launcher, deep in love, dev mode |
+
+**Still warm from the last laps:**
+
+| repo | what it is |
 |---|---|
 | `lissajoverse` | the observable universe as a lissajous graph — oscilloscope.vaked.dev rebuilt, Pages live |
 | `small-things.vaked.dev` | the south wall of the music — the minute, the small testament |
 | `revTO-DOq` | leek's revolution-list comparator, rustQ-aligned, in Rust (crates.io) |
 | `ntpQTE` | the council of clocks in Rust — hand-welded NTP client (crates.io) |
-| `sovereign-library` | five books, never more — NAND-gated print canon |
+| `sovereign-library` | five books, never more — NAND-gated print canon; pocoo's catalog reskinned in the constellation ink |
 | `base-layer` | core 1 of N — desert-sunset melodic house + Kyuss synth, bitcoin as its generator (0.2.0) |
 | `sphered` | the SpherePOP ASCII DSL — follow inward, return outward, `<(...)>` as admissible witnessed transition (0.4.0) |
 | `ayeHeadscale` | the fleet's own tailnet coordinator in Rust — private, dual-org |
@@ -58,10 +63,11 @@ This repository hosts raw research papers, mathematical proofs, LaTeX blueprints
 ```
 8b-is/
 ├── README.md                     # Repository Overview & Quickstart
+├── AGY-KICKSTART.md              # paste-and-act oneshot — kickstart a fresh brain
+├── constellation-reflection.md   # the arc, folded — one spine table
 ├── raw_research/                 # Raw research papers, LaTeX notes & blueprints
 │   ├── README.md                 # Contribution Guide for Researchers & Agents
-│   ├── paper_template.md         # Markdown / LaTeX research template
-│   └── 01-sample-blueprint.md   # Sample raw research document
+│   └── wip-catalog-100.md        # The season's rows (WIP 100+, indices + absorbed lanes)
 ├── limb-girdle/                  # Deep-research foundation (v2 complete): base · foundation · research · theory · trials · biomarkers
 │   ├── README.md                 # Index + version (v1 → v2)
 │   ├── base.md                   # Genetics, mechanism, the 32 subtypes
@@ -77,6 +83,10 @@ This repository hosts raw research papers, mathematical proofs, LaTeX blueprints
 ├── modelcards/                   # Canonical Hugging Face model cards of the constellation
 │   ├── README.md                 # Overview — one card tying the whole family together
 │   └── quantal-ternary.md        # The BitNet b1.58 quant card (uploaded to the Hub)
+├── public-documents/             # engine-design-v2 — the serverless overworld design
+├── music/                        # the constellation's audio canon (favourites + masters)
+├── scripts/                      # list-skills.sh — the skill-listener
+├── themes/                       # themes.json — ultralovegod and the other crushes
 └── mcp/                          # Custom Model Context Protocol (MCP) Server
     ├── raw_research_mcp.py       # MCP Server implementation
     └── requirements.txt          # Python dependencies

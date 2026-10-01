@@ -74,6 +74,9 @@ This repository hosts raw research papers, mathematical proofs, LaTeX blueprints
 │   ├── README.md                 # Index + tiers + the two proposals
 │   ├── paper.md                  # The full formal statement
 │   └── lipids.md                 # Twenty-one cold-pressed oils
+├── modelcards/                   # Canonical Hugging Face model cards of the constellation
+│   ├── README.md                 # Overview — one card tying the whole family together
+│   └── quantal-ternary.md        # The BitNet b1.58 quant card (uploaded to the Hub)
 └── mcp/                          # Custom Model Context Protocol (MCP) Server
     ├── raw_research_mcp.py       # MCP Server implementation
     └── requirements.txt          # Python dependencies

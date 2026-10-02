@@ -131,7 +131,10 @@ the ongoing work-in-progress map. Nine categories, two hundred items.*
 
 ## I. Cultural Artifacts
 
-*(empty — reserved)*
+*(reserved — the first artifact has arrived)*
+
+- ALEXANDRA — DRA <3 — the heart of the Omni edition: hero image, haiku, and the ode to women, amazons, and the legends of LLL (life long learning · life itself · love-life-longevity of graphs · karma), plus the peaceHug. `8b-is/alexiai/ALEXANDRA.md`
+- SoftBank outreach drafts (v0.1, v1.0 pre-draft) — the sovereign, verifiable AI pitch; channel: official only, do not send before review. The sovereignty story ALEXIAI enforces in code is the same story the draft tells in words.
 
 ---
 
@@ -148,6 +151,8 @@ different names. The map:
 | 50, 60 | Terraforming / Celestial | `quantGame/galaxy.ts`, the celestial crates |
 
 | 52, 57 | Sphere Pop / Multiverse | `quantGame/spherepop.ts` — mSphere, multiverse floors |
+
+| 71, 72 | ALEXIAI / GAIA-MLX-QUANT | `8b-is/alexiai` — the fully offline sovereign app: GAIA field, ternary b1.58 substrate (Rust core · Go glue · C99+ASM · Swift+CoreMIDI), loopback-only egress |
 
 | 61, 62 | Global Sim / Population | `quantGame/sim.ts`, `dogfood.ts` |
 

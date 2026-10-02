@@ -317,3 +317,4 @@ with its one sentence — the catalog of named fires, per the DoD.*
 
 *Coherence without collapse — the season is open, the fires are named.
 September 10 2026.*
+| 201 | the foundation blocks | the WebKit layer evolves into 8b-kit: Rust decision core behind one C ABI (`kit_abi.h`), Chez Scheme (Apache-2.0) as the dynamic tongue, an engine facade with WebKit as its first backend, a GPU ML lane (Metal raw / CUDA / ROCm, feature-gated), and host glue (Swift on Apple hosts, Rust ± C ± asm elsewhere) | the constellation + qwave |

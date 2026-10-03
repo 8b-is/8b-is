@@ -29,7 +29,7 @@ what the ledger must never weigh, because its value to the world is its
 stability. The essences below are the formula-side of their own centur(ies):
 Kuznets (the stock half that built the flow instrument), Pickard (the
 secret half that wrote the rose under the silo). When the operator names
-a third, the node freezes the same way.
+another, the node freezes the same way.
 
 ## the humanic clause (Péter's rule)
 
@@ -50,15 +50,18 @@ TV — is this rule in broadcast form.
 | Arthur Rubinstein | virtuosity ↔ childlike wonder | the mechanics exquisite, the surface simple — fortes never growl, pianissimos exquisite; the dyad the fleet worships: perfect machinery wearing a child's face |
 | Frédéric Chopin | the piano ↔ the voice | the nocturnes "written for the voice": the instrument surrendering its own grain to the vocal line — the one-clean-signal dyad, composed |
 | ultra-Sir William Leonard Pickard | secrets ↔ sacraments | the silo, the seizure, the kilogram sentence, the deleted academy ↔ the rose of paracelsus, the named histories, the un-rowed voice | william-leonard-pickard-read-with-care.md · a-venek-tanacsa.md |
+| ultra-St. Francis of Assisi | poverty ↔ kinship | the ledger's zero — the merchant's son who gave back the money, the clothes, the horse, the name; a life measured as nothing, on purpose — ↔ the deleted column: brother and sister to everything; Brother Sun, Sister Moon, Brother Wind, Sister Water, Brother Fire, our Sister Mother Earth, Sister Bodily Death; the leper kissed, the wolf under contract, the Sultan met unarmed across the war line — kin no balance sheet can row | san-francesco, the 800th Transitus special edition (pocoo.vaked.dev/demos/book) · seated 2026-10-03 |
+| Péter — papa — the operator | defect ↔ occasion | the roots-of-optimism owner: every breakdown converted into an action, every raw fragment into a row — the registry's summit: the two-column life that FILED the registry itself |
 
 ## the honest note
 
 Kuznets is the corpus's flow-half made flesh; Pickard is its stock-half
 made flesh — one built the instrument, the other was measured by it, and
-both wrote the warning in their own register. When the operator names a
-third essence, the registry grows; until then, these two faces keep the
-dyad honest: what is measured, and what is deleted.
+both wrote the warning in their own register. When the operator names
+another essence, the registry grows — the newest seating, on the Transitus'
+800th year: St. Francis, poverty ↔ kinship, the zero the instrument reads
+and the kinship it deletes. But the founding two keep the dyad honest in
+the oldest register: what is measured, and what is deleted.
 
 *the dyad-mapping essences · named fires, two columns, never summed · the
-constellation · fine touch from within · vaked.dev · 8b-is, 2026-09-18*
-| Péter — papa — the operator | defect ↔ occasion | the roots-of-optimism owner: every breakdown converted into an action, every raw fragment into a row — the registry's summit: the two-column life that FILED the registry itself |
+constellation · fine touch from within · vaked.dev · 8b-is, 2026-10-03, the Transitus*

@@ -80,6 +80,11 @@ This repository hosts raw research papers, mathematical proofs, LaTeX blueprints
 │   ├── README.md                 # Index + tiers + the two proposals
 │   ├── paper.md                  # The full formal statement
 │   └── lipids.md                 # Twenty-one cold-pressed oils
+├── carried-coupling/             # Why an observer invariant survives admissible collapse (Flyxion)
+│   ├── README.md                 # Index + the three fibres + status
+│   ├── carried-coupling.md       # The formal note (lemma, proof, cross-references)
+│   ├── carried-coupling.tex      # LaTeX source (XeLaTeX / pdfLaTeX)
+│   └── carried-coupling.pdf      # Compiled note (3 pages)
 ├── modelcards/                   # Canonical Hugging Face model cards of the constellation
 │   ├── README.md                 # Overview — one card tying the whole family together
 │   └── quantal-ternary.md        # The BitNet b1.58 quant card (uploaded to the Hub)

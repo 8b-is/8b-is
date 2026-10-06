@@ -18,6 +18,8 @@ def submit_raw_research(title: str, author: str, content: str, tags: list[str]) 
     
     # Generate clean filename from title
     clean_title = "".join(c if c.isalnum() else "_" for c in title.lower()).strip("_")
+    if not clean_title:
+        return {"status": "INVALID_TITLE", "message": "Title must contain at least one letter or number."}
     filename = f"{clean_title}.md"
     file_path = RESEARCH_DIR / filename
 
@@ -25,7 +27,18 @@ def submit_raw_research(title: str, author: str, content: str, tags: list[str]) 
     header = f"# {title}\n\n**Author:** {author}  \n**Tags:** {tag_str}  \n\n"
     
     full_text = header + content
-    file_path.write_text(full_text, encoding="utf-8")
+    # Exclusive creation prevents both concurrent overwrites and following an
+    # existing symlink. A submission never edits an existing paper.
+    try:
+        with file_path.open("x", encoding="utf-8") as output:
+            output.write(full_text)
+    except FileExistsError:
+        return {
+            "status": "CONFLICT",
+            "file_path": str(file_path),
+            "filename": filename,
+            "message": "A paper with this normalized title already exists; choose a different title."
+        }
 
     return {
         "status": "SUCCESS",

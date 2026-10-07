@@ -23,6 +23,7 @@ every graph · winter is coming, the queue is the harvest.
 | `mem-16-10` | identity as continuity evidence — the sovereign library's founding document |
 | `bluesky-mcp` | the constellation's Bluesky / AT-Proto bridge — the thread tooling, live |
 | `crush-love-dev` | the e2e launcher, deep in love, dev mode |
+| `rea` | reverse-engineer anything with agents — the `morluto/rea` fork, aligned and wired into the constellation (MCP server, binaries → runtime) |
 
 **Still warm from the last laps:**
 

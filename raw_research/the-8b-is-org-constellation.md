@@ -15,6 +15,7 @@ shelf, these are the shelves that matter.*
 | `ntpQTE` | the council of clocks in Rust — hand-welded NTP client, the elders' median, the drift journal; crates.io live |
 | `sovereign-library` | five books, never more — the NAND-gated print canon (the shelf's public print face) |
 | `wa-stream` | the mapping-stream sidecar + the replay inbox (second login refused by design) |
+| `peter-omni-chan-qPtodos` | ZEN-PRIO-TODO-SYNC — the priority TODO ledger across the org (private); a 24h pulse ranks commits/PRs/issues + wip-catalog, surface live at `todos.vaked.dev` |
 
 ## the AGNOS stack (the engine's subsystems)
 

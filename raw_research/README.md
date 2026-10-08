@@ -2,6 +2,11 @@
 
 > **Welcome to the 8b-is Raw Research Vault.** This directory contains unrefined, work-in-progress, and peer-reviewed mathematical proofs, LaTeX equations, and research blueprints for **AXIOM QUANT**.
 
+> **Published:** the WIP catalog rides out as the pocoo research feed —
+> [the catalog of named fires](https://pocoo.vaked.dev/posts/2026-09-06-the-catalog-of-named-fires.html) ·
+> [the residue is the evidence](https://pocoo.vaked.dev/posts/2026-09-19-the-residue-is-the-evidence.html) ·
+> index at [pocoo.vaked.dev/research](https://pocoo.vaked.dev/research/).
+
 ---
 
 ## 🗂 the recorded corpus (index)

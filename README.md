@@ -4,7 +4,7 @@
 
 ---
 
-## 🌌 the constellation, as of the 2026-10-01 session
+## 🌌 the constellation, as of the 2026-10-09 session
 
 The vault sits at **WIP 200** — the season's rows ride in
 `raw_research/wip-catalog-100.md`, the index in `raw_research/README.md`,
@@ -25,6 +25,7 @@ every graph · winter is coming, the queue is the harvest.
 | `crush-love-dev` | the e2e launcher, deep in love, dev mode |
 | `rea` | reverse-engineer anything with agents — the `morluto/rea` fork, aligned and wired into the constellation (MCP server, binaries → runtime) |
 | `photocraft` | open-source Photoshop in pure Rust — the `storytold/photocraft` fork, wired into the scifinime lane (image editing, layers, real PSD, headless/MCP) |
+| `pocoo.vaked.dev` | the **research feed** — the WIP catalog published as a SOTA dispatch and the residual-channel epistemology, live at [`/research/`](https://pocoo.vaked.dev/research/) |
 
 **Still warm from the last laps:**
 

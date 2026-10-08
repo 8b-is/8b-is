@@ -24,6 +24,7 @@ every graph · winter is coming, the queue is the harvest.
 | `bluesky-mcp` | the constellation's Bluesky / AT-Proto bridge — the thread tooling, live |
 | `crush-love-dev` | the e2e launcher, deep in love, dev mode |
 | `rea` | reverse-engineer anything with agents — the `morluto/rea` fork, aligned and wired into the constellation (MCP server, binaries → runtime) |
+| `photocraft` | open-source Photoshop in pure Rust — the `storytold/photocraft` fork, wired into the scifinime lane (image editing, layers, real PSD, headless/MCP) |
 
 **Still warm from the last laps:**
 

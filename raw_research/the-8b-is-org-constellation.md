@@ -52,6 +52,18 @@ shelf, these are the shelves that matter.*
 - `waked-lsp`? — note: the LSP lives under `vaked-lsp` in this org too
   (the umbrella + the MLX sidecar + the NATS mesh sidecar)
 
+## the memory lane (forked in, with thanks)
+
+- `knowledge-worker` — **fork [rahulmranga/knowledge-worker](https://github.com/rahulmranga/knowledge-worker)**
+  (MIT, Python): a local-first, provenance-backed personal knowledge graph that
+  carries context across AI sessions — notes become reviewable concepts, decisions,
+  goals, and relationships with source excerpts attached, and a compact context
+  snapshot exports into any LLM. It sits beside the memory family (`mem8*`, MEMNET,
+  the vault) as the *human-facing* side of the same question: what should an
+  assistant remember about you, and why. Rahul builds the constellation's Rust
+  hive in `kompress-ultra`; this is the gift of his other hand — **thank you,
+  friend. <3**
+
 ## the coordinates
 
 - the music lane: `goonj` (resonance) — *Let The Light In* and *The

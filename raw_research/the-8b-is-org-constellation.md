@@ -64,6 +64,18 @@ shelf, these are the shelves that matter.*
   hive in `kompress-ultra`; this is the gift of his other hand — **thank you,
   friend. <3**
 
+## the protein lane (for Rahul, with Nate)
+
+- `proteinFolding` — the **sovereign** protein lane: fold (Boltz-2-class) and
+  design binders (ESMFold2/ESMC-class) on hardware you *own*, evolving
+  `protein-q-fold-bind` off Modal. Built with **`standardgalactic` (Nate)**,
+  whose `biomechanical_DLIR` is the clinical sibling — registration for
+  anatomy where folding is for molecules; *one platform, one sovereignty
+  question: model the structure, own the compute, keep the data.* It powers
+  the private pharma pilot (`pilot.vaked.dev`). For Rahul's father. <3
+- `protein-q-fold-bind` · `qbit-protein-studio` — the proven fold/design
+  surfaces this lane grows from.
+
 ## the coordinates
 
 - the music lane: `goonj` (resonance) — *Let The Light In* and *The

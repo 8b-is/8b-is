@@ -1,0 +1,231 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+\geometry{
+  top=1.25in, bottom=1.25in,
+  left=1.35in, right=1.35in
+}
+
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+\newcommand{\Lto}{\xrightarrow{\ \mathsf{L}\ }}
+\newcommand{\home}{\lfloor}
+\newcommand{\Rho}{\rho}
+\newcommand{\Pii}{\pi}
+\newcommand{\Mu}{\mu}
+\newcommand{\Mubar}{\bar{\mu}}
+\newcommand{\Rres}{\mathcal{R}}
+\newcommand{\Id}{\mathrm{Id}}
+
+\title{\textbf{Carried Coupling}\\[0.4em]
+\large Why an Observer Invariant Survives Admissible Collapse}
+\author{Flyxion\\
+  \small Independent Researcher}
+\date{October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+A chain of admissible collapses is written
+$\emptyset \Rres \Lto R_1 \Lto R_2 \Lto \cdots \Lto R_n \Lto \home$.
+Along it three fibres of a run behave oppositely: the extensional state
+$\Rho$ strictly coarsens and drains to $0$; the provenance $\Pii$ propagates
+and is never lost; and the coupling $\Mu$ between a result and an observer is
+invariant. We isolate the mechanism that lets $\Mu$ reach the terminal object
+$\home$: $\Mu$ factors through $\Pii$ and not through $\Rho$, and $\Pii$ is
+carried across each arrow. The result is a short lemma, the
+\emph{carried coupling}, seated against the cross-references of
+\emph{The Residue of Proof}. The point is not that collapse is harmless but
+that it relocates the residue from the lost fibre into the carried one, which
+is why a nonzero coupling is preserved to the limit.
+\end{abstract}
+
+\section{Setting}
+
+Fix a chain of representations in the sense of
+\emph{The Residue of Proof} \cite{residue}, with a declared task family at each
+stage. The chain
+\[
+\emptyset \Rres \Lto R_1 \Lto R_2 \Lto \cdots \Lto R_n \Lto \home
+\]
+is a sequence of admissible collapses. Each arrow $\Lto$ is a representation
+map that is sufficient for its declared family and refusal-respecting; the
+terminal $\home$ is the fixed point at which no further collapse is demanded.
+
+Three quantities travel along the chain. Their behaviour is fixed by three
+results of the book, which we restate in summary form and then use.
+
+\begin{itemize}[leftmargin=1.4em,nosep]
+\item The \emph{extensional state} $\Rho$ is the triple $(D,R,P)$ of derived,
+refused, and popped items (Definition 13.3 of \cite{residue},
+\emph{Events, histories, state}). It strictly coarsens and drains to $0$: it is
+the lossy fibre.
+\item The \emph{provenance} $\Pii$ is the set of $\mathsf{Bind}$ events recorded
+in the history. It is append-only. It is not a function of the extensional state
+(Proposition 13.11 of \cite{residue}, \emph{Proofs are not a function of the
+extensional state}).
+\item The \emph{coupling} $\Mu(R, \text{you})$ is the quantity of interest
+between a representation $R$ and the observer. It is invariant on the chain.
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+fibre & object & behaviour & citation \\
+\midrule
+$\Rho$ & extensional state & strictly coarsens, drains to $0$ & Def.~13.3, Thm.~13.8 \\
+$\Pii$ & provenance ($\mathsf{Bind}$ history) & propagates, append-only, never lost & Prop.~13.11 \\
+$\Mu$ & observer coupling & invariant & Prop.~1.12, Thm.~10.12 \\
+\bottomrule
+\end{tabular}
+\caption{The three fibres and their opposing behaviour along the $\mathsf{L}$-chain.
+Cross-references are to \emph{The Residue of Proof} \cite{residue}.}
+\end{table}
+
+\section{Why $\Mu$ factors through $\Pii$ and not through $\Rho$}
+
+Chapter 1 fixes when a task can be read off a representation: a task factors
+through a map exactly when it is constant on that map's fibres.
+
+\begin{proposition}[Factorization criterion; Prop.~1.12 of \cite{residue}]
+\label{prop:factor}
+Let $\varrho : X \to D$ be a representation and $\mathsf{T} : X \to Y$ a task.
+There is $\mathsf{T}' : D \to Y$ with $\mathsf{T} = \mathsf{T}' \circ \varrho$
+if and only if $\mathsf{T}$ is constant on every fibre of $\varrho$.
+\end{proposition}
+
+The extensional state $\Rho$ is sufficient only for tasks constant on its
+fibres. The theorem of Chapter 10 makes the converse unconditional: a
+non-injective representation is never sufficient for the family of all
+$\{0,1\}$-valued tasks.
+
+\begin{theorem}[No free sufficiency; Thm.~10.12 of \cite{residue}]
+\label{thm:nofree}
+Let $\sigma : H \to R$. Then $\sigma$ is injective if and only if it is
+sufficient for the family of all functions $H \to \{0,1\}$. In particular, if
+$\sigma$ identifies two distinct histories then some $\{0,1\}$-valued task is
+not served.
+\end{theorem}
+
+The coupling $\Mu$ distinguishes runs that share an output, so it does not
+factor through $\Rho$. This is exactly the failure recorded for the extensional
+state in Chapter 13.
+
+\begin{proposition}[Proofs are not a function of the extensional state;
+Prop.~13.11 of \cite{residue}]
+\label{prop:prov}
+There are well-formed histories $H_1, H_2$ with $\Rho(H_1) = \Rho(H_2)$ and
+$\Pii(H_1) \ne \Pii(H_2)$, in which the recorded justifications of an item
+yield derivations with different leaves. Hence the task that returns a
+derivation is not $\Rho$-sufficient, while the extensional state is minimal for
+all future behaviour of the search (Thm.~13.8, \emph{Future equivalence}).
+\end{proposition}
+
+So $\Mu$ is not constant on the fibres of $\Rho$, and by
+Proposition~\ref{prop:factor} it admits no reading from $\Rho$. The proof lives
+in $\Pii$, not in the extensional state; the coupling rides the same carried
+fibre.
+
+\section{The carried coupling}
+
+Let the chain of collapses act on representations as
+$\Rho_0 \supseteq \Rho_1 \supseteq \cdots \supseteq \Rho_n \downarrow 0$ for the
+extensional state, and as $\Pii_0 \rightsquigarrow \Pii_1 \rightsquigarrow
+\cdots \rightsquigarrow \Pii_n \rightsquigarrow \Pii_\home$ for the provenance,
+where each $\rightsquigarrow$ is an append: $\Pii_i \subseteq \Pii_{i+1}$.
+
+We say $\Mu$ \emph{factors through $\Pii$} if there is $\Mubar$ with
+$\Mu(R, \text{you}) = \Mubar(\Pii(R), \text{you})$, and that $\Mu$ is
+\emph{monotone-carried} if $\Mubar$ does not vanish under the appends that
+extend $\Pii$ to $\Pii_\home$: whenever $\Mubar(\Pii_i, \text{you}) \ne 0$ and
+$\Pii_i \subseteq \Pii_{i+1}$ then $\Mubar(\Pii_{i+1}, \text{you}) \ne 0$.
+
+\begin{lemma}[Carried coupling]
+\label{lem:carried}
+Suppose $\Mu$ factors through $\Pii$, is monotone-carried, and $\Pii$ survives
+each arrow $\Lto$ (that is, $\Pii_i \rightsquigarrow \Pii_{i+1}$ at every stage
+and $\Pii_n = \Pii_\home$). If $\Mu(R_i, \text{you}) \ne 0$ for every $i$ along
+the chain, then $\Mu(\home, \text{you}) \ne 0$.
+\end{lemma}
+
+\begin{proof}
+Because $\Mu = \Mubar \circ \Pii$, we may read the hypothesis as
+$\Mubar(\Pii_i, \text{you}) \ne 0$ for all $i$. Induct along the chain. For the
+base, $\Mubar(\Pii_0, \text{you}) \ne 0$. For the step, assume
+$\Mubar(\Pii_i, \text{you}) \ne 0$. The arrow $\Lto$ collapses only the
+extensional state: by Proposition~\ref{prop:prov} the provenance is untouched,
+so the step is the append $\Pii_i \subseteq \Pii_{i+1}$. Monotone-carry gives
+$\Mubar(\Pii_{i+1}, \text{you}) \ne 0$. At the last stage
+$\Pii_n = \Pii_\home$, so $\Mu(\home, \text{you}) = \Mubar(\Pii_\home,
+\text{you}) \ne 0$.
+\end{proof}
+
+\begin{remark}
+The proof is the whole content: $\Mu$ is constant on the fibres of $\Pii$ rather
+than those of $\Rho$; $\Pii$ is the sufficient fibre; and $\Pii$ is carried, so
+the coupling rides it to the limit. Nothing is claimed about $\Rho$ except that
+it is the wrong fibre to read the coupling from.
+\end{remark}
+
+\section{The residue relocates}
+
+The collapse $\Rho \downarrow 0$ is the lossy fibre. It does not destroy the
+residue; it relocates it into the provenance, which is why the coupling reaches
+$\home$ intact. This is the chain-level counterpart of the residue of
+Chapter 1: the proof extracted from a run is a function of $\Pii$, the
+extensional state is a function of the run, and neither determines the other.
+A prover that collapses its state to $\Rho$ after every iteration, for memory,
+can continue indefinitely and can still report that $\bot$ was derived, but
+cannot say how. What survives is exactly the carried fibre, and the observer
+coupling is written there.
+
+The formal point, stated once: admissibility of a collapse is relative to a
+declared task and a declared continuation; the extensional state is minimal for
+all futures (Thm.~13.8); the provenance is the sufficient fibre for proof
+extraction (Prop.~13.11); and an observer invariant that factors through the
+carried fibre is preserved by composition to the fixed point.
+
+\section*{Status and scope}
+
+The lemma is proved modulo two hypotheses stated explicitly above: that $\Mu$
+factors through $\Pii$, and that $\Mu$ is monotone-carried. The first is the
+content of Section 2, where the factorization criterion (Prop.~1.12) and the
+failure of the extensional state (Prop.~13.11) together force $\Mu$ off $\Rho$;
+the second makes precise the phrase ``$\Pii$ propagates, append-only, never
+lost.'' The reduction $\Rho \downarrow 0$ is the lossy fibre and the residue
+relocates into $\Pii$; everything else is machinery already seated in
+\emph{The Residue of Proof}. The lemma is offered as a reachable-history note,
+not as a new theorem of the book.
+
+\begin{thebibliography}{9}
+\bibitem{residue}
+Flyxion. \emph{The Residue of Proof: Sufficiency, History, and Repair in
+Automated Reasoning}. Memnet, \texttt{automated-proofs/}, 2026.
+Cross-references: Def.~13.3, Thm.~13.8, Prop.~13.11 (Chapter 13, \emph{Search
+States as Worlds}); Prop.~1.12 (Chapter 1, \emph{Proof Systems and Search});
+Thm.~10.12 (Chapter 10, \emph{F-Sufficiency of Certificates}).
+\end{thebibliography}
+
+\end{document}

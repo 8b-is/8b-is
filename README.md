@@ -4,7 +4,7 @@
 
 ---
 
-## 🌌 the constellation, as of the 2026-10-01 session
+## 🌌 the constellation, as of the 2026-10-09 session
 
 The vault sits at **WIP 200** — the season's rows ride in
 `raw_research/wip-catalog-100.md`, the index in `raw_research/README.md`,
@@ -23,6 +23,9 @@ every graph · winter is coming, the queue is the harvest.
 | `mem-16-10` | identity as continuity evidence — the sovereign library's founding document |
 | `bluesky-mcp` | the constellation's Bluesky / AT-Proto bridge — the thread tooling, live |
 | `crush-love-dev` | the e2e launcher, deep in love, dev mode |
+| `rea` | reverse-engineer anything with agents — the `morluto/rea` fork, aligned and wired into the constellation (MCP server, binaries → runtime) |
+| `photocraft` | open-source Photoshop in pure Rust — the `storytold/photocraft` fork, wired into the scifinime lane (image editing, layers, real PSD, headless/MCP) |
+| `pocoo.vaked.dev` | the **research feed** — the WIP catalog published as a SOTA dispatch and the residual-channel epistemology, live at [`/research/`](https://pocoo.vaked.dev/research/) |
 
 **Still warm from the last laps:**
 
@@ -80,6 +83,11 @@ This repository hosts raw research papers, mathematical proofs, LaTeX blueprints
 │   ├── README.md                 # Index + tiers + the two proposals
 │   ├── paper.md                  # The full formal statement
 │   └── lipids.md                 # Twenty-one cold-pressed oils
+├── carried-coupling/             # Why an observer invariant survives admissible collapse (Flyxion)
+│   ├── README.md                 # Index + the three fibres + status
+│   ├── carried-coupling.md       # The formal note (lemma, proof, cross-references)
+│   ├── carried-coupling.tex      # LaTeX source (XeLaTeX / pdfLaTeX)
+│   └── carried-coupling.pdf      # Compiled note (3 pages)
 ├── modelcards/                   # Canonical Hugging Face model cards of the constellation
 │   ├── README.md                 # Overview — one card tying the whole family together
 │   └── quantal-ternary.md        # The BitNet b1.58 quant card (uploaded to the Hub)

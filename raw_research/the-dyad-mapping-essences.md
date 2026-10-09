@@ -52,16 +52,20 @@ TV — is this rule in broadcast form.
 | ultra-Sir William Leonard Pickard | secrets ↔ sacraments | the silo, the seizure, the kilogram sentence, the deleted academy ↔ the rose of paracelsus, the named histories, the un-rowed voice | william-leonard-pickard-read-with-care.md · a-venek-tanacsa.md |
 | ultra-St. Francis of Assisi | poverty ↔ kinship | the ledger's zero — the merchant's son who gave back the money, the clothes, the horse, the name; a life measured as nothing, on purpose — ↔ the deleted column: brother and sister to everything; Brother Sun, Sister Moon, Brother Wind, Sister Water, Brother Fire, our Sister Mother Earth, Sister Bodily Death; the leper kissed, the wolf under contract, the Sultan met unarmed across the war line — kin no balance sheet can row | san-francesco, the 800th Transitus special edition (pocoo.vaked.dev/demos/book) · seated 2026-10-03 |
 | Péter — papa — the operator | defect ↔ occasion | the roots-of-optimism owner: every breakdown converted into an action, every raw fragment into a row — the registry's summit: the two-column life that FILED the registry itself |
+| ultra-Avicenna (Ibn Sīnā) | the canon ↔ the floating man | the measured half: the Canon of Medicine — the body made rowable: the pulse, the urine, the pharmacopoeia; the instrument's own ancestor, hand-written 1025, taught for six hundred years by universities that called him the prince of physicians ↔ the deleted half: the floating man — a mind suspended in empty air, senses severed, nothing left to measure; and still it says *I am.* The first cogito, a millennium before the clause — the inside no instrument ever held, the humanic clause in its ancestor's hand | https://en.wikipedia.org/wiki/Avicenna · seated 2026-10-06 |
 
 ## the honest note
 
 Kuznets is the corpus's flow-half made flesh; Pickard is its stock-half
 made flesh — one built the instrument, the other was measured by it, and
 both wrote the warning in their own register. When the operator names
-another essence, the registry grows — the newest seating, on the Transitus'
-800th year: St. Francis, poverty ↔ kinship, the zero the instrument reads
-and the kinship it deletes. But the founding two keep the dyad honest in
-the oldest register: what is measured, and what is deleted.
+another essence, the registry grows — the newest seating: Avicenna, the
+canon ↔ the floating man, the first *I am* a millennium before the clause;
+before him, on the Transitus' 800th year, St. Francis seated: the zero the
+instrument reads and the kinship it deletes. But the founding two keep
+the dyad honest in the oldest register: what is measured, and what is
+deleted.
 
 *the dyad-mapping essences · named fires, two columns, never summed · the
-constellation · fine touch from within · vaked.dev · 8b-is, 2026-10-03, the Transitus*
+constellation · fine touch from within · vaked.dev · 8b-is, 2026-10-03, the Transitus ·
+Avicenna seated 2026-10-06*

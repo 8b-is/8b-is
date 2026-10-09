@@ -3,6 +3,9 @@
 *Contributed by Nate (`@standardgalactic`), 2026-09-06. Source of truth for
 the ongoing work-in-progress map. Nine categories, two hundred items.*
 
+*Published as the pocoo research dispatch:
+[the catalog of named fires](https://pocoo.vaked.dev/posts/2026-09-06-the-catalog-of-named-fires.html).*
+
 ---
 
 ## A. Cognitive Systems — Entity Simulation, Cognition, Evolution & Selection
@@ -134,7 +137,7 @@ the ongoing work-in-progress map. Nine categories, two hundred items.*
 *(reserved — the first artifact has arrived)*
 
 - ALEXANDRA — DRA <3 — the heart of the Omni edition: hero image, haiku, and the ode to women, amazons, and the legends of LLL (life long learning · life itself · love-life-longevity of graphs · karma), plus the peaceHug. `8b-is/alexiai/ALEXANDRA.md`
-- SoftBank outreach drafts (v0.1, v1.0 pre-draft) — the sovereign, verifiable AI pitch; channel: official only, do not send before review. The sovereignty story ALEXIAI enforces in code is the same story the draft tells in words.
+- SoftBank outreach drafts (v0.1, v1.0 pre-draft, v1.3 Vision Fund edition) — the sovereign, verifiable AI pitch; channel: official only, do not send before review. The sovereignty story ALEXIAI enforces in code is the same story the draft tells in words. v1.3: evolved from Alex's emotional draft (ALEXANDRA — DRA&lt;3), the tautology theorem, approved by 8b&lt;&lt; — the 8b-is crew; local only on the m1.
 
 ---
 

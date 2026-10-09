@@ -15,6 +15,7 @@ shelf, these are the shelves that matter.*
 | `ntpQTE` | the council of clocks in Rust — hand-welded NTP client, the elders' median, the drift journal; crates.io live |
 | `sovereign-library` | five books, never more — the NAND-gated print canon (the shelf's public print face) |
 | `wa-stream` | the mapping-stream sidecar + the replay inbox (second login refused by design) |
+| `peter-omni-chan-qPtodos` | ZEN-PRIO-TODO-SYNC — the priority TODO ledger across the org (private); a 24h pulse ranks commits/PRs/issues + wip-catalog, surface live at `todos.vaked.dev` |
 
 ## the AGNOS stack (the engine's subsystems)
 
@@ -50,6 +51,30 @@ shelf, these are the shelves that matter.*
 - `ayeos` / `aye` / `aygent` — the operating system + the agents
 - `waked-lsp`? — note: the LSP lives under `vaked-lsp` in this org too
   (the umbrella + the MLX sidecar + the NATS mesh sidecar)
+
+## the memory lane (forked in, with thanks)
+
+- `knowledge-worker` — **fork [rahulmranga/knowledge-worker](https://github.com/rahulmranga/knowledge-worker)**
+  (MIT, Python): a local-first, provenance-backed personal knowledge graph that
+  carries context across AI sessions — notes become reviewable concepts, decisions,
+  goals, and relationships with source excerpts attached, and a compact context
+  snapshot exports into any LLM. It sits beside the memory family (`mem8*`, MEMNET,
+  the vault) as the *human-facing* side of the same question: what should an
+  assistant remember about you, and why. Rahul builds the constellation's Rust
+  hive in `kompress-ultra`; this is the gift of his other hand — **thank you,
+  friend. <3**
+
+## the protein lane (for Rahul, with Nate)
+
+- `proteinFolding` — the **sovereign** protein lane: fold (Boltz-2-class) and
+  design binders (ESMFold2/ESMC-class) on hardware you *own*, evolving
+  `protein-q-fold-bind` off Modal. Built with **`standardgalactic` (Nate)**,
+  whose `biomechanical_DLIR` is the clinical sibling — registration for
+  anatomy where folding is for molecules; *one platform, one sovereignty
+  question: model the structure, own the compute, keep the data.* It powers
+  the private pharma pilot (`pilot.vaked.dev`). For Rahul's father. <3
+- `protein-q-fold-bind` · `qbit-protein-studio` — the proven fold/design
+  surfaces this lane grows from.
 
 ## the coordinates
 

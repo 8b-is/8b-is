@@ -2,10 +2,16 @@
 
 > **Welcome to the 8b-is Raw Research Vault.** This directory contains unrefined, work-in-progress, and peer-reviewed mathematical proofs, LaTeX equations, and research blueprints for **AXIOM QUANT**.
 
+> **Published:** the WIP catalog rides out as the pocoo research feed —
+> [the catalog of named fires](https://pocoo.vaked.dev/posts/2026-09-06-the-catalog-of-named-fires.html) ·
+> [the residue is the evidence](https://pocoo.vaked.dev/posts/2026-09-19-the-residue-is-the-evidence.html) ·
+> index at [pocoo.vaked.dev/research](https://pocoo.vaked.dev/research/).
+
 ---
 
 ## 🗂 the recorded corpus (index)
 
+- [cubic-rhombus-initiative-absorbed.md](cubic-rhombus-initiative-absorbed.md) — Flyxion's 14,000-manuscript release on the cubic rhombus `R_n(c)` (Gram `(1−c)I + cJ`): 280 families, 14 statements, 967,680 points, verified in SymPy n=2…8 — "some results could have issues." Our independent check: the closed form `det G_n(c) = (1−c)^{n−1}(1+(n−1)c)` holds exactly n=2…8; 280×50=14,000. The book's thesis at industrial scale: a certificate is not yet a claim
 - [the-8b-is-org-constellation.md](the-8b-is-org-constellation.md) — the org's repository map: the AGNOS stack (prakash, bhava, tanmatra, jantu, PhoenixiX, cinematic-reconstruction, rustybox, smart-tree, bodh, goonj, libro), the theory repos (spherepop, mem8*), the engine surfaces — navigation for every session
 - [son-go-ku-training-concept.md](son-go-ku-training-concept.md)
 - [the-kompress-brain-recalled.md](the-kompress-brain-recalled.md) — the memory spine: the 540-node graph (lodri · krengel · ralph · cosmos), the four roles (Pruner · Rewriter · Circulator · Composer), the two Rust agents — recalled through 8s.is, the operator as a node in his own atlas

@@ -120,9 +120,38 @@ absolute — it is the set of the operator's own devices, and the web UI
 has **no login of its own**. Anyone on that tailnet can drive the agent.
 That is a named boundary, not a wall, and naming it is the point.
 
-Still open: the stale `:9998` serve entry (tailnet-only, dead target,
-harmless — remove with `tailscale serve --http=9998 off` when it is
-clear what it was for).
+## closed, 2026-10-11 (later the same morning)
+
+- **`:9998`** — removed (`tailscale serve --http=9998 off`). The status now
+  carries exactly one route, the one that is wanted.
+- **`*:4747`** — closed with a **firewall block**, not a restart. The
+  interactive session is the operator's live TUI; killing it to change a
+  bind would cost more than it fixes, so macOS's Application Firewall
+  (already *enabled* on this machine) now carries an explicit
+  `Block incoming connections` entry for the opencode binary. Applied
+  without sudo, reversible with `--unblockapp`.
+
+Verified, and separated by how it was verified:
+
+| check | method | result |
+|---|---|---|
+| the rule exists | `socketfilterfw --listapps` | entry 19, "Block incoming connections" |
+| the phone still works | probe → `https://lodris-macbook-pro.tail2870dc.ts.net/` | **200** (Serve proxies over loopback, which ALF does not filter) |
+| local access still works | probe → `http://127.0.0.1:4747/` | **200** |
+| LAN connections are actually refused | — | **not tested: no second host on the LAN.** Config-verified, not probe-verified |
+
+**The root fix is still unapplied**, and saying so is the point. The
+binary still binds `*:4747`; the firewall is a *compensating control*,
+which is the correct security term for "the thing that holds until the
+real fix lands." A rebuilt binary at a different path would not be
+covered by the rule. The real fix is one flag at launch:
+
+```bash
+opencode --hostname 127.0.0.1 -s ses_ed82e01c0ffeCupVmO83M6ilCm
+```
+
+Left to the operator because it interrupts a live session, and because
+resuming the session by id is theirs to time.
 
 ## a second finding, same lap: two writers, one repo
 

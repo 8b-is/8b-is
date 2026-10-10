@@ -77,3 +77,39 @@ history of *which* family produced *which* invariant.
 
 — absorbed 2026-10-07 · the vault rows it · verified: determinant identity
 n=2…8 (SymPy), counts exact. <3
+
+---
+
+## 2026-10-10 — the invited next move landed: Lean
+
+The row above ends by naming what the release invited and could not supply:
+Lean. Three days later it exists. `cubicrhombus/CubicRhombus.lean` (Lean 4 +
+Mathlib) proves the core lemmas for **every** `n : ℕ` and **every** `c : ℝ` —
+not the finite range `n = 2…8` that `verify.py` covers:
+
+| theorem | what it fixes |
+|---|---|
+| `det_gram` | `det G_{n+1}(c) = (1−c)^n (1 + n·c)` for all `n`, `c` — the closed form, no longer a sample |
+| `facet_gram` | the deletion recursion: dropping an edge vector leaves the same family one dimension down |
+| `hasDerivAt_vol2` | the derivative the manuscript's Lemma 2 states, `−n(n+1)c(1−c)^{n−1}` |
+| `vol2_le_one` | for `−1 < n·c` and `c < 1`, the squared volume is `≤ 1` — the sharp inequality (T2) |
+| `vol2_eq_one_iff` | with `n ≥ 1`, equality holds iff `c = 0` — the cube is the only maximiser |
+
+Two honest bounds, because the row's own thesis is that a certificate is not a
+claim. First: **neither file is compiled here** — no Lean toolchain is installed
+in this workspace and Mathlib is needed to elaborate; nothing claims a green
+build, and the *proof* is the artifact until it is. Second: the scope is the
+**volume and facet lemmas**, not the release's 14 distinct statements across its
+280 families. So the SymPy evidence went from finite to universal on one axis
+while the rest of the release stays exactly where it was.
+
+That is the loop closing in the shape the row predicted — Lean, and a retained
+history. Here the retained history is this addendum itself: the table above
+still reads *"Lean: not attempted (yet)"* because that is what was true on
+2026-10-07, and the vault revises status in place rather than rewriting the
+record. The claim moved; the old row stayed.
+
+*the invited move · Lean 4 + Mathlib · `cubicrhombus/CubicRhombus.lean` ·
+written, not compiled · scope: volume and facets · the constellation · fine
+touch from within · vaked.dev · 8b-is, 2026-10-10*
+

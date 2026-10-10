@@ -77,12 +77,38 @@ the true pair**: it kept the right surname for the wrong man and invented
 an MC who does not exist. Three independent marks inside one source
 settled what the third-party resolution got wrong.
 
-**Still HELD:**
+**Still HELD — and the search came back empty, in the interesting way.**
 
-- *Van valami…* — needs a correct video ID. Nothing further can be written.
-- *Kivonat* — same, and the couplet it quotes stays unabsorbed.
+Asked to find the correct video IDs, the vault searched the artist's own
+channel and the album both entries named. `Kottazűr` has a published
+tracklist (the full-album playlist on the band's own channel), and it runs:
 
-Until those two IDs arrive, HELD.
+> Zenebuddhizmus · Miért most?! · Hisz Sztori (Kis Kece) · Egy Ház ·
+> Hangerő · Budapesmód · A Nekemtenee · Szófacsavar · Völgyeim és Utaim ·
+> 30_Semmi · Let's Bagó · Hidegen · **Kottazűr** · Rámnemetnemlel ·
+> Sprint · Karszalag · NTN (Be pofátlan) · Nyugat 100 · 5 terem ·
+> 06-1-996-2010 · Gondolj Már Végig · Arany közértpult (+ the skits)
+
+**Neither *Van valami…* nor *Kivonat* is on it** — though both entries
+attribute themselves to exactly that album. Chasing the titles directly
+is no better: a search of the AKPH catalogue for *Van valami* returns
+**Van gond**, **Van egy gádzsi** and **Vagy Mindegy** — near-misses, no
+match — and *Kivonat* returns nothing of that title at all.
+
+So the finding is not "the IDs were wrong". It is that **there is no AKPH
+release under either title to point an ID at**: the title, the album and
+the quote fail together. That is a stronger result than the first pass
+had, and it is why the gate stays shut.
+
+**One thing did settle.** Searching the catalogue turned up YouTube's own
+content-ID metadata for a different AKPH track, printed verbatim in that
+video's description: *"Habi steez · Akkezdet Phiai · **Mark Suveg ·
+Peter Zavada** · Mark Suveg · Akkezdet ℗ Akph"*. That is the label's own
+credit line, from a wholly independent surface, and it agrees with the
+video hashtags and the self-signature: **Saiid = Márk Süveg**,
+**Újonc = Závada Péter**. Three sources, one answer.
+
+Until a real AKPH release under those two titles exists, HELD.
 
 *music · HELD not absorbed · two link corruptions, one garble, one
 unbacked quote · NAND by honesty — the fleet does not guess · the

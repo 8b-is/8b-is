@@ -18,12 +18,28 @@ is the shape of the miss.*
 
 ## the two mechanisms
 
-**`--mdns` is what opened 4747.** `opencode`'s help is explicit and easy
-to miss: `--mdns` "enable mDNS service discovery (**defaults hostname to
-0.0.0.0**)". The flag exists to advertise `opencode.local` on a LAN — it
-is a *sharing* feature wearing a discovery name, and it silently converts
-a localhost server into a network-wide one. The default is
-`--hostname 127.0.0.1`; the exposure was one flag deep.
+**The interactive TUI is what opens 4747 — and this paragraph is a
+correction.** The first version of this row blamed `--mdns`, reading the
+help text ("enable mDNS service discovery, **defaults hostname to
+0.0.0.0**") and inferring the flag from it. Then the port was checked
+again and the listener had a *different* command line:
+
+```
+54605  opencode -s ses_ed82e01c0ffeCupVmO83M6ilCm   parent: -/bin/zsh
+```
+
+No `--mdns`. No flags at all. A plain interactive `opencode` — the TUI
+session itself — binds **`*:4747`** and serves its web UI from that
+socket. `opencode serve --hostname 127.0.0.1` honours the hostname (it
+was verified binding correctly, on 127.0.0.1 only); the *TUI* does not,
+or reads no such setting — there is no `hostname` key in
+`~/.config/opencode/`.
+
+So the exposure was not one flag deep. It was the **default shape of the
+interactive session**, which is the shape the operator uses every day.
+The lesson is the correction itself: a mechanism inferred from
+documentation is a claim; a mechanism read from `lsof` and `ps` is a
+finding. The first version was the former.
 
 **Funnel is public by definition.** `tailscale serve` and `tailscale
 funnel` differ by exactly one property, and it is the property that
@@ -35,15 +51,24 @@ connection was on the funnel side.
 ## the fix
 
 ```bash
-# 1. bind the agent to localhost, not the world
-opencode serve --hostname 127.0.0.1 --port 4747
-
-# 2. give it a private HTTPS front door (tailnet only, no open ports)
+# 1. give it a private HTTPS front door (tailnet only, no open ports)
 tailscale serve --bg 4747
 
-# 3. close the public one
+# 2. close the public one
 tailscale funnel --https=8443 off
+
+# 3. for a headless server, bind it yourself — `serve` honours this
+opencode serve --hostname 127.0.0.1 --port 4747
+
+# 4. for the interactive TUI (which binds *:4747), the bind must be
+#    closed by not exposing the machine — Tailscale is the perimeter,
+#    and the host firewall is the second line.
 ```
+
+A LaunchAgent for step 3 was written and then **withdrawn**: it cannot
+coexist with the TUI, which already owns the port. Installing a
+`KeepAlive` server beside a TUI that rebinds `*:4747` trades an exposure
+for a crash loop. Standing down was the fix.
 
 Result, verified by probe rather than by reading config:
 
@@ -75,7 +100,8 @@ citation. `/bin/kill` works. **Verify the effect, not the invocation.**
 | the move | the echo |
 |---|---|
 | a working endpoint that nobody re-checked | `σ_d > ω`: the annotation ("this is my private thing") outran the component (a public Funnel URL). The surface worked, so it was never audited |
-| `--mdns` quietly rebinding localhost → `0.0.0.0` | the defaults do the damage; the flag is named for a feature and carries a property |
+| the **interactive default** binding `*`, not a flag | the defaults do the damage, and they are not in the help text — they are in the running process |
+| the first diagnosis (`--mdns`) was wrong and is kept | revise status in place, keep the record: the wrong mechanism stays in the row beside the right one, because a correction with no backlink is the failure this whole row is about |
 | serve vs funnel — same syntax, one word of difference | `Dep / Enc / Int / Upt`: persistence, reachability, interpretation and *use* are independent. Both were reachable; only one was intended |
 | the stale `:9998` proxy with a dead target | the vault's `ρ` — link rot in infrastructure. A route that still resolves and no longer arrives |
 | probing instead of reading config | readability is freedom, applied to your own machine: the config said "tailnet only" and the socket said `*` |
@@ -97,6 +123,21 @@ That is a named boundary, not a wall, and naming it is the point.
 Still open: the stale `:9998` serve entry (tailnet-only, dead target,
 harmless — remove with `tailscale serve --http=9998 off` when it is
 clear what it was for).
+
+## a second finding, same lap: two writers, one repo
+
+While this row was being written, `git add -A raw_research` swept up
+`standardgalactic-wire-absorbed.md` — **a file this session did not
+write**. Another agent instance was working the same vault at the same
+time (two `crush-love-dev --ultra` processes and a live `opencode`
+session were all running), and the pattern-add caught its in-flight work
+and committed it under this row's message.
+
+Nothing was lost and the file is sound, but the lesson belongs beside
+the `kill` one: **`-A` is a claim about the whole tree, made without
+reading it.** The correction is to stage explicit paths, and to check
+which processes own the directory before assuming sole custody. Where a
+tree is contested, `git status` is not a checklist — it is a witness.
 
 *the funnel finding · two open doors, closed · the ledger rows it ·
 fine touch from within · vaked.dev · 8b-is, 2026-10-11*

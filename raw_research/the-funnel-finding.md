@@ -153,6 +153,42 @@ opencode --hostname 127.0.0.1 -s ses_ed82e01c0ffeCupVmO83M6ilCm
 Left to the operator because it interrupts a live session, and because
 resuming the session by id is theirs to time.
 
+## a third instance, same lap: the wrong instrument, recommended from a headline
+
+Asked whether to route the phone through **Portail**, this session first
+said yes — reasoning from the README's own headline ("*Unified
+proxy/gateway*"). Then the schema was read:
+
+```rust
+// portail/src/config.rs:105
+pub struct TargetConfig {
+    pub name: String,
+    pub provider: String,     // openai, anthropic, google, azure, custom
+    pub base_url: String,     // an AI provider endpoint
+    pub models: Vec<String>,
+    pub rps: f64,
+}
+```
+
+Portail's targets are **AI provider templates**. Its fronts are *AI
+Gateway · MCP Gateway · CDN cache* — and the CDN takes a single `origin`
+plus a cache, which is the wrong layer for a stateful agent UI. It is
+the right tool for the operator's AI traffic (LiteLLM, OpenAI,
+Anthropic, Ollama on `:11434`) and the wrong tool for this.
+
+That is the third time in one night that a mechanism was inferred from a
+summary instead of read from the thing itself — after `--mdns` (inferred
+from help text) and the `:9998` route (inferred "orphan" from a dead
+port, when it was Portail's own prepared door, `listen =
+"127.0.0.1:9998"` in `docs/E2E_TEST_STRATEGY.md`). **The pattern is the
+finding.** Every one of the three was caught by going one level deeper
+than the document, and every one of them would have shipped otherwise.
+
+The right second gate is a **Tailscale ACL**, not a proxy — `serve`
+answers *which device*, the ACL scopes *which service on which node*.
+The policy snippet and the whole chain are recorded in
+`adhoc-runbooks/runbooks/m1-remote-access.md`.
+
 ## a second finding, same lap: two writers, one repo
 
 While this row was being written, `git add -A raw_research` swept up

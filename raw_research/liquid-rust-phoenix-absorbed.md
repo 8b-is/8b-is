@@ -11,6 +11,11 @@ SpherePOP); this repo is the second and third of them, compiled. Covers
 approved KV-cache plan, and the two narrative pieces
 (`Acoustic_Consciousness…`, `Beyond_the_Vector…`).*
 
+> Published as a four-part research post —
+> [liquid-rust, the Phoenix Protocol](https://pocoo.vaked.dev/posts/2026-10-14-liquid-rust-the-phoenix-protocol.html)
+> (pocoo-research #7) — with illustrations generated via the `agy`
+> (Antigravity) CLI. This row is the closed ledger; the post is its open face.
+
 ## the spine
 
 **Pure Rust, no FFI.** `candle` (ML), `symphonia` (decode — replaces

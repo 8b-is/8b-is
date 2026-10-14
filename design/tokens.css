@@ -1,0 +1,107 @@
+/* 8b.is — constellation ink design tokens
+ * The single source of truth for the 8b-is palette and base primitives.
+ * Import this anywhere; override nothing locally.
+ * See DESIGN.md for the rules that govern these values.
+ */
+
+:root {
+  /* canvas */
+  --bg: #05060a;
+  --panel: #0b0f19;
+  --panel-2: #0e1424;
+
+  /* text */
+  --ink: #cfc9dd;
+  --dim: #7f7c99;
+  --faint: #5b577a;
+
+  /* accents */
+  --mint: #62e6c9;
+  --gold: #e8b05c;
+  --violet: #b48bff;
+  --cyan: #00f0ff;
+  --pink: #ff4d9d;
+
+  /* structure */
+  --line: rgba(170, 150, 255, 0.18);
+  --line-strong: rgba(170, 150, 255, 0.28);
+  --vignette: #0d1220;
+
+  /* type */
+  --font-mono: ui-monospace, "SF Mono", Menlo, "JetBrains Mono", monospace;
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-cjk: "STKaiti", "KaiTi", "PingFang SC", serif;
+
+  /* shape */
+  --radius-sm: 10px;
+  --radius-card: 14px;
+  --radius-pill: 999px;
+
+  /* space */
+  --maxw: 1376px;
+  --pad: 64px;
+  --section-y: 84px;
+
+  /* motion */
+  --t-fast: 150ms;
+  --t-ambient: 22s;
+}
+
+/* daisyUI bridge — keeps Tailwind components on the same palette.
+ * Pair with data-theme="vaked" (see tailwind.config.js). */
+
+/* utility primitives */
+.constellation-ink {
+  background: radial-gradient(ellipse at 50% -10%, var(--vignette) 0%, var(--bg) 60%);
+  color: var(--ink);
+  font-family: var(--font-serif);
+}
+
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--bg);
+  background: var(--mint);
+  border-radius: var(--radius-sm);
+  padding: 13px 22px;
+  transition: transform var(--t-fast) ease, box-shadow var(--t-fast) ease;
+}
+.primary-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 30px rgba(98, 230, 201, 0.25);
+}
+
+.ghost-link {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--mint);
+  border-bottom: 1px solid rgba(98, 230, 201, 0.35);
+}
+
+:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

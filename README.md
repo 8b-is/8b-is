@@ -2,6 +2,13 @@
 
 > **8b-is**: Open research vault for graph-theoretic foundations of quantum calculus, Erdős phase transitions, BitNet b1.58 ternary quantization, spectral rigidity, and agentic loop engineering.
 
+![8b.is — everything under the sun](./assets/hero.svg)
+
+The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) —
+**the constellation ink**: near-black canvas `#05060a`, mint `#62e6c9`, gold
+`#e8b05c`, violet `#b48bff`, cyan `#00f0ff`. Machine-readable tokens:
+[`design/tokens.json`](./design/tokens.json) · [`design/tokens.css`](./design/tokens.css).
+
 ---
 
 ## 🌌 the constellation, as of the 2026-10-09 session
@@ -18,6 +25,7 @@ every graph · winter is coming, the queue is the harvest.
 
 | repo | what it is |
 |---|---|
+| `standardgalactic` | the home repo, wired — `standardgalactic/standardgalactic` (the Standard Galactic Alphabet) indexed as `raw_research/standardgalactic-wire-absorbed.md`; the sovereign library's source garden (`SOURCES.md`) now names its roots and its eight lanes both ways |
 | `deepsiper-enthea` | the sovereign DeepSeek-Harness fork — vendored Cordis synced to the current 4.0.4 line, the user-patch watch layer settled and audited, suite green |
 | `taiko-01-protocol-demo` | the 0/1 protocol lane for Taiko — deterministic preconfirmations + capability notary, Rust |
 | `mem-16-10` | identity as continuity evidence — the sovereign library's founding document |

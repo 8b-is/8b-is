@@ -11,7 +11,7 @@ The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) —
 
 ---
 
-## 🌌 the constellation, as of the 2026-10-09 session
+## 🌌 the constellation, as of the 2026-10-18 session
 
 The vault sits at **WIP 200** — the season's rows ride in
 `raw_research/wip-catalog-100.md`, the index in `raw_research/README.md`,
@@ -25,6 +25,8 @@ every graph · winter is coming, the queue is the harvest.
 
 | repo | what it is |
 |---|---|
+| `qwave` | the WebKit-native sovereign browser — `core/src/badge.rs` (`sphered` `#Commit = #ValidWitness` + P1 membership channel gate, `Stable` always free), `quanttern` C ABI (`qw_quanttern_*`), `qwave-inspect` CLI, and `mem16` C-string NUL-termination fix (53 Rust tests green) |
+| `zoneInn` | quantTernRadio (`zoneinn.vaked.dev` · `radio.vaked.dev`) — live Web Radio & Bluetooth Studio, `rodio 0.23` + CoreAudio/A2DP `--bt "Soundcore Select 4"` playback, the 14 Favourite Musics Crate (320 kbps MP3 masters + 432 Hz synth), and the 7-stage Ultrawhale NAND ring oscillator refeed to `peetpedro/ultrawhale-oscillator` |
 | `standardgalactic` | the home repo, wired — `standardgalactic/standardgalactic` (the Standard Galactic Alphabet) indexed as `raw_research/standardgalactic-wire-absorbed.md`; the sovereign library's source garden (`SOURCES.md`) now names its roots and its eight lanes both ways |
 | `deepsiper-enthea` | the sovereign DeepSeek-Harness fork — vendored Cordis synced to the current 4.0.4 line, the user-patch watch layer settled and audited, suite green |
 | `taiko-01-protocol-demo` | the 0/1 protocol lane for Taiko — deterministic preconfirmations + capability notary, Rust |

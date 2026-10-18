@@ -25,6 +25,7 @@ every graph · winter is coming, the queue is the harvest.
 
 | repo | what it is |
 |---|---|
+| `FLUG-OS` | Sovereign Constellation OS (`v0.4.0+s3-amoled`) evolved onto the physical **Waveshare ESP32-S3-Touch-AMOLED-2.06** (`410×502` `SH8601/CO5300` QSPI AMOLED, `FT3168` capacitive touch, `QMI8658` 6-axis IMU → `QuantTern` affect `qt:xx`, `AXP2101` PMIC) — 4 interactive tabs (`RADIO` 14 Favourite Musics, `802.11` Promiscuous Spectrum + Sine Kernel, `NAND` 7-stage ternary ring + Lissajous, `QWAVE` `sphered` witness + dual-boot switcher) + `bridge/s3_amoled_bridge.py` |
 | `qwave` | the WebKit-native sovereign browser — `core/src/badge.rs` (`sphered` `#Commit = #ValidWitness` + P1 membership channel gate, `Stable` always free), `quanttern` C ABI (`qw_quanttern_*`), `qwave-inspect` CLI, and `mem16` C-string NUL-termination fix (53 Rust tests green) |
 | `zoneInn` | quantTernRadio (`zoneinn.vaked.dev` · `radio.vaked.dev`) — live Web Radio & Bluetooth Studio, `rodio 0.23` + CoreAudio/A2DP `--bt "Soundcore Select 4"` playback, the 14 Favourite Musics Crate (320 kbps MP3 masters + 432 Hz synth), and the 7-stage Ultrawhale NAND ring oscillator refeed to `peetpedro/ultrawhale-oscillator` |
 | `standardgalactic` | the home repo, wired — `standardgalactic/standardgalactic` (the Standard Galactic Alphabet) indexed as `raw_research/standardgalactic-wire-absorbed.md`; the sovereign library's source garden (`SOURCES.md`) now names its roots and its eight lanes both ways |

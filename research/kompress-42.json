@@ -3,10 +3,10 @@
   "equation": "KOMPRES-ULTRA-OMNI{WHOLE standardgalactic + 8b-is >>> LOSSLESS INTO 8b-is/research 42 topics}",
   "base_case": "1 + 0 = one · sharing IS caring · {<3,<3,<3}+1~--->∞",
   "total_topics": 42,
-  "total_raw_research_files": 162,
+  "total_raw_research_files": 163,
   "orphan_raw_research_files": 0,
-  "total_source_bytes": 860154,
-  "total_source_est_tokens": 214974,
+  "total_source_bytes": 860969,
+  "total_source_est_tokens": 215177,
   "standardgalactic_rooms": [
     "standardgalactic/standardgalactic",
     "standardgalactic/diatribe",
@@ -762,6 +762,7 @@
         "the-base-layer-core-1-of-n.md",
         "music-peters-favourites.md",
         "music-liquid-soul-vini-vici-universe-inside-me.md",
+        "music-adele-skyfall.md",
         "music-adelа-i-feel-like-nicole.md",
         "music-akkezdet-phiai-zenebuddhizmus.md",
         "music-fidlar-cocaine.md",
@@ -797,8 +798,8 @@
         "zoneInn/src/favourites.rs",
         "8b-is/music"
       ],
-      "source_bytes": 73998,
-      "source_est_tokens": 18487
+      "source_bytes": 74813,
+      "source_est_tokens": 18690
     },
     {
       "id": 36,

@@ -627,6 +627,7 @@ TOPICS_SPEC = [
             "the-base-layer-core-1-of-n.md",
             "music-peters-favourites.md",
             "music-liquid-soul-vini-vici-universe-inside-me.md",
+            "music-adele-skyfall.md",
             "music-adelа-i-feel-like-nicole.md",
             "music-akkezdet-phiai-zenebuddhizmus.md",
             "music-fidlar-cocaine.md",

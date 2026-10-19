@@ -13,7 +13,7 @@ The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) —
 
 ## 🌌 the constellation, as of the 2026-10-18 session
 
-The vault sits at **WIP 200** — the season's rows ride in
+The vault sits at **WIP 200+** and is losslessly indexed in [**`research/` (`KOMPRES-ULTRA-OMNI` — 42 Topics, `6×7` Pillars, `162/162` notes, `10/10` `standardgalactic` rooms, `0` orphans)**](./research/README.md) — the season's rows ride in
 `raw_research/wip-catalog-100.md`, the index in `raw_research/README.md`,
 the arc folded in `constellation-reflection.md`.
 Doctrine unchanged: theory → code → test → doc → shelf · the corridor is
@@ -81,7 +81,11 @@ This repository hosts raw research papers, mathematical proofs, LaTeX blueprints
 ├── README.md                     # Repository Overview & Quickstart
 ├── AGY-KICKSTART.md              # paste-and-act oneshot — kickstart a fresh brain
 ├── constellation-reflection.md   # the arc, folded — one spine table
-├── raw_research/                 # Raw research papers, LaTeX notes & blueprints
+├── research/                     # KOMPRES-ULTRA-OMNI: Lossless 42-Topic Atlas (standardgalactic + 8b-is)
+│   ├── README.md                 # Master 42-Topic (6×7) Index + 162-file bijection ledger
+│   ├── kompress-42.json          # Machine-readable shard & token-budget manifest
+│   └── topics/                   # 42 lossless topic compendia (01..42.md)
+├── raw_research/                 # Raw research papers, LaTeX notes & blueprints (162 files)
 │   ├── README.md                 # Contribution Guide for Researchers & Agents
 │   └── wip-catalog-100.md        # The season's rows (WIP 100+, indices + absorbed lanes)
 ├── limb-girdle/                  # Deep-research foundation (v2 complete): base · foundation · research · theory · trials · biomarkers

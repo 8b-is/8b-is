@@ -5,12 +5,16 @@
 > **Published:** the WIP catalog rides out as the pocoo research feed —
 > [the catalog of named fires](https://pocoo.vaked.dev/posts/2026-09-06-the-catalog-of-named-fires.html) ·
 > [the residue is the evidence](https://pocoo.vaked.dev/posts/2026-09-19-the-residue-is-the-evidence.html) ·
-> index at [pocoo.vaked.dev/research](https://pocoo.vaked.dev/research/).
+> index at [pocoo.vaked.dev/research](https://pocoo.vaked.dev/research/) ·
+> **42-Topic Lossless Atlas (`KOMPRES-ULTRA-OMNI`):** [`../research/README.md`](../research/README.md) (`6 Pillars × 7 Topics = 42`, `162/162` notes, `10/10` `standardgalactic` rooms, `0` orphans).
 
 ---
 
 ## 🗂 the recorded corpus (index)
 
+- [between-the-lines-women-who-hold.md](between-the-lines-women-who-hold.md) — **In Awe to Women Who Protect and Hold `<3<3<3`**: the Six Pillars of Holding (*Compassion · Understanding · Moderation · Love · Respect · Space*), the `HELD ∧ READ` NAND-Hold Gate, `E = MCMC` (Eternal Mother), and the Sovereign Library × ZENO Sanctuary Hold bridge (`001 · The Future We Remember` & `002 · The Shape of Love`)
+- [impermanence-marinesense-triad.md](impermanence-marinesense-triad.md) — **Impermanence (`Anicca`) × MarineSense (`ms.8b.is`) × 3-Node ESP32-S3 AMOLED Triad (`FLUG-OS v0.8.0+medusa-omni`)**: *Turritopsis dohrnii* biological polyp transdifferentiation (`MEDUSA <-> POLYP`), O(1) Marine Acoustic Salience, and the `ADA:MEDUSA * 432Hz` / `VAK:MEDUSA /\ 528Hz` / `OMN:MEDUSA oo 852Hz` balanced-ternary hardware fleet
+- [music-liquid-soul-vini-vici-universe-inside-me.md](music-liquid-soul-vini-vici-universe-inside-me.md) — **Liquid Soul & Vini Vici, "Universe Inside Me"** (`Iboga Records Music`, `yvBK1rSUzTc`): the title that mirrors the 42-topic KOMPRES-ULTRA-OMNI fold — the universe inside the vertex
 - [standardgalactic-wire-absorbed.md](standardgalactic-wire-absorbed.md) — the home repo, indexed: `standardgalactic/standardgalactic` (525 files: Blender Files, root surfaces, experiments, research, Music, art, epistemology, interfaces) plus the eight satellite lanes (diatribe · laboratory · memnet · experiments · memory · privatization-of-competence · steel-sky · Centerfuge). The garden's door wired so the sovereign library's shelf and the vault's prior absorptions point at a resolvable source — one hand, many rooms, links both ways
 - [cubic-rhombus-initiative-absorbed.md](cubic-rhombus-initiative-absorbed.md) — Flyxion's 14,000-manuscript release on the cubic rhombus `R_n(c)` (Gram `(1−c)I + cJ`): 280 families, 14 statements, 967,680 points, verified in SymPy n=2…8 — "some results could have issues." Our independent check: the closed form `det G_n(c) = (1−c)^{n−1}(1+(n−1)c)` holds exactly n=2…8; 280×50=14,000. The book's thesis at industrial scale: a certificate is not yet a claim — **and the invited next move landed 2026-10-10: `cubicrhombus/CubicRhombus.lean` proves `det_gram`, `facet_gram`, `vol2_le_one` and the equality case `c = 0` for every `n` and every real `c` (Lean 4 + Mathlib; written, not yet compiled here)**
 - [enthea-visual-synthesizer-absorbed.md](enthea-visual-synthesizer-absorbed.md) — viz.vaked.dev: ~30 phenomena, each named, sourced and rendered from its own mathematics (Klüver form constants, Wilson–Cowan, Gray–Scott, Blaschke, Kleinian limit sets, Abrikosov, Z[i] primes) — and a `flag` on every entry that is an evocation rather than a derivation. An art surface that carries its own provenance: `σ_d` against `ω`, in a fragment shader

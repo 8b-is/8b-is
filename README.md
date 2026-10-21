@@ -128,3 +128,10 @@ This repository provides an MCP server (`mcp/raw_research_mcp.py`) allowing AI a
 - `submit_raw_research(title, author, content, tags)`: Submits a new raw research paper to `raw_research/`.
 - `list_raw_research()`: Lists all raw research papers in the vault.
 - `search_raw_research(query)`: Searches across paper titles, tags, and LaTeX equations.
+
+---
+
+## 🔔 Background Commit Summary Neural TTS Trigger (`kokoro-tiny`)
+
+Every Git commit across the 8b-is workspace automatically triggers a `< 2ms` non-blocking `.git/hooks/post-commit` hook that notifies the persistent `kokoro-speak watch-commits` daemon (`127.0.0.1:8420`). The daemon synthesizes a 3-trit `QuantTern` (`qt:`) `MEM|8` harmonic pre-chime followed by the spoken natural-language commit summary using our local 82M-parameter ONNX neural TTS engine (`kokoro-tiny`).
+

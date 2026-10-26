@@ -1,0 +1,12 @@
+[Unit]
+Description=100% Pure-Rust Zero-Float Autonomous Publisher for https://8b.is & live-pulse.json (ALEXIAI <3)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/data/8b-is/8b-is
+ExecStart=/usr/local/bin/alexiai-8b-publisher publish
+StandardOutput=journal
+StandardError=journal

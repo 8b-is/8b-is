@@ -1,0 +1,12 @@
+[Unit]
+Description=Run alexiai-8b-publisher every 2 minutes to update https://8b.is & live-pulse.json
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=2min
+AccuracySec=5s
+Persistent=true
+Unit=alexiai-8b-publisher.service
+
+[Install]
+WantedBy=timers.target

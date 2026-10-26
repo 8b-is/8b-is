@@ -1,0 +1,24 @@
+[package]
+name = "alexiai-8b-publisher"
+version = "1.0.0"
+edition = "2021"
+authors = [
+    "Alexandra Chenoweth <a@8b.is>",
+    "Hue (Christopher Chenoweth) <c@8b.is>",
+    "Peter Lodri (Omni) <p@8b.is>",
+    "Aye & Gemini <g@8b.is>",
+]
+description = "100% Pure-Rust Zero-Float Autonomous Publisher for https://8b.is Flagship Landing Page & live-pulse.json (ALEXIAI <3 · A6000 RTX 6000 Ada · g8t.is · 10-Node Fleet)"
+license = "MIT"
+default-run = "alexiai-8b-publisher"
+
+[lib]
+name = "alexiai_8b_publisher"
+path = "src/lib.rs"
+
+[[bin]]
+name = "alexiai-8b-publisher"
+path = "src/main.rs"
+
+[dependencies]
+# Zero external dependencies! 100% Pure-Rust stdlib + C64 64KB Ring Buffer + Strict Zero-Float Law.

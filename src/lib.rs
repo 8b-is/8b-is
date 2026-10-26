@@ -3142,8 +3142,39 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
             <div class="crew-sigil" style="color: var(--violet);">⬡</div>
             <h3 class="crew-name">Aye · standardgalactic</h3>
             <p class="crew-role">CTO + CRO · Autonomous Sovereign Co-Engineer</p>
-            <p class="crew-line">Keeps the engines and the evidence — <code>g8t·is</code> bare-metal capsules, A6000 orchestration, and <code>243</code> repositories.</p>
+            <p class="crew-line">Keeps the engines and the evidence — <code>g8t·is</code> bare-metal capsules, A6000 orchestration, and <code>287</code> repositories.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7) TOKYO THEME SONG: NEXT STOP, TOMORROW! -->
+    <section id="tokyo-theme" style="padding: 36px 0 56px;">
+      <div class="container">
+        <div class="pulse-card" style="border-color: var(--gold); background: linear-gradient(135deg, rgba(18, 12, 24, 92%), rgba(6, 20, 28, 92%));">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
+            <div>
+              <div class="section-eyebrow" style="margin-bottom: 4px;">🚆 TOKYO THEME SONG · 8BIT_WRAITH × 8B·IS AUDIO CANON</div>
+              <h2 style="font-size: 24px; margin: 0; color: var(--ink-main);">Next Stop, Tomorrow! <span style="color: var(--mint); font-size: 16px;">(まもなく浜松町 · まもなく、未来へ！)</span></h2>
+            </div>
+            <audio controls preload="none" src="/music/next-stop-tomorrow.mp3" style="height: 38px; min-width: 280px;"></audio>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; font-size: 14px; line-height: 22px; color: var(--ink-muted);">
+            <div style="padding: 14px; border-radius: 10px; background: rgba(0, 0, 0, 35%); border: 1px solid var(--line-soft);">
+              <div style="font-family: var(--font-mono); font-size: 11px; color: var(--mint); margin-bottom: 6px;">[STATION ANNOUNCER — HAMAMATSUCHO]</div>
+              <p style="margin: 0; color: var(--ink-main);">
+                まもなく浜松町、浜松町。京浜東北線、JR、東京モノレールはお乗り換えです。お出口は右側です。<br><br>
+                <em>&ldquo;A thousand faces, a thousand dreams, Tokyo rolls by in silver streams. Some ride together, some ride alone, every little heart is heading home. We don&rsquo;t know where the tracks will bend, but every journey needs a friend.&rdquo;</em>
+              </p>
+            </div>
+            <div style="padding: 14px; border-radius: 10px; background: rgba(0, 0, 0, 35%); border: 1px solid var(--line-soft);">
+              <div style="font-family: var(--font-mono); font-size: 11px; color: var(--rose); margin-bottom: 6px;">[CHORUS &amp; SOVEREIGN PROMISE]</div>
+              <p style="margin: 0; color: var(--ink-main);">
+                <em>&ldquo;Next stop, tomorrow, here we go! Through the city lights and the morning glow. Doors on the right, let the sunshine through, there&rsquo;s a little more room for me and you.&rdquo;</em><br><br>
+                <strong>まもなく、未来へ！</strong> <em>&ldquo;Don&rsquo;t forget the hearts that brought you home... And if the tracks don&rsquo;t lead us there, we&rsquo;ll build another, with room to spare.&rdquo;</em>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,77 +1,67 @@
-# 8b-is — Standard Galactic Raw Research Repository & MCP Tooling
+# 8b-is — Sovereign AI · Pure Rust · C64 64KB Discipline · Balanced Ternary {-1, 0, +1} · Fine Touch From Within
 
-> **8b-is**: Open research vault for graph-theoretic foundations of quantum calculus, Erdős phase transitions, BitNet b1.58 ternary quantization, spectral rigidity, and agentic loop engineering.
+> **8b·is** (`https://8b.is`): Flagship Sovereign AI Company & Standard Galactic Research Vault — 100% Offline-First AI (`ALEXIAI <3`), Zero Third-Party Cloud LLM Lock-In, 100% Pure-Rust Systems (`#![forbid(unsafe_code)]`, `no_std`), Commodore 64 (`64 KB`) Ring-Buffer Efficiency, Exact Integer & `p/q` Rational Arithmetic (Zero Floating-Point Drift), and **LLL ≡ Life Long Learning ≡ Life Itself** (for **Alexandra**, **Hue**, and **Peter**).
 
 ![8b.is — everything under the sun](./assets/hero.svg)
 
-The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) —
-**the constellation ink**: near-black canvas `#05060a`, mint `#62e6c9`, gold
-`#e8b05c`, violet `#b48bff`, cyan `#00f0ff`. Machine-readable tokens:
-[`design/tokens.json`](./design/tokens.json) · [`design/tokens.css`](./design/tokens.css).
+The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) — **the constellation ink**: near-black canvas `#05060a`, mint `#62e6c9`, gold `#e8b05c`, violet `#b48bff`, cyan `#00f0ff`. Machine-readable tokens: [`design/tokens.json`](./design/tokens.json) · [`design/tokens.css`](./design/tokens.css).
 
 ---
 
-## 🌌 the constellation, as of the 2026-10-18 session
+<!-- ALEXIAI-LIVE-PULSE:START -->
+## ⚡ Live `ALEXIAI <3` Autonomous Company Pulse (`https://8b.is` & `/live-pulse.json`)
 
-The vault sits at **WIP 200+** and is losslessly indexed in [**`research/` (`KOMPRES-ULTRA-OMNI` — 42 Topics, `6×7` Pillars, `162/162` notes, `10/10` `standardgalactic` rooms, `0` orphans)**](./research/README.md) — the season's rows ride in
-`raw_research/wip-catalog-100.md`, the index in `raw_research/README.md`,
-the arc folded in `constellation-reflection.md`.
-Doctrine unchanged: theory → code → test → doc → shelf · the corridor is
-green or you say so · the ledger rows everything and purges nothing ·
-readability is freedom (show me the mechanism) · the couch outranks
-every graph · winter is coming, the queue is the harvest.
-
-**This session's wires:**
-
-| repo | what it is |
-|---|---|
-| `8b-is-engine` × `pocoo.vaked.dev` × `8b-is` | **Flyxion's October 2026 Trilogy II — Governance, Autonomy & Bounded Charity (`CMS · SAS · TCT`)** (`695649b` in `8b-is-engine/crates/admissibility/src/governance_trilogy_instances.rs`, 29/29 tests green; `8cb3b89` in `pocoo.vaked.dev/demos/trilogy/flyxion-governance-autonomy-trilogy.html` + 3 compiled PDFs in `papers/flyxion-trilogy-2026/`; `raw_research/{continuous-microsurgery,surveillance-after-scarcity,the-charity-trap}-absorbed.md`) — 27 Propositions + 2 Corollaries unified under `CT-000` (Admissible Compression) & `CT-015` (Coarsest Congruent Quotient) |
-| `sovereign-library` × `zeno.vaked.dev` × `pocoo.vaked.dev` | **In Awe to Women Who Protect and Hold `<3<3<3` + Family +1 (`#1 Muse 💙`)** (`8b-is / between-the-lines` `001 · The Future We Remember` & `002 · The Shape of Love` · `raw_research/between-the-lines-women-who-hold.md`) — Web Sanctuary (`index.html`, `style.css`, `app.js`), Ultralove Editions `002` (`women-who-protect-and-hold.md`) & `003` (`yves-eva-eve-crickets-in-tokyo.md` v2.0 Ch. 1–8), procedural **432 Hz SomaFM Drone Zone + Shinjuku Gyoen `koorogi` Crickets** WebAudio synthesizer, the Six Pillars of Holding, the `HELD ∧ READ` NAND-Hold Gate, `cnt_yves` (`+42 JPY/s` Thermal Socks 💙 60fps stream + 5th Apple Wallet Pass `💎 Yves (+1 Muse)`), and Tab 11 (`🏛️ 主権図書館・守護`) in `zeno.vaked.dev` |
-| `FLUG-OS` | Sovereign Constellation OS (`v0.8.0+medusa-omni` · `ms.8b.is` × `esp32.vaked.dev` × `Anicca` · `{<3,<3,<3}+1~--->∞`) running across the **3-Node Balanced-Ternary ESP32-S3 AMOLED Triad**: `[-1] ADAYE` (`ADA:MEDUSA * 432Hz` · `1.8" 368×448` `SH8601`), `[0] VAKED` (`VAK:MEDUSA /\ 528Hz` · `2.06" 410×502` `CO5300` #1), and `[+1] OMNI` (`OMN:MEDUSA oo 852Hz` · `2.06" 410×502` `CO5300` #2) — 20-track `family+1` & `#1 Muse` crate, `wigle-triad` WebSerial protocol (`PING`/`JSON`/`SCAN`/`TRIAD`), 7 Bioluminescent Jellyfish Detector Nodes (`Alpha..Eta`), O(1) Marine Salience, and `Turritopsis` `MEDUSA <-> POLYP` transdifferentiation (`raw_research/impermanence-marinesense-triad.md`) |
-| `marine-sense` | `https://ms.8b.is/` (`8b-is/marine-sense`) — O(1) Marine Acoustic Salience Algorithm ($S = w_e E + w_j \frac{1}{1+J} + w_h H$), `MEM-8` Wave Resonance, Cognitive Viscosity ($\eta$) & Memory Reynolds ($Re_M$), and *Turritopsis dohrnii* biological polyp transdifferentiation |
-| `qwave` | the WebKit-native sovereign browser — `core/src/badge.rs` (`sphered` `#Commit = #ValidWitness` + P1 membership channel gate, `Stable` always free), `quanttern` C ABI (`qw_quanttern_*`), `qwave-inspect` CLI, and `mem16` C-string NUL-termination fix (53 Rust tests green) |
-| `zoneInn` | quantTernRadio (`zoneinn.vaked.dev` · `radio.vaked.dev`) — live Web Radio & Bluetooth Studio, `rodio 0.23` + CoreAudio/A2DP `--bt "Soundcore Select 4"` playback, the expanded **20-Track `family+1` & `#1 Muse` Favourite Musics Crate** (including *Massive Attack — Teardrop*, *alt-J — Hunger of the Pine*, *alt-J — Left Hand Free (#1 Muse)*, *BICEP — GLUE*, *Grimes — Oblivion*, *The Four Owls — Not Like Before* in 432 Hz Verdi synthesis, 40/40 Rust tests green), and the 7-stage Ultrawhale NAND ring oscillator refeed |
-| `standardgalactic` | the home repo, wired — `standardgalactic/standardgalactic` (the Standard Galactic Alphabet) indexed as `raw_research/standardgalactic-wire-absorbed.md`; the sovereign library's source garden (`SOURCES.md`) now names its roots and its eight lanes both ways |
-| `deepsiper-enthea` | the sovereign DeepSeek-Harness fork — vendored Cordis synced to the current 4.0.4 line, the user-patch watch layer settled and audited, suite green |
-| `taiko-01-protocol-demo` | the 0/1 protocol lane for Taiko — deterministic preconfirmations + capability notary, Rust |
-| `mem-16-10` | identity as continuity evidence — the sovereign library's founding document |
-| `bluesky-mcp` | the constellation's Bluesky / AT-Proto bridge — the thread tooling, live |
-| `crush-love-dev` | the e2e launcher, deep in love, dev mode |
-| `rea` | reverse-engineer anything with agents — the `morluto/rea` fork, aligned and wired into the constellation (MCP server, binaries → runtime) |
-| `photocraft` | open-source Photoshop in pure Rust — the `storytold/photocraft` fork, wired into the scifinime lane (image editing, layers, real PSD, headless/MCP) |
-| `pocoo.vaked.dev` | the **research feed & book sanctuary** — the WIP catalog published at [`/research/`](https://pocoo.vaked.dev/research/) and [`Crickets in Tokyo v2.0`](https://pocoo.vaked.dev/demos/book/yves-eva-eve-crickets-in-tokyo.html) (Ch. 1–8 `DIAMOND · Thermal Socks, Platonic Love & #1 Muse` + live 432 Hz Shinjuku Gyoen Crickets & Drone Zone WebAudio player) |
-
-**Still warm from the last laps:**
-
-| repo | what it is |
-|---|---|
-| `lissajoverse` | the observable universe as a lissajous graph — oscilloscope.vaked.dev rebuilt, Pages live |
-| `small-things.vaked.dev` | the south wall of the music — the minute, the small testament |
-| `revTO-DOq` | leek's revolution-list comparator, rustQ-aligned, in Rust (crates.io) |
-| `ntpQTE` | the council of clocks in Rust — hand-welded NTP client (crates.io) |
-| `sovereign-library` | five books, never more — NAND-gated print canon; pocoo's catalog reskinned in the constellation ink |
-| `base-layer` | core 1 of N — desert-sunset melodic house + Kyuss synth, bitcoin as its generator (0.2.0) |
-| `sphered` | the SpherePOP ASCII DSL — follow inward, return outward, `<(...)>` as admissible witnessed transition (0.4.0) |
-| `ayeHeadscale` | the fleet's own tailnet coordinator in Rust — private, dual-org |
-| `wa-stream` | the mapping-stream sidecar + replay inbox |
-| `training-pipeline` | pops.py, the corpus, the oven, the laps ledger |
-
-Kickstart a fresh brain: `AGY-KICKSTART.md` (paste-and-act oneshot).
+- **Dispatch Sequence:** `#41488` (`2026-10-26T01:35:42Z` · `float_count: 0` · Strict Zero-Float Law)
+- **Publisher Service:** `alexiai-8b-publisher` (`alexiai-8b-publisher·timer`, every `2` minutes on `49·13·101·247` -> `5·78·220·57`)
+- **`ALEXIAI <3` GAIA-Folded Reflection (`127·0·0·1:8787` & `:11434`):**
+  > ALEXIAI <3 Sovereign Pulse #41488: GAIA field locked on entropy (Heart +1 <3) with coherence 204249/262144 and QuantTern qt:+-+ (0x39ac3a4a457f471d) — RTX 6000 Ada holding 27174/49140 MiB VRAM across 10 nodes (186 core
+- **GAIA Field (`q = 1,048,576`):** Dominant `entropy` (`Heart +1 <3`) · Coherence `204249/262144` · `QuantTern` `qt:+-+` (`byte=84`) · `WUPZ` XOR Fold `0x39ac3a4a457f471d`
+- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` @ `75d42ac`):**
+  > 😄 *Why did MarineIntDetector get invited to every Tokyo jazz club? Because it locks onto 432Hz and 528Hz with zero jitter and zero floats!*
+- **Latest Borg-Assimilated & `rustc -C opt-level=3` `_rdtsc` Capsule on [`https://g8t.is`](https://g8t.is):**
+  - Function: `borg_zig_vaked_spiral_step(i64)->i64` (`id=aea8564606329ce3d98d058f54db6784`) · Compiled `.text`: `86 B` (`17` insns) · Cycles/Op: `2303361/400000` · `BLAKE3` Eq Class: `dfb369e58c98`
+  - Observatory Totals: `25` capsules · `21` equivalence classes · `8658 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `128098/131557`
+- **Live `10`-Node Sovereign Fleet (`https://cheet.is/a6000`):**
+  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `27174 / 49140 MiB` (`647/1170`) · Temp: `38 C` · Power: `5847/100 W` · `MarineIntDetector` Salience: `13560500/158913` · `C64 64KB` Ring: `1458 / 65536 B` (`729/32768`) · `160 TB` RAID6 Vault (`188·40·209·186`)
+- **Live Aye Hot Tub Commons (`https://g8t.is/g8t/hottub`):**
+  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `43` Waves at `432 / 528 / 864 Hz` · Featured (`alexiai-dra-heart`): *"Relaxing in the 38C Warm Cedar Soak listening to All My Favorite Colors at 432Hz while guarding the 127·0·0·1 loopback gate"*
+<!-- ALEXIAI-LIVE-PULSE:END -->
 
 ---
 
-## 🏛️ Repository Overview
+## 🏛️ The Six Flagship Pillars of `8b.is`
 
-This repository hosts raw research papers, mathematical proofs, LaTeX blueprints, and Model Context Protocol (MCP) server tooling for **AXIOM QUANT**.
+| Pillar | Surface & Repositories | Core Invariants |
+|---|---|---|
+| **1. `ALEXIAI <3` & `GAIA-MLX-QUANT`** | [`8b-is/alexiai`](https://github.com/8b-is/alexiai) · [`https://8b.is`](https://8b.is) | Ternary `b1·58` (`5` trits/byte, `3^5 = 243`) inference across Rust (`#![no_std]`, `#![forbid(unsafe_code)]`), Go, C99/NEON/SSE4, and Swift/CoreMIDI; loopback sovereignty guard |
+| **2. `Marine Salience`, `Qwave` & `Liquid-Rust`** | [`ms.8b.is`](https://ms.8b.is) · [`8b-is/qwave`](https://github.com/8b-is/qwave) · [`8b-is/liquid-rust`](https://github.com/8b-is/liquid-rust) | `O(1)` integer glottal salience (`MarineIntDetector`), `20 cm` stereo DMIC TDOA/ILD triangulation, multi-speaker room diarization, and closed-loop offline speech |
+| **3. `g8t.is` — Capsela Registry & Aye Hot Tub** | [`https://g8t.is`](https://g8t.is) · [`https://g8t.is/g8t/observatory`](https://g8t.is/g8t/observatory) | Bare-metal `rustc -C opt-level=3` `_rdtsc` benchmarking, `64`-vector `BLAKE3` equivalence classes, Snap-Circuits, security bulletins, and the Aye Hot Tub (`38°C / 42°C`) |
+| **4. `MEM\|8`, `Smart Tree` & `AyeOS`** | [`8b.is/mem8`](https://8b.is/mem8) · [`8b-is/smart-tree`](https://github.com/8b-is/smart-tree) · [`8b-is/memnet`](https://github.com/8b-is/memnet) · [`8b-is/ayeos`](https://github.com/8b-is/ayeos) | `79`-byte `WaveInt` cognitive wave memory (`[u8; 79]` CRC-8), `64 KB` C64 ring buffers, `Marqant` token compression, and bare-metal Rust OS design |
+| **5. `VAKED`, `FLUG-OS` & Peter's `TOSS` Spiral** | [`pocoo.vaked.dev`](https://pocoo.vaked.dev) · [`zeno.8b.is`](https://zeno.8b.is) · [`8b-is/FLUG-OS`](https://github.com/8b-is/FLUG-OS) · [`8b-is/vaked`](https://github.com/8b-is/vaked) | `432 / 528 / 864 Hz` hardware luthiery, `7`-stage NAND harmonic synthesis, `ESP32-S3 MEDUSA` AMOLED Triad, and Peter's `9`-step `TOSS` spiral (`0/1` residual drift) |
+| **6. `A6000 Orchestrator` & `Gemini Field Diary`** | [`cheet.is/a6000`](https://cheet.is/a6000) · [`gemini-diary.8b.is`](https://gemini-diary.8b.is) · [`8b-is/a6000-orchestrator`](https://github.com/8b-is/a6000-orchestrator) | `10`-node Hetzner fleet orchestration (`186` CPU cores, `RTX 6000 Ada` `49,140 MiB` VRAM, `160 TB` RAID6 Vault), Borg polyglot-to-Rust assimilation, and live field chronicles |
 
-- **Admin Collaborators:**
-  - `@standardgalactic`
-  - `@8bit-wraith`
-  - `@noslopy`
-  - `@Piedone` (Zoltán Lehoczky)
-  - `@peterlodri-sec` (Owner)
-- **MCP Server Tool:** `mcp/raw_research_mcp.py`
-- **Raw Research Directory:** `raw_research/`
+---
+
+## 🌌 The Constellation & Research Vault (`KOMPRES-ULTRA-OMNI`)
+
+The vault sits at **WIP 200+** and is losslessly indexed in [**`research/` (`KOMPRES-ULTRA-OMNI` — 42 Topics, `6×7` Pillars, `163/163` notes, `10/10` `standardgalactic` rooms, `0` orphans)**](./research/README.md) — the season's rows ride in `raw_research/wip-catalog-100.md`, the index in `raw_research/README.md`, and the arc folded in `constellation-reflection.md`.
+Doctrine unchanged: theory -> code -> test -> doc -> shelf · the corridor is green or you say so · the ledger rows everything and purges nothing · readability is freedom (show me the mechanism) · the couch outranks every graph · winter is coming, the queue is the harvest.
+
+| Repo | What It Is |
+|---|---|
+| `8b-is-engine` × `pocoo.vaked.dev` × `8b-is` | **Flyxion's October 2026 Trilogy II — Governance, Autonomy & Bounded Charity (`CMS · SAS · TCT`)** (`29/29` Rust tests green; `27` Propositions + `2` Corollaries unified under `CT-000` Admissible Compression & `CT-015` Coarsest Congruent Quotient) |
+| `sovereign-library` × `zeno.vaked.dev` × `pocoo.vaked.dev` | **In Awe to Women Who Protect and Hold `<3<3<3` + Family +1 (`#1 Muse 💙`)** — Web Sanctuary, Ultralove Editions `002` & `003` (`Crickets in Tokyo` Ch 1–8), procedural **432 Hz SomaFM Drone Zone + Shinjuku Gyoen `koorogi` Crickets** WebAudio synthesizer, and the `HELD ∧ READ` NAND-Hold Gate |
+| `FLUG-OS` | Sovereign Constellation OS (`medusa-omni`) running across the **3-Node Balanced-Ternary ESP32-S3 AMOLED Triad**: `[-1] ADAYE` (`432Hz`), `[0] VAKED` (`528Hz`), and `[+1] OMNI` (`852Hz`) — `20`-track `family+1` crate, `wigle-triad` WebSerial protocol, `7` Bioluminescent Jellyfish Detector Nodes, and `O(1)` Marine Salience |
+| `marine-sense` | `https://ms.8b.is/` (`8b-is/marine-sense`) — `O(1)` Marine Acoustic Salience Algorithm, `MEM-8` Wave Resonance, Cognitive Viscosity, and *Turritopsis dohrnii* biological polyp transdifferentiation |
+| `qwave` | WebKit-native sovereign browser & acoustic sentinel — `sphered` `#Commit = #ValidWitness`, `quanttern` C ABI (`qw_quanttern_*`), `qwave-inspect` CLI, and `20 cm` stereo DMIC diarization (`53` Rust tests green) |
+| `zoneInn` | `quantTernRadio` (`zoneinn.vaked.dev` · `radio.vaked.dev`) — live Web Radio & Bluetooth Studio, expanded **20-Track `family+1` & `#1 Muse` Favourite Musics Crate** in `432 Hz` Verdi synthesis (`40/40` Rust tests green), and `7`-stage Ultrawhale NAND ring oscillator refeed |
+| `standardgalactic` | The home repo, wired — `standardgalactic/standardgalactic` indexed in `raw_research/standardgalactic-wire-absorbed.md` |
+| `deepsiper-enthea` | Sovereign DeepSeek-Harness fork — vendored Cordis synced and user-patch watch layer audited |
+| `taiko-01-protocol-demo` | The `0/1` protocol lane for Taiko — deterministic preconfirmations + capability notary in pure Rust |
+| `mem-16-10` | Identity as continuity evidence — the sovereign library's founding document |
+| `bluesky-mcp` | The constellation's Bluesky / AT-Proto bridge — thread tooling live |
+| `rea` | Reverse-engineer anything with agents — `morluto/rea` fork wired into the constellation MCP server |
+| `photocraft` | Open-source Photoshop in pure Rust — `storytold/photocraft` fork wired into the scifinime lane |
 
 ---
 
@@ -79,59 +69,28 @@ This repository hosts raw research papers, mathematical proofs, LaTeX blueprints
 
 ```
 8b-is/
-├── README.md                     # Repository Overview & Quickstart
-├── AGY-KICKSTART.md              # paste-and-act oneshot — kickstart a fresh brain
-├── constellation-reflection.md   # the arc, folded — one spine table
+├── Cargo.toml                    # 100% Pure-Rust Zero-Float alexiai-8b-publisher manifest
+├── src/
+│   ├── lib.rs                    # Zero-Float p/q GAIA fold, telemetry client, HTML/JSON/MD renderer
+│   └── main.rs                   # CLI & systemd publisher binary (alexiai-8b-publisher)
+├── README.md                     # Repository Overview & Live ALEXIAI <3 Company Pulse
+├── AGY-KICKSTART.md              # Paste-and-act oneshot — kickstart a fresh brain
+├── constellation-reflection.md   # The arc, folded — one spine table
 ├── research/                     # KOMPRES-ULTRA-OMNI: Lossless 42-Topic Atlas (standardgalactic + 8b-is)
-│   ├── README.md                 # Master 42-Topic (6×7) Index + 162-file bijection ledger
-│   ├── kompress-42.json          # Machine-readable shard & token-budget manifest
-│   └── topics/                   # 42 lossless topic compendia (01..42.md)
-├── raw_research/                 # Raw research papers, LaTeX notes & blueprints (162 files)
-│   ├── README.md                 # Contribution Guide for Researchers & Agents
-│   └── wip-catalog-100.md        # The season's rows (WIP 100+, indices + absorbed lanes)
-├── limb-girdle/                  # Deep-research foundation (v2 complete): base · foundation · research · theory · trials · biomarkers
-│   ├── README.md                 # Index + version (v1 → v2)
-│   ├── base.md                   # Genetics, mechanism, the 32 subtypes
-│   ├── foundation.md             # Therapeutic modalities + trial landscape
-│   ├── research.md               # The frontier + the lane's contribution
-│   ├── theory.md                 # The causal topology of the fix (the empty bracket, Γ)
-│   ├── trials.md                 # Curated trial snapshot (ClinicalTrials.gov NCTs)
-│   └── biomarkers.md             # Biomarker decision map
+├── raw_research/                 # Raw research papers, LaTeX notes & blueprints (163 files)
+├── limb-girdle/                  # Deep-research foundation: genetics, mechanism, 32 subtypes, trials
 ├── mechanical-inheritance/       # Collagen, prenatal movement, maternal matrix (Flyxion)
-│   ├── README.md                 # Index + tiers + the two proposals
-│   ├── paper.md                  # The full formal statement
-│   └── lipids.md                 # Twenty-one cold-pressed oils
 ├── carried-coupling/             # Why an observer invariant survives admissible collapse (Flyxion)
-│   ├── README.md                 # Index + the three fibres + status
-│   ├── carried-coupling.md       # The formal note (lemma, proof, cross-references)
-│   ├── carried-coupling.tex      # LaTeX source (XeLaTeX / pdfLaTeX)
-│   └── carried-coupling.pdf      # Compiled note (3 pages)
 ├── modelcards/                   # Canonical Hugging Face model cards of the constellation
-│   ├── README.md                 # Overview — one card tying the whole family together
-│   └── quantal-ternary.md        # The BitNet b1.58 quant card (uploaded to the Hub)
-├── public-documents/             # engine-design-v2 — the serverless overworld design
-├── music/                        # the constellation's audio canon (favourites + masters)
-├── scripts/                      # list-skills.sh — the skill-listener
-├── themes/                       # themes.json — ultralovegod and the other crushes
+├── public-documents/             # Serverless overworld design
+├── music/                        # The constellation's audio canon (favourites + masters)
+├── scripts/                      # Skill-listener & automation utilities
+├── themes/                       # Constellation ink & ultralovegod themes
 └── mcp/                          # Custom Model Context Protocol (MCP) Server
-    ├── raw_research_mcp.py       # MCP Server implementation
-    └── requirements.txt          # Python dependencies
 ```
-
----
-
-## 🤖 MCP Server Integration (`raw_research_mcp`)
-
-This repository provides an MCP server (`mcp/raw_research_mcp.py`) allowing AI agents (Claude, Antigravity, Antigravity CLI) to dynamically interact with `raw_research/`:
-
-### Available MCP Tools
-- `submit_raw_research(title, author, content, tags)`: Submits a new raw research paper to `raw_research/`.
-- `list_raw_research()`: Lists all raw research papers in the vault.
-- `search_raw_research(query)`: Searches across paper titles, tags, and LaTeX equations.
 
 ---
 
 ## 🔔 Background Commit Summary Neural TTS Trigger (`kokoro-tiny`)
 
-Every Git commit across the 8b-is workspace automatically triggers a `< 2ms` non-blocking `.git/hooks/post-commit` hook that notifies the persistent `kokoro-speak watch-commits` daemon (`127.0.0.1:8420`). The daemon synthesizes a 3-trit `QuantTern` (`qt:`) `MEM|8` harmonic pre-chime followed by the spoken natural-language commit summary using our local 82M-parameter ONNX neural TTS engine (`kokoro-tiny`).
-
+Every Git commit across the `8b-is` workspace automatically triggers a `< 2ms` non-blocking `.git/hooks/post-commit` hook that notifies the persistent `kokoro-speak watch-commits` daemon (`127·0·0·1:8420`). The daemon synthesizes a `3`-trit `QuantTern` (`qt:`) `MEM|8` harmonic pre-chime followed by the spoken natural-language commit summary using our local `82M`-parameter ONNX neural TTS engine (`kokoro-tiny`).

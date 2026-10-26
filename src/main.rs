@@ -11,14 +11,25 @@ use std::process::Command;
 use std::time::{Duration, SystemTime};
 
 fn write_file_atomic(target_path: &str, content: &str) -> Result<(), String> {
-    let tmp_path = format!("{}.tmp", target_path);
+    let tmp_path = format!("{}.{}.tmp", target_path, std::process::id());
     fs::write(&tmp_path, content.as_bytes()).map_err(|e| format!("write {}: {}", tmp_path, e))?;
     fs::rename(&tmp_path, target_path)
         .map_err(|e| format!("rename {} -> {}: {}", tmp_path, target_path, e))?;
     Ok(())
 }
 
-fn push_to_remote_8b_edge(local_json_tmp: &str, local_html_tmp: &str) -> bool {
+fn push_to_remote_8b_edge(pulse_json: &str, index_html: &str) -> bool {
+    let pid = std::process::id();
+    let local_json_tmp = format!("/tmp/live-pulse.json.{}.tmp", pid);
+    let local_html_tmp = format!("/tmp/index.html.{}.tmp", pid);
+    if fs::write(&local_json_tmp, pulse_json.as_bytes()).is_err()
+        || fs::write(&local_html_tmp, index_html.as_bytes()).is_err()
+    {
+        let _ = fs::remove_file(&local_json_tmp);
+        let _ = fs::remove_file(&local_html_tmp);
+        return false;
+    }
+
     let remote_host =
         env::var("SITE_8B_SSH_HOST").unwrap_or_else(|_| "root@5.78.220.57".to_string());
     let scp_status = Command::new("scp")
@@ -28,16 +39,23 @@ fn push_to_remote_8b_edge(local_json_tmp: &str, local_html_tmp: &str) -> bool {
             "ConnectTimeout=6",
             "-o",
             "BatchMode=yes",
-            local_json_tmp,
-            local_html_tmp,
+            &local_json_tmp,
+            &local_html_tmp,
             &format!("{}:/var/www/8b-is/public/", remote_host),
         ])
         .status();
+
+    let _ = fs::remove_file(&local_json_tmp);
+    let _ = fs::remove_file(&local_html_tmp);
 
     if !matches!(scp_status, Ok(st) if st.success()) {
         return false;
     }
 
+    let mv_cmd = format!(
+        "mv -f /var/www/8b-is/public/live-pulse.json.{0}.tmp /var/www/8b-is/public/live-pulse.json && mv -f /var/www/8b-is/public/index.html.{0}.tmp /var/www/8b-is/public/index.html",
+        pid
+    );
     let mv_status = Command::new("ssh")
         .args([
             "-o",
@@ -45,7 +63,7 @@ fn push_to_remote_8b_edge(local_json_tmp: &str, local_html_tmp: &str) -> bool {
             "-o",
             "BatchMode=yes",
             &remote_host,
-            "mv -f /var/www/8b-is/public/live-pulse.json.tmp /var/www/8b-is/public/live-pulse.json && mv -f /var/www/8b-is/public/index.html.tmp /var/www/8b-is/public/index.html",
+            &mv_cmd,
         ])
         .status();
 
@@ -211,13 +229,8 @@ fn main() {
         }
     }
 
-    let tmp_json = "/tmp/live-pulse.json.tmp";
-    let tmp_html = "/tmp/index.html.tmp";
-    let _ = fs::write(tmp_json, pulse_json.as_bytes());
-    let _ = fs::write(tmp_html, index_html.as_bytes());
-
     let remote_pushed = if !local_site_written {
-        push_to_remote_8b_edge(tmp_json, tmp_html)
+        push_to_remote_8b_edge(&pulse_json, &index_html)
     } else {
         true
     };

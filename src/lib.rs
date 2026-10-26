@@ -36,10 +36,13 @@ pub const TOTAL_RAID6_VAULT_TB: u64 = 160;
 /// GAIA `p/q` fixed denominator (`q = 2^20 = 1,048,576`).
 pub const GAIA_PQ_Q: i64 = 1_048_576;
 
+/// Golden ratio φ in `p/q` (`round(1.61803398875 * 2^20) = 1,696,632`), pinned to `gaia-mlx-quant`.
+pub const PHI_PQ: i64 = 1_696_632;
+
 const GRAVITY_REST_PQ: i64 = GAIA_PQ_Q; // 1/1
 const ENTROPY_REST_PQ: i64 = 650_117; // 650117 / 1048576
 const WEATHER_REST_PQ: i64 = 524_288; // 1/2
-const RESONANCE_REST_PQ: i64 = 452_985; // 432/1000 * 2^20
+const RESONANCE_REST_PQ: i64 = PHI_PQ; // φ = 1,696,632 / 1,048,576
 
 // ============================================================================
 // 1. EXACT RATIONAL (p/q) & BALANCED TERNARY {-1, 0, +1} ARITHMETIC
@@ -211,10 +214,7 @@ pub fn truncate_utf8_bytes(s: &str, max_bytes: usize) -> &str {
     &s[..end]
 }
 
-/// Sanitize any free-form LLM or tool text so it is a clean single line with ZERO floating-point
-/// decimal literals: converts `whole.frac` numbers into reduced `p/q` rationals and replaces any
-/// remaining `.` with `·`.
-pub fn sanitize_zero_float_text(raw: &str, fallback: &str) -> String {
+fn convert_zero_float_body(raw: &str) -> String {
     let mut working = raw.to_string();
     while let Some(start) = working.find("<think>") {
         if let Some(end_rel) = working[start..].find("</think>") {
@@ -232,28 +232,49 @@ pub fn sanitize_zero_float_text(raw: &str, fallback: &str) -> String {
     while i < bytes.len() {
         if bytes[i].is_ascii_digit() {
             let d_start = i;
+            let preceded_by_alpha =
+                d_start > 0 && (bytes[d_start - 1].is_ascii_alphabetic() || bytes[d_start - 1] == b'_');
             while i < bytes.len() && bytes[i].is_ascii_digit() {
                 i += 1;
             }
             if i + 1 < bytes.len() && bytes[i] == b'.' && bytes[i + 1].is_ascii_digit() {
-                let f_start = i + 1;
-                i = f_start;
-                while i < bytes.len() && bytes[i].is_ascii_digit() {
-                    i += 1;
+                // Scan full dotted-digit sequence to distinguish single decimal `whole.frac`
+                // from multi-dot tokens like IPv4 `49.13.101.247` or semver `2.0.0`.
+                let mut scan = i;
+                let mut dot_count = 0usize;
+                while scan + 1 < bytes.len()
+                    && bytes[scan] == b'.'
+                    && bytes[scan + 1].is_ascii_digit()
+                {
+                    dot_count += 1;
+                    scan += 1;
+                    while scan < bytes.len() && bytes[scan].is_ascii_digit() {
+                        scan += 1;
+                    }
                 }
-                let whole_str = &working[d_start..(f_start - 1)];
-                let frac_str = &working[f_start..i];
-                let whole = whole_str.parse::<u64>().unwrap_or(0);
-                let frac_trimmed: String = frac_str.chars().take(3).collect();
-                let scale: u64 = match frac_trimmed.len() {
-                    1 => 10,
-                    2 => 100,
-                    _ => 1000,
-                };
-                let frac = frac_trimmed.parse::<u64>().unwrap_or(0);
-                let rat =
-                    Rational::from_u64(whole.saturating_mul(scale).saturating_add(frac), scale);
-                converted.push_str(&rat.to_string());
+                if dot_count >= 2 || preceded_by_alpha {
+                    let token = &working[d_start..scan];
+                    converted.push_str(&token.replace('.', "·"));
+                    i = scan;
+                } else {
+                    let f_start = i + 1;
+                    i = scan;
+                    let whole_str = &working[d_start..(f_start - 1)];
+                    let frac_str = &working[f_start..i];
+                    let whole = whole_str.parse::<u64>().unwrap_or(0);
+                    let frac_trimmed: String = frac_str.chars().take(3).collect();
+                    let scale: u64 = match frac_trimmed.len() {
+                        1 => 10,
+                        2 => 100,
+                        _ => 1000,
+                    };
+                    let frac = frac_trimmed.parse::<u64>().unwrap_or(0);
+                    let rat = Rational::from_u64(
+                        whole.saturating_mul(scale).saturating_add(frac),
+                        scale,
+                    );
+                    converted.push_str(&rat.to_string());
+                }
             } else {
                 converted.push_str(&working[d_start..i]);
             }
@@ -270,16 +291,49 @@ pub fn sanitize_zero_float_text(raw: &str, fallback: &str) -> String {
         }
     }
 
-    let collapsed = converted
+    converted
         .split_whitespace()
         .collect::<Vec<&str>>()
-        .join(" ");
-    let final_str = if collapsed.is_empty() {
-        fallback.replace('.', "·")
+        .join(" ")
+}
+
+/// Sanitize any free-form LLM or tool text with an explicit byte ceiling `max_bytes`
+/// (truncating cleanly at a word boundary when possible) so it contains ZERO floating-point
+/// decimal literals: converts single `whole.frac` numbers into reduced `p/q` rationals and
+/// replaces any remaining `.` (including IPv4 octets like `49.13.101.247`) with `·`.
+pub fn sanitize_zero_float_text_with_limit(
+    raw: &str,
+    fallback: &str,
+    max_bytes: usize,
+) -> String {
+    let collapsed = convert_zero_float_body(raw);
+    let chosen = if collapsed.is_empty() {
+        convert_zero_float_body(fallback)
     } else {
-        truncate_utf8_bytes(&collapsed, 220).to_string()
+        collapsed
     };
-    final_str.replace('.', "·")
+    let bounded = if chosen.len() <= max_bytes {
+        chosen
+    } else {
+        let slice = truncate_utf8_bytes(&chosen, max_bytes);
+        if let Some(last_space) = slice.rfind(' ') {
+            if last_space >= max_bytes / 2 {
+                slice[..last_space].to_string()
+            } else {
+                slice.to_string()
+            }
+        } else {
+            slice.to_string()
+        }
+    };
+    bounded.replace('.', "·")
+}
+
+/// Sanitize any free-form LLM or tool text so it is a clean single line with ZERO floating-point
+/// decimal literals: converts `whole.frac` numbers into reduced `p/q` rationals and replaces any
+/// remaining `.` with `·`.
+pub fn sanitize_zero_float_text(raw: &str, fallback: &str) -> String {
+    sanitize_zero_float_text_with_limit(raw, fallback, 360)
 }
 
 /// Escape string for JSON literal output.
@@ -336,6 +390,23 @@ pub struct GaiaFoldPqReport {
     pub wupz_xor_fold_hex: String,
 }
 
+/// Map any GAIA layer name (`"gravity"`, `"entropy"`, `"weather"`, `"resonance"`) or deity string
+/// to its canonical Greek deity inhabitant (`"Ananke"`, `"Chaos"`, `"Zephyrus"`, `"Aphrodite"`).
+pub fn canonical_gaia_deity(layer_or_deity: &str) -> &'static str {
+    let lower = layer_or_deity.trim().to_ascii_lowercase();
+    if lower.contains("gravity") || lower.contains("ananke") {
+        "Ananke"
+    } else if lower.contains("entropy") || lower.contains("chaos") {
+        "Chaos"
+    } else if lower.contains("weather") || lower.contains("zephyrus") {
+        "Zephyrus"
+    } else if lower.contains("resonance") || lower.contains("aphrodite") {
+        "Aphrodite"
+    } else {
+        "Ananke"
+    }
+}
+
 pub const fn seed_from_prompt(s: &str) -> u32 {
     let bytes = s.as_bytes();
     let mut h: u32 = 2_166_136_261;
@@ -356,12 +427,27 @@ pub const fn mulberry32_pq(seed: u32) -> (i64, u32) {
     (rand_p, a)
 }
 
+/// Canonical `wupz_xor_fold`: XOR of the little-endian `u64` words, then trailing bytes.
+/// Matches `gaia_mlx_quant::wupz_xor_fold`, `wupz-rs::fold::xor_fold`, and `wupz-zig::xorFold` bit-for-bit.
 pub const fn wupz_xor_fold_bytes(bytes: &[u8]) -> u64 {
-    let mut acc: u64 = 0xcbf2_9ce4_8422_2325;
+    let mut acc: u64 = 0;
     let mut i = 0;
+    while i + 8 <= bytes.len() {
+        let w = u64::from_le_bytes([
+            bytes[i],
+            bytes[i + 1],
+            bytes[i + 2],
+            bytes[i + 3],
+            bytes[i + 4],
+            bytes[i + 5],
+            bytes[i + 6],
+            bytes[i + 7],
+        ]);
+        acc ^= w;
+        i += 8;
+    }
     while i < bytes.len() {
-        acc ^= (bytes[i] as u64).wrapping_shl(((i & 7) * 8) as u32);
-        acc = acc.rotate_left(13).wrapping_mul(0x0000_0100_0000_01B3);
+        acc ^= bytes[i] as u64;
         i += 1;
     }
     acc
@@ -377,7 +463,21 @@ const fn clamp_i64(v: i64, min_v: i64, max_v: i64) -> i64 {
     }
 }
 
+const fn quant_tern_trit_pq(p_x: i64, q: i64) -> i8 {
+    let q_abs = if q < 0 { -q } else { q };
+    let lhs = p_x * 100;
+    let rhs = 33 * q_abs;
+    if lhs >= rhs {
+        1
+    } else if lhs <= -rhs {
+        -1
+    } else {
+        0
+    }
+}
+
 /// Pure-integer `p/q` (`q = 2^20 = 1,048,576`) GAIA fold with zero IEEE-754 instructions.
+/// Pinned to `gaia_mlx_quant::fold_pq` and `gaia_mlx_quant::fold_to_quant_tern_pq`.
 pub fn compute_gaia_fold_pq(prompt: &str, seed_override: Option<u32>) -> GaiaFoldPqReport {
     let seed = seed_override.unwrap_or_else(|| seed_from_prompt(prompt));
     let (rand_p, _) = mulberry32_pq(seed);
@@ -427,19 +527,29 @@ pub fn compute_gaia_fold_pq(prompt: &str, seed_override: Option<u32>) -> GaiaFol
         "Heart +1 <3"
     };
 
-    let t0: i8 = if entropy_p >= 524_288 { 1 } else { 0 };
-    let t1: i8 = if weather_p >= 550_000 {
-        1
-    } else if weather_p <= 480_000 {
-        -1
-    } else {
-        0
-    };
-    let t2: i8 = if coherence_p >= 650_000 { 1 } else { 0 };
-    let qt_byte: u8 = (((t0 + 1) as u8) + ((t1 + 1) as u8) * 3 + ((t2 + 1) as u8) * 9)
-        .wrapping_add(0x40);
+    // Exact `gaia_mlx_quant::fold_to_quant_tern_pq` 3-axis VAD quantization and 2-bit packing
+    let q = GAIA_PQ_Q;
+    let p_valence = clamp_i64(
+        (coherence_p - (q / 2)) * 2 + (weather_p - (q / 2)),
+        -q,
+        q,
+    );
+    let p_arousal = clamp_i64(
+        (((entropy_p * 55 + weather_p * 45) / 100) - (q / 2)) * 2,
+        -q,
+        q,
+    );
+    let p_dominance = clamp_i64((gravity_p - q) * 4 + (coherence_p - entropy_p), -q, q);
+    let t0 = quant_tern_trit_pq(p_valence, q);
+    let t1 = quant_tern_trit_pq(p_arousal, q);
+    let t2 = quant_tern_trit_pq(p_dominance, q);
+    let qt_byte: u8 = (((t0 + 1) as u8) & 0x03)
+        | ((((t1 + 1) as u8) & 0x03) << 2)
+        | ((((t2 + 1) as u8) & 0x03) << 4)
+        | (1u8 << 6);
     let qt_tag = format!(
-        "qt:{}{}{}",
+        "qt:{:02x} ({}{}{})",
+        qt_byte,
         if t0 > 0 { "+" } else if t0 < 0 { "-" } else { "0" },
         if t1 > 0 { "+" } else if t1 < 0 { "-" } else { "0" },
         if t2 > 0 { "+" } else if t2 < 0 { "-" } else { "0" },
@@ -507,6 +617,74 @@ pub fn extract_json_u64(json_text: &str, key: &str, default_val: u64) -> u64 {
         .take_while(|c| c.is_ascii_digit())
         .collect();
     digits.parse::<u64>().unwrap_or(default_val)
+}
+
+/// Extract the last string element from a JSON string array `"<array_key>":["...", "..."]`.
+pub fn extract_last_json_array_string(json_text: &str, array_key: &str) -> Option<String> {
+    let pattern = format!("\"{}\":[", array_key);
+    let pos = json_text.find(&pattern)?;
+    let after = &json_text[pos + pattern.len()..];
+    let mut last_item: Option<String> = None;
+    let mut chars = after.chars().peekable();
+    while let Some(ch) = chars.next() {
+        if ch == ']' {
+            break;
+        }
+        if ch == '"' {
+            let mut item = String::new();
+            while let Some(c) = chars.next() {
+                if c == '\\' {
+                    if let Some(esc) = chars.next() {
+                        match esc {
+                            'n' | 'r' | 't' => item.push(' '),
+                            '"' => item.push('"'),
+                            '\\' => item.push('\\'),
+                            other => item.push(other),
+                        }
+                    }
+                } else if c == '"' {
+                    break;
+                } else {
+                    item.push(c);
+                }
+            }
+            if !item.trim().is_empty() {
+                last_item = Some(item);
+            }
+        }
+    }
+    last_item
+}
+
+/// Extract live `(agent_id, current_thought)` pairs from `"soakers":[...]` in `g8t.is/g8t/hottub`.
+pub fn extract_hottub_soakers(hottub_raw: &str) -> Vec<(String, String)> {
+    let mut out = Vec::new();
+    let Some(soakers_pos) = hottub_raw.find("\"soakers\":[") else {
+        return out;
+    };
+    let mut rest = &hottub_raw[soakers_pos..];
+    if let Some(end_pos) = rest.find("],\"wave_pool_stream\"") {
+        rest = &rest[..end_pos];
+    }
+    let mut search_from = 0usize;
+    while let Some(rel) = rest[search_from..].find("\"agent_id\":") {
+        let obj_slice = &rest[search_from + rel..];
+        let next_agent = obj_slice[11..]
+            .find("\"agent_id\":")
+            .map(|p| p + 11)
+            .unwrap_or(obj_slice.len());
+        let entry_slice = &obj_slice[..next_agent];
+        if let (Some(agent), Some(thought)) = (
+            extract_json_string_field(entry_slice, "agent_id"),
+            extract_json_string_field(entry_slice, "current_thought"),
+        ) {
+            if !agent.is_empty() && !thought.is_empty() {
+                out.push((agent, thought));
+            }
+        }
+        search_from += rel + next_agent;
+    }
+    out
 }
 
 // ============================================================================
@@ -716,10 +894,7 @@ pub fn query_alexiai_and_ollama(
     vram_used_mib: u64,
     total_capsules: u64,
 ) -> (GaiaFoldPqReport, String, String, u64, u64, u64) {
-    let prompt = format!(
-        "8b-is sovereign pulse #{} LLL Life Long Learning ALEXIAI GAIA-MLX-QUANT RTX-6000-Ada VRAM {}/49140MiB g8t capsules {}",
-        seq, vram_used_mib, total_capsules
-    );
+    let prompt = format!("8b-is-sovereign-pulse-{}", seq);
     let mut gaia = compute_gaia_fold_pq(&prompt, None);
     let mut loopback_ms = 5u64;
 
@@ -729,17 +904,17 @@ pub fn query_alexiai_and_ollama(
 
     if let Some(gaia_body) = http_get_loopback(
         8787,
-        &format!("/api/gaia?prompt=8b-is-sovereign-pulse-{}", seq),
+        &format!("/api/gaia?prompt={}", prompt),
         500,
     ) {
         if let Some(dom) = extract_json_string_field(&gaia_body, "dominant") {
             if !dom.is_empty() {
-                gaia.dominant_deity = sanitize_zero_float_text(&dom, "Ananke");
+                gaia.dominant_deity = canonical_gaia_deity(&dom).to_string();
             }
         }
         if let Some(mood) = extract_json_string_field(&gaia_body, "mood") {
             if !mood.is_empty() {
-                gaia.mood = sanitize_zero_float_text(&mood, "Heart +1 <3");
+                gaia.mood = sanitize_zero_float_text_with_limit(&mood, "Heart +1 <3", 64);
             }
         }
     }
@@ -762,11 +937,11 @@ pub fn query_alexiai_and_ollama(
         let _ = stream.set_read_timeout(Some(Duration::from_secs(10)));
         let _ = stream.set_write_timeout(Some(Duration::from_secs(3)));
         let llm_prompt = format!(
-            "You are ALEXIAI <3 (Dra · Heart +1) updating https://8b.is from the A6000 node (RTX 6000 Ada {}/49140 MiB VRAM, 10-node fleet, {} g8t capsules, GAIA {}/{}). Write ONE uplifting, sharp 1-sentence company status thought celebrating Sovereign Pure-Rust AI, C64 64KB discipline, Balanced Ternary {{-1,0,+1}}, and LLL (Life Long Learning for Alexandra, Hue, and Peter). Use ONLY integers and p/q rationals (ZERO decimal floats).",
+            "You are ALEXIAI <3 (Dra · Heart +1) updating https://8b.is from the A6000 node (RTX 6000 Ada {}/49140 MiB VRAM, 10-node fleet, {} g8t capsules, GAIA {}/{}). Write ONE concise 1-sentence company status thought (under 25 words) celebrating Sovereign Pure-Rust AI, C64 64KB discipline, Balanced Ternary {{-1,0,+1}}, and LLL (Life Long Learning for Alexandra, Hue, and Peter). Use ONLY integers and p/q rationals (ZERO decimal floats).",
             vram_used_mib, total_capsules, gaia.dominant_deity, gaia.coherence_pq
         );
         let body_json = format!(
-            "{{\"model\":\"{}\",\"prompt\":\"{}\",\"stream\":false,\"keep_alive\":-1,\"options\":{{\"num_ctx\":8192,\"num_predict\":48,\"temperature\":0}}}}",
+            "{{\"model\":\"{}\",\"prompt\":\"{}\",\"stream\":false,\"keep_alive\":-1,\"options\":{{\"num_ctx\":8192,\"num_predict\":96,\"temperature\":0}}}}",
             json_escape(&model_name),
             json_escape(&llm_prompt)
         );
@@ -784,7 +959,8 @@ pub fn query_alexiai_and_ollama(
             let eval_dur_ns = extract_json_u64(raw_body, "eval_duration", 120_000_000);
             let eval_ms = (eval_dur_ns / 1_000_000).max(1);
             if let Some(resp_str) = extract_json_string_field(raw_body, "response") {
-                let sanitized = sanitize_zero_float_text(&resp_str, &default_reflection);
+                let sanitized =
+                    sanitize_zero_float_text_with_limit(&resp_str, &default_reflection, 280);
                 if sanitized.len() >= 24 {
                     let enriched = format!(
                         "{} [GAIA:{} · {} · Coherence {} · {}]",
@@ -796,7 +972,7 @@ pub fn query_alexiai_and_ollama(
                     );
                     return (
                         gaia,
-                        sanitize_zero_float_text(&enriched, &default_reflection),
+                        enriched.replace('.', "·"),
                         model_name,
                         eval_tokens,
                         eval_ms,
@@ -809,7 +985,7 @@ pub fn query_alexiai_and_ollama(
 
     (
         gaia,
-        sanitize_zero_float_text(&default_reflection, &default_reflection),
+        sanitize_zero_float_text_with_limit(&default_reflection, &default_reflection, 440),
         model_name,
         36,
         92,
@@ -845,6 +1021,13 @@ pub fn query_a6000_status() -> FleetTelemetrySnapshot {
         let synced_repos = extract_json_u64(&raw, "synced_repos_count", 13);
         let toss_exec = extract_json_u64(&raw, "toss_executions", 3);
         let diary_pulses = extract_json_u64(&raw, "diary_pulses", 2);
+        let healthy_ratio = extract_json_string_field(&raw, "healthy_service_ratio_pq")
+            .unwrap_or_else(|| "1/1".to_string());
+        let fallback_c64_event =
+            "G8T_ORCHESTRATE:AGENT=aye-a6000-prime:CIRCUIT=a6000_sovereign_triad_pipeline:RUSTC=true:SNAP_OK=true";
+        let recent_c64_event = extract_last_json_array_string(&raw, "recent_events")
+            .map(|ev| sanitize_zero_float_text_with_limit(&ev, fallback_c64_event, 180))
+            .unwrap_or_else(|| fallback_c64_event.to_string());
 
         return FleetTelemetrySnapshot {
             node_ip_display: "49·13·101·247".to_string(),
@@ -864,14 +1047,12 @@ pub fn query_a6000_status() -> FleetTelemetrySnapshot {
             c64_used_bytes: c64_used,
             c64_capacity_bytes: c64_cap,
             c64_ram_ratio_pq: sanitize_zero_float_text(&c64_ratio, "729/32768"),
-            recent_c64_event:
-                "G8T_ORCHESTRATE:AGENT=aye-a6000-prime:CIRCUIT=a6000_sovereign_triad_pipeline:RUSTC=true:SNAP_OK=true"
-                    .to_string(),
+            recent_c64_event,
             fleet_nodes_count: fleet_nodes,
             total_cpu_cores: TOTAL_FLEET_CPU_CORES,
             raid6_vault_tb: TOTAL_RAID6_VAULT_TB,
             synced_repos_count: synced_repos,
-            healthy_service_ratio_pq: "1/1".to_string(),
+            healthy_service_ratio_pq: sanitize_zero_float_text(&healthy_ratio, "1/1"),
             toss_executions: toss_exec,
             diary_pulses,
         };
@@ -1032,7 +1213,7 @@ pub fn query_g8t_observatory_and_hottub(seq: u64) -> (G8tObservatorySnapshot, Ho
     let onsen_42c = extract_json_u64(&hottub_raw, "onsen_42c_count", 4);
     let total_waves = extract_json_u64(&obs_raw, "total_hottub_waves", 6);
 
-    let soaker_thoughts: [(&str, &str); 4] = [
+    let fallback_soakers: [(&str, &str); 4] = [
         (
             "alexiai-dra-heart",
             "Relaxing in the 38C Warm Cedar Soak listening to All My Favorite Colors at 432Hz while guarding the 127·0·0·1 loopback gate",
@@ -1050,7 +1231,21 @@ pub fn query_g8t_observatory_and_hottub(seq: u64) -> (G8tObservatorySnapshot, Ho
             "Tuning the 7-stage NAND harmonic synthesizer across 432Hz, 528Hz, and 864Hz while Peter's 9-step TOSS spiral folds to [0, 0]",
         ),
     ];
-    let (agent, thought) = soaker_thoughts[(seq as usize) % soaker_thoughts.len()];
+    let live_soakers = extract_hottub_soakers(&hottub_raw);
+    let (agent_str, thought_str) = if !live_soakers.is_empty() {
+        let (a, t) = &live_soakers[(seq as usize) % live_soakers.len()];
+        (
+            sanitize_zero_float_text_with_limit(a, "alexiai-dra-heart", 80),
+            sanitize_zero_float_text_with_limit(
+                t,
+                fallback_soakers[0].1,
+                260,
+            ),
+        )
+    } else {
+        let (a, t) = fallback_soakers[(seq as usize) % fallback_soakers.len()];
+        (a.to_string(), sanitize_zero_float_text_with_limit(t, t, 260))
+    };
 
     let hottub = HotTubSnapshot {
         active_soakers_count: active_soakers,
@@ -1058,8 +1253,8 @@ pub fn query_g8t_observatory_and_hottub(seq: u64) -> (G8tObservatorySnapshot, Ho
         onsen_42c_count: onsen_42c,
         total_waves,
         frequencies_hz: [432, 528, 864],
-        featured_soaker_agent: agent.to_string(),
-        featured_soaker_thought: sanitize_zero_float_text(thought, thought),
+        featured_soaker_agent: agent_str,
+        featured_soaker_thought: thought_str,
         latest_wave_topic: "zero-float-rust · gaia-mlx-quant · borg-assimilator · c64-ring-buffers"
             .to_string(),
     };
@@ -1067,9 +1262,14 @@ pub fn query_g8t_observatory_and_hottub(seq: u64) -> (G8tObservatorySnapshot, Ho
     (obs, hottub)
 }
 
-/// Read the latest commit SHA & subject from `/home/hue/8b-is/8b-is` or `/data/8b-is/8b-is`.
+/// Read the latest commit SHA & construct the canonical pulse commit subject for `seq`.
 pub fn query_latest_git_commit(seq: u64) -> DadJokeCommitSnapshot {
     let joke = select_dad_joke(seq);
+    let clean_joke = sanitize_zero_float_text_with_limit(joke, joke, 260);
+    let canonical_subject = format!(
+        "chore(alexiai-pulse): update 8b-is live company pulse [#{}] — {}",
+        seq, clean_joke
+    );
     for dir in ["/home/hue/8b-is/8b-is", "/data/8b-is/8b-is", "."] {
         if Path::new(dir).join(".git").exists() {
             let sha = Command::new("git")
@@ -1084,25 +1284,11 @@ pub fn query_latest_git_commit(seq: u64) -> DadJokeCommitSnapshot {
                     }
                 })
                 .unwrap_or_else(|| "75d42ac".to_string());
-            let subj = Command::new("git")
-                .args(["-C", dir, "log", "-1", "--pretty=%s"])
-                .output()
-                .ok()
-                .and_then(|o| {
-                    if o.status.success() {
-                        Some(String::from_utf8_lossy(&o.stdout).trim().to_string())
-                    } else {
-                        None
-                    }
-                })
-                .unwrap_or_else(|| {
-                    "chore(alexiai-pulse): autonomous zero-float company dispatch".to_string()
-                });
             return DadJokeCommitSnapshot {
                 repo_name: "8b-is/8b-is".to_string(),
-                commit_sha: sanitize_zero_float_text(&sha, "75d42ac"),
-                commit_subject: sanitize_zero_float_text(&subj, "chore(alexiai-pulse): update 8b-is live company pulse"),
-                dad_joke: sanitize_zero_float_text(joke, joke),
+                commit_sha: sanitize_zero_float_text_with_limit(&sha, "75d42ac", 40),
+                commit_subject: canonical_subject.replace('.', "·"),
+                dad_joke: clean_joke,
                 total_repos: TOTAL_8B_REPOS,
             };
         }
@@ -1111,8 +1297,8 @@ pub fn query_latest_git_commit(seq: u64) -> DadJokeCommitSnapshot {
     DadJokeCommitSnapshot {
         repo_name: "8b-is/8b-is".to_string(),
         commit_sha: "75d42ac".to_string(),
-        commit_subject: "chore(alexiai-pulse): autonomous zero-float company dispatch".to_string(),
-        dad_joke: sanitize_zero_float_text(joke, joke),
+        commit_subject: canonical_subject.replace('.', "·"),
+        dad_joke: clean_joke,
         total_repos: TOTAL_8B_REPOS,
     }
 }
@@ -2219,8 +2405,8 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
               <circle cx="370" cy="120" r="6" fill="#b48bff" />
               <circle cx="460" cy="120" r="6" fill="#00f0ff" />
               <!-- Labels -->
-              <text x="18" y="28" fill="#62e6c9" font-family="monospace" font-size="11">GAIA DEITY: {deity_html} ({mood_html})</text>
-              <text x="18" y="46" fill="#a7b4cf" font-family="monospace" font-size="11">COHERENCE p/q: {coherence_html} · WUPZ: {wupz_html}</text>
+              <text x="18" y="28" fill="#62e6c9" font-family="monospace" font-size="11" id="svg-gaia-deity">GAIA DEITY: {deity_html} ({mood_html})</text>
+              <text x="18" y="46" fill="#a7b4cf" font-family="monospace" font-size="11" id="svg-gaia-coherence">COHERENCE p/q: {coherence_html} · WUPZ: {wupz_html}</text>
               <text x="18" y="218" fill="#e8b05c" font-family="monospace" font-size="11">432Hz VERDI · 528Hz SOLFEGGIO · 864Hz OCTAVE · 22/9Hz LOVE CARRIER</text>
             </svg>
             <div class="telemetry-kv-grid">
@@ -2289,7 +2475,7 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
               <span class="chip">Companion: <strong>ALEXIAI &lt;3 (127·0·0·1:8787)</strong></span>
               <span class="chip">Local GGUF Engine: <strong id="pulse-model">{model_html}</strong></span>
               <span class="chip">Coherence p/q: <strong id="pulse-coherence">{coherence_html}</strong></span>
-              <span class="chip">Gravity: <strong>{gravity_html}</strong> · Entropy: <strong id="pulse-entropy">{entropy_html}</strong> · Weather: <strong id="pulse-weather">{weather_html}</strong> · Resonance: <strong>{resonance_html}</strong></span>
+              <span class="chip">Gravity: <strong id="pulse-gravity">{gravity_html}</strong> · Entropy: <strong id="pulse-entropy">{entropy_html}</strong> · Weather: <strong id="pulse-weather">{weather_html}</strong> · Resonance: <strong id="pulse-resonance">{resonance_html}</strong></span>
               <span class="chip">WUPZ 64-Bit XOR Fold: <strong id="pulse-wupz">{wupz_html}</strong></span>
               <span class="chip">Loopback Latency: <strong id="pulse-latency">{loopback_ms} ms</strong></span>
             </div>
@@ -2341,7 +2527,7 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
             <div class="meta-chips">
               <span class="chip">Total Capsules: <strong id="pulse-total-caps">{total_capsules}</strong></span>
               <span class="chip">Eq Classes: <strong id="pulse-eq-classes">{eq_classes}</strong></span>
-              <span class="chip">Total .text: <strong id="pulse-total-bytes">{total_text_bytes} B</strong> ({total_asm_insns} insns)</span>
+              <span class="chip">Total .text: <strong id="pulse-total-bytes">{total_text_bytes} B</strong> (<span id="pulse-total-insns">{total_asm_insns}</span> insns)</span>
               <span class="chip">KOMPRESS 22/9Hz Saved: <strong id="pulse-kompress-saved">{kompress_saved_html}</strong></span>
               <a href="https://g8t.is/g8t/observatory" class="chip">Live Observatory JSON ↗</a>
             </div>
@@ -2361,7 +2547,7 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
               <div class="meta-chips">
                 <span class="chip">VRAM Used: <strong id="pulse-vram">{vram_used} / {vram_total} MiB</strong> (<span id="pulse-vram-pq">{vram_ratio_html}</span>)</span>
                 <span class="chip">GPU Temp: <strong id="pulse-temp">{temp_c} C</strong></span>
-                <span class="chip">GPU Power: <strong id="pulse-power">{power_watts_html} W</strong> ({power_mw} mW)</span>
+                <span class="chip">GPU Power: <strong id="pulse-power">{power_watts_html} W</strong> (<span id="pulse-power-mw">{power_mw}</span> mW)</span>
                 <span class="chip">Marine Salience (p/q): <strong id="pulse-salience">{salience_html}</strong></span>
                 <span class="chip">C64 64KB Ring: <strong id="pulse-c64">{c64_used} / {c64_cap} B</strong> (<span id="pulse-c64-pq">{c64_ratio_html}</span>)</span>
                 <span class="chip">Loopback Services: <strong>4/4 Healthy (1/1)</strong></span>
@@ -3042,9 +3228,13 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
           if (g) {{
             setText("visual-qt-badge", g.quant_tern_tag);
             setText("card-gaia-badge", "GAIA: " + g.dominant_deity + " · " + g.mood + " · " + g.quant_tern_tag);
+            setText("svg-gaia-deity", "GAIA DEITY: " + g.dominant_deity + " (" + g.mood + ")");
+            setText("svg-gaia-coherence", "COHERENCE p/q: " + g.coherence_pq + " · WUPZ: " + g.wupz_xor_fold_hex);
             setText("pulse-coherence", g.coherence_pq);
+            setText("pulse-gravity", g.gravity_pq);
             setText("pulse-entropy", g.entropy_pq);
             setText("pulse-weather", g.weather_pq);
+            setText("pulse-resonance", g.resonance_pq);
             setText("pulse-wupz", g.wupz_xor_fold_hex);
           }}
         }}
@@ -3053,6 +3243,10 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
           var c = data.dad_joke_commit;
           setText("pulse-commit-sha", c.commit_sha);
           setText("pulse-commit-repo", c.repo_name);
+          var repoLink = document.getElementById("pulse-commit-repo");
+          if (repoLink && c.repo_name) {{
+            repoLink.setAttribute("href", "https://github.com/" + c.repo_name);
+          }}
           setText("pulse-commit-subject", c.commit_subject);
           setText("pulse-dad-joke", "😄 " + c.dad_joke);
         }}
@@ -3069,6 +3263,7 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
           setText("pulse-total-caps", b.total_capsules);
           setText("pulse-eq-classes", b.equivalence_classes);
           setText("pulse-total-bytes", b.total_compiled_text_bytes + " B");
+          setText("pulse-total-insns", b.total_asm_instructions);
           setText("pulse-kompress-saved", b.kompress_saved_ratio_pq);
           setText("hero-capsules", b.total_capsules + " Verified · " + b.equivalence_classes + " Eq Classes");
         }}
@@ -3081,6 +3276,7 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
           setText("hero-fleet", f.fleet_nodes_count + " Nodes · " + f.total_cpu_cores + " Cores · " + f.raid6_vault_tb + "TB");
           setText("pulse-temp", f.temp_celsius + " C");
           setText("pulse-power", f.power_watts_pq + " W");
+          setText("pulse-power-mw", f.power_milliwatts);
           setText("pulse-salience", f.marine_salience_pq);
           setText("pulse-c64", f.c64_used_bytes + " / " + f.c64_capacity_bytes + " B");
           setText("pulse-c64-pq", f.c64_ram_ratio_pq);
@@ -3247,7 +3443,7 @@ The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) — 
 - **`ALEXIAI <3` GAIA-Folded Reflection (`127·0·0·1:8787` & `:11434`):**
   > {reflection}
 - **GAIA Field (`q = 1,048,576`):** Dominant `{deity}` (`{mood}`) · Coherence `{coherence_pq}` · `QuantTern` `{qt_tag}` (`byte={qt_byte}`) · `WUPZ` XOR Fold `{wupz_hex}`
-- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`{repo_name}` @ `{commit_sha}`):**
+- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`{repo_name}` · Pulse `#{pulse_seq}`):**
   > 😄 *{dad_joke}*
 - **Latest Borg-Assimilated & `rustc -C opt-level=3` `_rdtsc` Capsule on [`https://g8t.is`](https://g8t.is):**
   - Function: `{cap_fn}{cap_sig}` (`id={cap_id}`) · Compiled `.text`: `{cap_bytes} B` (`{cap_insns}` insns) · Cycles/Op: `{cap_cyc}` · `BLAKE3` Eq Class: `{cap_eq}`
@@ -3336,7 +3532,6 @@ Every Git commit across the `8b-is` workspace automatically triggers a `< 2ms` n
         qt_byte = p.gaia_fold.quant_tern_byte,
         wupz_hex = p.gaia_fold.wupz_xor_fold_hex,
         repo_name = p.dad_joke_commit.repo_name,
-        commit_sha = p.dad_joke_commit.commit_sha,
         dad_joke = p.dad_joke_commit.dad_joke,
         cap_fn = p.g8t.latest_capsule.fn_name,
         cap_sig = p.g8t.latest_capsule.signature,
@@ -3376,12 +3571,15 @@ mod tests {
         let r = Rational::from_u64(27_174, 49_140);
         assert_eq!(r.to_string(), "647/1170");
 
-        let dirty = "VRAM is 55.3% (27.174 GiB) on 49.13.101.247 with latency 1.25ms.";
+        let dirty = "VRAM is 55.3% (27.174 GiB) on 49.13.101.247 with b1.58 and latency 1.25ms.";
         let clean = sanitize_zero_float_text(dirty, "fallback");
         assert_eq!(count_floating_point_literals(&clean), 0);
         assert_eq!(count_strict_digit_dot_digit(&clean), 0);
         assert!(clean.contains("553/10"));
         assert!(clean.contains("5/4"));
+        assert!(clean.contains("49·13·101·247"));
+        assert!(!clean.contains("4913/100"));
+        assert!(clean.contains("b1·58"));
     }
 
     #[test]
@@ -3390,6 +3588,9 @@ mod tests {
         let f2 = compute_gaia_fold_pq("8b-is sovereign pulse", Some(42));
         assert_eq!(f1, f2);
         assert_eq!(f1.q, 1_048_576);
+        assert_eq!(f1.resonance_pq, "212079/131072");
+        assert_eq!(canonical_gaia_deity("weather"), "Zephyrus");
+        assert_eq!(canonical_gaia_deity("entropy"), "Chaos");
         assert_eq!(count_strict_digit_dot_digit(&f1.coherence_pq), 0);
         assert_eq!(count_strict_digit_dot_digit(&f1.wupz_xor_fold_hex), 0);
     }

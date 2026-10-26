@@ -4,10 +4,12 @@ use alexiai_8b_publisher::*;
 
 #[test]
 fn test_edge_cases_sanitizer_and_float_detectors() {
-    // Empty input uses sanitized fallback
-    let empty_clean = sanitize_zero_float_text("", "Fallback 1.5 value.");
+    // Empty input uses sanitized fallback AND converts decimal in fallback to p/q
+    let empty_clean = sanitize_zero_float_text("", "Fallback 1.5 value on 5.78.220.57.");
     assert_eq!(count_floating_point_literals(&empty_clean), 0);
     assert_eq!(count_strict_digit_dot_digit(&empty_clean), 0);
+    assert!(empty_clean.contains("3/2"));
+    assert!(empty_clean.contains("5·78·220·57"));
 
     // Unclosed <think> block is stripped cleanly
     let unclosed_think = "Valid prefix 2.5 <think>internal float 3.14159";
@@ -17,12 +19,15 @@ fn test_edge_cases_sanitizer_and_float_detectors() {
     assert!(clean_think.contains("5/2"));
     assert!(!clean_think.contains("3.14"));
 
-    // Closed <think>...</think> block is stripped cleanly
-    let closed_think = "<think>0.999</think> Saliency is 0.75 on node 49.13.101.247.";
+    // Closed <think>...</think> block is stripped cleanly and IPv4 octets are preserved
+    let closed_think = "<think>0.999</think> Saliency is 0.75 on node 49.13.101.247 with b1.58.";
     let clean_closed = sanitize_zero_float_text(closed_think, "fallback");
     assert_eq!(count_floating_point_literals(&clean_closed), 0);
     assert_eq!(count_strict_digit_dot_digit(&clean_closed), 0);
     assert!(clean_closed.contains("3/4"));
+    assert!(clean_closed.contains("49·13·101·247"));
+    assert!(!clean_closed.contains("4913/100"));
+    assert!(clean_closed.contains("b1·58"));
 }
 
 #[test]
@@ -38,6 +43,50 @@ fn test_parse_publish_capsule_line_valid_and_invalid() {
     assert_eq!(parsed.asm_insns, 21);
     assert_eq!(parsed.cycles_per_op_pq, "2043799/400000");
     assert_eq!(parsed.blake3_eq_class, "e31a7acbf1dd");
+
+    // Edge case: PUBLISH_CAPSULE with floating-point cyc_op and control characters
+    let dirty_line = "PUBLISH_CAPSULE id=abc\x07def fn=capsule_v1.2 sig=(u64)->u64 text=128B insns=32 cyc_op=15.75 eq=deadbeef1234";
+    let dirty_parsed =
+        parse_publish_capsule_line(dirty_line).expect("should parse dirty capsule line");
+    assert_eq!(count_strict_digit_dot_digit(&dirty_parsed.fn_name), 0);
+    assert_eq!(
+        count_strict_digit_dot_digit(&dirty_parsed.cycles_per_op_pq),
+        0
+    );
+    assert_eq!(dirty_parsed.cycles_per_op_pq, "63/4");
+    assert_eq!(dirty_parsed.fn_name, "capsule_v1·2");
+    assert!(!dirty_parsed.capsule_id.contains('\x07'));
+}
+
+#[test]
+fn test_extract_hottub_soakers_and_last_array_string() {
+    let a6000_json = r#"{"c64_ring":{"recent_events":["STATUS:TICK=1","AUTO_IMPROVE:CYCLE=43:REPO=memnet:SPEEDUP=58/37"]}}"#;
+    let last_ev =
+        extract_last_json_array_string(a6000_json, "recent_events").expect("should extract last");
+    assert_eq!(last_ev, "AUTO_IMPROVE:CYCLE=43:REPO=memnet:SPEEDUP=58/37");
+
+    let hottub_json = r#"{"soakers":[{"agent_id":"aye-a6000-prime","current_thought":"Soaking at 42C with 0.0 float"},{"agent_id":"qwave-tokyo-ear","current_thought":"Salience 99/1 at 528Hz"}],"wave_pool_stream":[]}"#;
+    let soakers = extract_hottub_soakers(hottub_json);
+    assert_eq!(soakers.len(), 2);
+    assert_eq!(soakers[0].0, "aye-a6000-prime");
+    assert_eq!(soakers[1].0, "qwave-tokyo-ear");
+}
+
+#[test]
+fn test_cross_lane_gaia_and_wupz_invariants() {
+    // Verify canonical WUPZ 8-byte little-endian XOR fold self-witness property
+    let payload = *b"8b-is-sovereign!";
+    let fold = wupz_xor_fold_bytes(&payload);
+    let mut sealed = [0u8; 24];
+    sealed[..16].copy_from_slice(&payload);
+    sealed[16..24].copy_from_slice(&fold.to_le_bytes());
+    assert_eq!(wupz_xor_fold_bytes(&sealed), 0);
+
+    // Verify canonical deity mapping for all 4 GAIA layers
+    assert_eq!(canonical_gaia_deity("gravity"), "Ananke");
+    assert_eq!(canonical_gaia_deity("entropy"), "Chaos");
+    assert_eq!(canonical_gaia_deity("weather"), "Zephyrus");
+    assert_eq!(canonical_gaia_deity("resonance"), "Aphrodite");
 }
 
 #[test]

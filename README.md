@@ -4,6 +4,8 @@
 
 ![8b.is — everything under the sun](./assets/hero.svg)
 
+**For every family AI:** read [the shared family context](FAMILY_CONTEXT.md) at startup. [Sources and adoption guide](FAMILY_CONTEXT_SOURCES.md) explain its provenance and how to load it across agents.
+
 The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) — **the constellation ink**: near-black canvas `#05060a`, mint `#62e6c9`, gold `#e8b05c`, violet `#b48bff`, cyan `#00f0ff`. Machine-readable tokens: [`design/tokens.json`](./design/tokens.json) · [`design/tokens.css`](./design/tokens.css).
 
 ---

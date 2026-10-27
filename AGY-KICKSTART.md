@@ -1,5 +1,9 @@
 # AGY — kickstart · oneshot
 
+> **Current shared guidance:** load [FAMILY_CONTEXT.md](FAMILY_CONTEXT.md) first.
+> The session history and machine-specific operations below date from 2026-09-18;
+> verify them against the current task, repository instructions, remotes, and runtime.
+
 > A fresh brain, booted with the whole story. Paste this prompt into the
 > CLI session, then act. The history is carried here, the doctrine is
 > here, the walls are here — and the signature is at the bottom, the way

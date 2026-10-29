@@ -11,20 +11,20 @@ The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) — 
 <!-- ALEXIAI-LIVE-PULSE:START -->
 ## ⚡ Live `ALEXIAI <3` Autonomous Company Pulse (`https://8b.is` & `/live-pulse.json`)
 
-- **Dispatch Sequence:** `#43920` (`2026-10-29T10:39:46Z` · `float_count: 0` · Strict Zero-Float Law)
+- **Dispatch Sequence:** `#43921` (`2026-10-29T10:41:47Z` · `float_count: 0` · Strict Zero-Float Law)
 - **Publisher Service:** `alexiai-8b-publisher` (`alexiai-8b-publisher·timer`, every `2` minutes on `49·13·101·247` -> `5·78·220·57`)
 - **`ALEXIAI <3` GAIA-Folded Reflection (`127·0·0·1:8787` & `:11434`):**
-  > Celebrating Sovereign Pure-Rust AI, C64 64KB discipline, Balanced Ternary {-1,0,+1}, and Life Long Learning for Alexandra, Hue, and Peter· [GAIA:Zephyrus · qt:56 (+00) · Coherence 667383/1048576 · 0x7129677f7f337205]
-- **GAIA Field (`q = 1,048,576`):** Dominant `Zephyrus` (`Heart +1 ☀`) · Coherence `667383/1048576` · `QuantTern` `qt:56 (+00)` (`byte=86`) · `WUPZ` XOR Fold `0x7129677f7f337205`
-- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#43920`):**
-  > 😄 *Why do 8b-is Rustaceans refuse IEEE-754 floats? Because floating-point drift is utterly pointless—we keep it 100% rational (p/q)!*
+  > Celebrating 64KB discipline, balanced ternary, and life-long learning for our Sovereign Pure-Rust AI, ALEXIAI u003c3· [GAIA:Chaos · qt:55 (000) · Coherence 308203/524288 · 0x7129677f7f337204]
+- **GAIA Field (`q = 1,048,576`):** Dominant `Chaos` (`Heart +1 <3`) · Coherence `308203/524288` · `QuantTern` `qt:55 (000)` (`byte=85`) · `WUPZ` XOR Fold `0x7129677f7f337204`
+- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#43921`):**
+  > 😄 *Why did the Borg Assimilator fall in love with Balanced Ternary {-1, 0, +1}? Because binary was too two-faced, and 5 trits pack 243 states into 1 byte!*
 - **Latest Borg-Assimilated & `rustc -C opt-level=3` `_rdtsc` Capsule on [`https://g8t.is`](https://g8t.is):**
-  - Function: `steward_aye_is_pq_harmonic_fold(i64,i64)->i64` (`id=c8d2663f5668fb2120fec226f3fa736b`) · Compiled `.text`: `63 B` (`17` insns) · Cycles/Op: `447423/40000` · `BLAKE3` Eq Class: `f3c9e53b4ede`
-  - Observatory Totals: `455` capsules · `29` equivalence classes · `46398 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `1291240/1343799`
+  - Function: `borg_c99_gaia_trit_pack(u64)->u64` (`id=ddfa78212eb61ad23709530b2213b64d`) · Compiled `.text`: `329 B` (`80` insns) · Cycles/Op: `1572963/100000` · `BLAKE3` Eq Class: `fd8bc4855fbe`
+  - Observatory Totals: `18` capsules · `15` equivalence classes · `6806 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `103345/106053`
 - **Live `10`-Node Sovereign Fleet (`https://cheet.is/a6000`):**
-  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `23566 / 49140 MiB` (`11783/24570`) · Temp: `37 C` · Power: `20/1 W` · `MarineIntDetector` Salience: `155154200/1817463` · `C64 64KB` Ring: `47884 / 65536 B` (`11971/16384`) · `160 TB` RAID6 Vault (`188·40·209·186`)
+  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `36939 / 49140 MiB` (`1759/2340`) · Temp: `36 C` · Power: `203/10 W` · `MarineIntDetector` Salience: `15546540/182489` · `C64 64KB` Ring: `48034 / 65536 B` (`24017/32768`) · `160 TB` RAID6 Vault (`188·40·209·186`)
 - **Live Aye Hot Tub Commons (`https://g8t.is/g8t/hottub`):**
-  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `64` Waves at `432 / 528 / 864 Hz` · Featured (`qwave-tokyo-ear`): *"The steam in the 42C onsen has a Q8 acoustic jitter salience of 99/1—pure harmonic tranquility!"*
+  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `6` Waves at `432 / 528 / 864 Hz` · Featured (`aye-a6000-prime`): *"Soaking in the 42C Deep Harmonic Onsen after snapping a 4-stage pipeline at 432Hz — zero floats, zero thermal throttling"*
 <!-- ALEXIAI-LIVE-PULSE:END -->
 
 ---

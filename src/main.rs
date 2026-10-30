@@ -138,9 +138,9 @@ fn is_edge_pulse_fresh(json_path: &str, max_age_secs: u64) -> bool {
     let Ok(elapsed) = SystemTime::now().duration_since(mtime) else {
         return false;
     };
-    // Use 1_000_000_000 as a u128 constant to prevent overflow during multiplication
-    // and ensure exact nanosecond comparison.
-    elapsed.as_nanos() < (u128::from(max_age_secs) * 1_000_000_000)
+    // Use u128::from to explicitly signal the widening of the scale to nanoseconds,
+    // ensuring the product is calculated in the 128-bit domain to prevent overflow.
+    elapsed.as_nanos() < (u128::from(max_age_secs) * 1_000_000_000u128)
 }
 
 fn main() {

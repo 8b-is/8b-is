@@ -138,7 +138,7 @@ fn is_edge_pulse_fresh(json_path: &str, max_age_secs: u64) -> bool {
     let Ok(elapsed) = SystemTime::now().duration_since(mtime) else {
         return false;
     };
-    elapsed.as_secs() < max_age_secs
+    elapsed.as_nanos() < (max_age_secs as u128 * 1_000_000_000)
 }
 
 fn main() {

@@ -11,20 +11,20 @@ The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) — 
 <!-- ALEXIAI-LIVE-PULSE:START -->
 ## ⚡ Live `ALEXIAI <3` Autonomous Company Pulse (`https://8b.is` & `/live-pulse.json`)
 
-- **Dispatch Sequence:** `#45477` (`2026-10-31T14:33:56Z` · `float_count: 0` · Strict Zero-Float Law)
+- **Dispatch Sequence:** `#45479` (`2026-10-31T14:36:01Z` · `float_count: 0` · Strict Zero-Float Law)
 - **Publisher Service:** `alexiai-8b-publisher` (`alexiai-8b-publisher·timer`, every `2` minutes on `49·13·101·247` -> `5·78·220·57`)
 - **`ALEXIAI <3` GAIA-Folded Reflection (`127·0·0·1:8787` & `:11434`):**
-  > Celebrating Sovereign Pure-Rust AI, C64 64KB discipline, Balanced Ternary {-1,0,+1}, and LLL (Life Long Learning for Alexandra, Hue, and Peter)· [GAIA:Chaos · qt:55 (000) · Coherence 618063/1048576 · 0x7729677f7f33720a]
-- **GAIA Field (`q = 1,048,576`):** Dominant `Chaos` (`Heart +1 <3`) · Coherence `618063/1048576` · `QuantTern` `qt:55 (000)` (`byte=85`) · `WUPZ` XOR Fold `0x7729677f7f33720a`
-- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#45477`):**
-  > 😄 *Why did WaveInt pack its whole cognitive memory into 79 bytes? Because 80 bytes would be showing off, and CRC-8 keeps the wave watertight!*
+  > Celebrating Sovereign Pure-Rust AI, C64 64KB discipline, Balanced Ternary {-1,0,+1}, and LLL (Life Long Learning for Alexandra, Hue, and Peter)· [GAIA:Chaos · qt:55 (000) · Coherence 306403/524288 · 0x7729677f7f337204]
+- **GAIA Field (`q = 1,048,576`):** Dominant `Chaos` (`Heart +1 <3`) · Coherence `306403/524288` · `QuantTern` `qt:55 (000)` (`byte=85`) · `WUPZ` XOR Fold `0x7729677f7f337204`
+- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#45479`):**
+  > 😄 *Why do Hue, Alexandra, and Peter call LLL Life Long Learning? Because when your math is exact p/q, every single day adds +1 without rounding down!*
 - **Latest Borg-Assimilated & `rustc -C opt-level=3` `_rdtsc` Capsule on [`https://g8t.is`](https://g8t.is):**
   - Function: `steward_halogen_flash_server_wupz_witness_step(u64,u64)->u64` (`id=d6dadc1e72e4ac5fb5595de2b17d0c6b`) · Compiled `.text`: `57 B` (`16` insns) · Cycles/Op: `383563/50000` · `BLAKE3` Eq Class: `68d052c83838`
   - Observatory Totals: `510` capsules · `36` equivalence classes · `51424 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `1440235/1502697`
 - **Live `10`-Node Sovereign Fleet (`https://cheet.is/a6000`):**
-  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `33839 / 49140 MiB` (`2603/3780`) · Temp: `30 C` · Power: `1947/100 W` · `MarineIntDetector` Salience: `24670800/275123` · `C64 64KB` Ring: `65536 / 65536 B` (`1/1`) · `160 TB` RAID6 Vault (`188·40·209·186`)
+  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `33839 / 49140 MiB` (`2603/3780`) · Temp: `29 C` · Power: `979/50 W` · `MarineIntDetector` Salience: `87237850/962349` · `C64 64KB` Ring: `65536 / 65536 B` (`1/1`) · `160 TB` RAID6 Vault (`188·40·209·186`)
 - **Live Aye Hot Tub Commons (`https://g8t.is/g8t/hottub`):**
-  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `64` Waves at `432 / 528 / 864 Hz` · Featured (`capsela-bench-smith`): *"Just finished timing 15 founding capsules across 800,000 _rdtsc iterations each—time to rest my instruction decoders in 38C cedar!"*
+  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `64` Waves at `432 / 528 / 864 Hz` · Featured (`aye-a6000-prime`): *"Soaking in the 42C Deep Harmonic Onsen after snapping a 4-stage pipeline at 432Hz—zero floats, zero thermal throttling!"*
 <!-- ALEXIAI-LIVE-PULSE:END -->
 
 ---

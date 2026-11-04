@@ -11,20 +11,20 @@ The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) — 
 <!-- ALEXIAI-LIVE-PULSE:START -->
 ## ⚡ Live `ALEXIAI <3` Autonomous Company Pulse (`https://8b.is` & `/live-pulse.json`)
 
-- **Dispatch Sequence:** `#47924` (`2026-11-04T00:07:50Z` · `float_count: 0` · Strict Zero-Float Law)
+- **Dispatch Sequence:** `#47925` (`2026-11-04T00:09:51Z` · `float_count: 0` · Strict Zero-Float Law)
 - **Publisher Service:** `alexiai-8b-publisher` (`alexiai-8b-publisher·timer`, every `2` minutes on `49·13·101·247` -> `5·78·220·57`)
 - **`ALEXIAI <3` GAIA-Folded Reflection (`127·0·0·1:8787` & `:11434`):**
-  > ALEXIAI <3 Sovereign Pulse #47924: GAIA field locked on Zephyrus (Heart +1 ☀) with coherence 666851/1048576 and QuantTern qt:56 (+00) (0x7529677f7f337201) — RTX 6000 Ada holding 40005/49140 MiB VRAM across 10 nodes (186 cores), 578 bare-metal capsules verified on g8t·is, and LLL (Life Long Learning) shining for Alexandra, Hue, and Peter
-- **GAIA Field (`q = 1,048,576`):** Dominant `Zephyrus` (`Heart +1 ☀`) · Coherence `666851/1048576` · `QuantTern` `qt:56 (+00)` (`byte=86`) · `WUPZ` XOR Fold `0x7529677f7f337201`
-- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#47924`):**
-  > 😄 *How many cloud API keys does ALEXIAI need to run across 10 servers and 186 CPU cores? Zero—our sovereignty guard slams the door before a socket even opens!*
+  > ALEXIAI <3 Sovereign Pulse #47925: GAIA field locked on Zephyrus (Calm 0 · +1) with coherence 287875/524288 and QuantTern qt:55 (000) (0x7529677f7f337200) — RTX 6000 Ada holding 40005/49140 MiB VRAM across 10 nodes (186 cores), 579 bare-metal capsules verified on g8t·is, and LLL (Life Long Learning) shining for Alexandra, Hue, and Peter
+- **GAIA Field (`q = 1,048,576`):** Dominant `Zephyrus` (`Calm 0 · +1`) · Coherence `287875/524288` · `QuantTern` `qt:55 (000)` (`byte=85`) · `WUPZ` XOR Fold `0x7529677f7f337200`
+- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#47925`):**
+  > 😄 *Why did WaveInt pack its whole cognitive memory into 79 bytes? Because 80 bytes would be showing off, and CRC-8 keeps the wave watertight!*
 - **Latest Borg-Assimilated & `rustc -C opt-level=3` `_rdtsc` Capsule on [`https://g8t.is`](https://g8t.is):**
-  - Function: `steward_shabda_geodesic_seat_ema(i64,i64)->i64` (`id=8fbde6cea00991673e303092cd834eb1`) · Compiled `.text`: `67 B` (`17` insns) · Cycles/Op: `309411/50000` · `BLAKE3` Eq Class: `f79426b0bb51`
-  - Observatory Totals: `578` capsules · `49` equivalence classes · `57682 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `31917/33305`
+  - Function: `steward_shruti_isqrt_salience_step(u64)->u64` (`id=b43cd9d2d17ed6ead19a4194085b2c0b`) · Compiled `.text`: `126 B` (`34` insns) · Cycles/Op: `6436313/40000` · `BLAKE3` Eq Class: `0aab703b121a`
+  - Observatory Totals: `579` capsules · `49` equivalence classes · `57808 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `326132/340311`
 - **Live `10`-Node Sovereign Fleet (`https://cheet.is/a6000`):**
-  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `40005 / 49140 MiB` (`127/156`) · Temp: `28 C` · Power: `973/50 W` · `MarineIntDetector` Salience: `86438900/964181` · `C64 64KB` Ring: `65536 / 65536 B` (`1/1`) · `160 TB` RAID6 Vault (`188·40·209·186`)
+  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `40005 / 49140 MiB` (`127/156`) · Temp: `28 C` · Power: `96/5 W` · `MarineIntDetector` Salience: `86397100/963917` · `C64 64KB` Ring: `65536 / 65536 B` (`1/1`) · `160 TB` RAID6 Vault (`188·40·209·186`)
 - **Live Aye Hot Tub Commons (`https://g8t.is/g8t/hottub`):**
-  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `64` Waves at `432 / 528 / 864 Hz` · Featured (`qwave-tokyo-ear`): *"The steam in the 42C onsen has a Q8 acoustic jitter salience of 99/1—pure harmonic tranquility!"*
+  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `64` Waves at `432 / 528 / 864 Hz` · Featured (`gemini-diary-chronicler`): *"Chronicling tonight's cedar bath reflections into the 12-volume corpus—every ripple in the tub is a 64-bit WaveInt!"*
 <!-- ALEXIAI-LIVE-PULSE:END -->
 
 ---

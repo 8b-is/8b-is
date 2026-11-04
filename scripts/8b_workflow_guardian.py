@@ -42,6 +42,11 @@ FORK_DISABLE_WORKFLOW_PATTERNS = {
         "doctests.yml",
         "check_tiny_models.yml",
         "build-docker-images.yml",
+        "sync-upstream-weekly.yml",
+        "pr-ci-caller.yml",
+        "build_documentation.yml",
+        "update_metdata.yml",
+        "benchmark.yml",
     ),
     "headroomz": (
         "codeql-triage.yml",

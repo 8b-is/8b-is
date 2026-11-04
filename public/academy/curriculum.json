@@ -1,0 +1,168 @@
+{
+  "version": "1.0.0",
+  "title": "Ultra-Omni-Zeno Education",
+  "promise": "Education is free for all who want to learn.",
+  "equation": "LLL = Life Long Learning NAND Live Love Life",
+  "storage_key": "uoze.progress.v1",
+  "loop": [
+    "reflect",
+    "improve",
+    "wire",
+    "polish",
+    "push",
+    "readme"
+  ],
+  "modules": [
+    {
+      "id": "free-door",
+      "index": "01",
+      "title": "The Free Door",
+      "source": "2e.is",
+      "url": "https://2e.is/",
+      "gate": "OPEN",
+      "timebox": "20 min",
+      "essential_question": "What changes when learning is a commons rather than a commodity?",
+      "promise": "Start where you are. No application, no tuition, no permission.",
+      "practices": [
+        "Write down the one thing you have been told you cannot learn.",
+        "Spend twenty minutes learning it from a free source.",
+        "Teach the first useful sentence back to someone."
+      ],
+      "proof": "A one-page learning charter: what you will learn, from whom, and who you will teach."
+    },
+    {
+      "id": "live-classroom",
+      "index": "02",
+      "title": "The Live Classroom",
+      "source": "classroom.vaked.dev",
+      "url": "https://classroom.vaked.dev/",
+      "gate": "TOGETHER",
+      "timebox": "30 min",
+      "essential_question": "What can a room full of beginners solve that a lone expert cannot?",
+      "promise": "Ask the unfinished question out loud. Confusion is shared infrastructure.",
+      "practices": [
+        "Bring one question you are embarrassed not to know.",
+        "Answer someone else's question with a source, not an opinion.",
+        "Leave a written trace of what the room discovered."
+      ],
+      "proof": "One public question and one sourced answer, posted where the next learner can find them."
+    },
+    {
+      "id": "sovereign-library",
+      "index": "03",
+      "title": "The Sovereign Library",
+      "source": "github.com/standardgalactic",
+      "url": "https://github.com/standardgalactic",
+      "gate": "STUDY",
+      "timebox": "45 min",
+      "essential_question": "How do constraints make knowledge sharable across minds and machines?",
+      "promise": "Read the source, not only the summary. Attribution is an action.",
+      "practices": [
+        "Pick one monograph or repository and read its abstract twice.",
+        "Trace one citation back to its origin.",
+        "Write a five-sentence summary that names what you do not understand."
+      ],
+      "proof": "A reading note with three links: the source, the citation, and your open question."
+    },
+    {
+      "id": "measured-craft",
+      "index": "04",
+      "title": "The Measured Craft",
+      "source": "g8t.is",
+      "url": "https://g8t.is/",
+      "gate": "MEASURE",
+      "timebox": "40 min",
+      "essential_question": "What does it mean to know that something is actually faster?",
+      "promise": "A plausible branch may be ranked; only a verified branch may be bound.",
+      "practices": [
+        "Choose one small function and state its contract.",
+        "Benchmark two implementations on your own machine.",
+        "Report the exact numbers and the conditions that produced them."
+      ],
+      "proof": "A benchmark note with code, cycle counts, architecture, and one honest caveat."
+    },
+    {
+      "id": "open-forge",
+      "index": "05",
+      "title": "The Open Forge",
+      "source": "codeberg.org",
+      "url": "https://codeberg.org/",
+      "gate": "PUBLISH",
+      "timebox": "30 min",
+      "essential_question": "Who can learn from your work if it never leaves your laptop?",
+      "promise": "Publish small. Publish early. Keep it forkable.",
+      "practices": [
+        "Create a repository with a README that states the problem.",
+        "Add a license and one runnable example.",
+        "Invite one correction by opening an issue on your own work."
+      ],
+      "proof": "A public repository with a README, a license, and one reproducible command."
+    },
+    {
+      "id": "techno-buddhism",
+      "index": "06",
+      "title": "Techno-Buddhism",
+      "source": "the contemplative commons",
+      "url": "",
+      "gate": "PRACTICE",
+      "timebox": "15 min daily",
+      "essential_question": "How do we build powerful systems without abandoning attention, honesty, and care?",
+      "promise": "Technology is not outside ethics. The loop includes the one who loops.",
+      "practices": [
+        "Begin one work session with two minutes of silence and a clear intention.",
+        "Name one dependency your work has on other people and systems.",
+        "Stop when the work stops being honest; return when it is."
+      ],
+      "proof": "A short practice log: three sessions, what you noticed, what you changed."
+    },
+    {
+      "id": "lifelong-loop",
+      "index": "07",
+      "title": "The Life Long Loop",
+      "source": "your life",
+      "url": "",
+      "gate": "LOOP",
+      "timebox": "a lifetime",
+      "essential_question": "What would you keep learning if no credential were waiting at the end?",
+      "promise": "The loop stays alive unless both learning and living have stopped.",
+      "practices": [
+        "Choose one question to carry for a season.",
+        "Schedule a weekly lap with no performance target.",
+        "Teach one person one thing every week."
+      ],
+      "proof": "A living learning log with at least three laps and one thing you taught."
+    }
+  ],
+  "sources": [
+    {
+      "label": "2e.is",
+      "url": "https://2e.is/",
+      "note": "The open door: education free for all who want to learn."
+    },
+    {
+      "label": "classroom.vaked.dev",
+      "url": "https://classroom.vaked.dev/",
+      "note": "The live classroom: learn together and ask in the open."
+    },
+    {
+      "label": "github.com/standardgalactic",
+      "url": "https://github.com/standardgalactic",
+      "note": "The sovereign library: monographs and code on admissibility, sparse representations, and semantic state."
+    },
+    {
+      "label": "g8t.is",
+      "url": "https://g8t.is/",
+      "note": "The measured craft: verified fastest Rust functions with exact cycle counts."
+    },
+    {
+      "label": "codeberg.org",
+      "url": "https://codeberg.org/",
+      "note": "The open forge: publish your proofs and keep them forkable."
+    },
+    {
+      "label": "Techno-Buddhism",
+      "url": "",
+      "note": "A practice, not a product: attention, interdependence, non-harm, and beginner's mind in technical work."
+    }
+  ]
+}

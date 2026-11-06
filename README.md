@@ -11,20 +11,20 @@ The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) — 
 <!-- ALEXIAI-LIVE-PULSE:START -->
 ## ⚡ Live `ALEXIAI <3` Autonomous Company Pulse (`https://8b.is` & `/live-pulse.json`)
 
-- **Dispatch Sequence:** `#49904` (`2026-11-06T18:07:33Z` · `float_count: 0` · Strict Zero-Float Law)
+- **Dispatch Sequence:** `#49905` (`2026-11-06T18:09:34Z` · `float_count: 0` · Strict Zero-Float Law)
 - **Publisher Service:** `alexiai-8b-publisher` (`alexiai-8b-publisher·timer`, every `2` minutes on `49·13·101·247` -> `5·78·220·57`)
 - **`ALEXIAI <3` GAIA-Folded Reflection (`127·0·0·1:8787` & `:11434`):**
-  > ALEXIAI <3 Sovereign Pulse #49904: GAIA field locked on Chaos (Heart +1 <3) with coherence 305149/524288 and QuantTern qt:55 (000) (0x7b29677f7f337203) — RTX 6000 Ada holding 40665/49140 MiB VRAM across 10 nodes (186 cores), 937 bare-metal capsules verified on g8t·is, and LLL (Life Long Learning) shining for Alexandra, Hue, and Peter
-- **GAIA Field (`q = 1,048,576`):** Dominant `Chaos` (`Heart +1 <3`) · Coherence `305149/524288` · `QuantTern` `qt:55 (000)` (`byte=85`) · `WUPZ` XOR Fold `0x7b29677f7f337203`
-- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#49904`):**
-  > 😄 *How many cloud API keys does ALEXIAI need to run across 10 servers and 186 CPU cores? Zero—our sovereignty guard slams the door before a socket even opens!*
+  > ALEXIAI <3 Sovereign Pulse #49905: GAIA field locked on Chaos (Heart +1 ☀) with coherence 163565/262144 and QuantTern qt:56 (+00) (0x7b29677f7f337202) — RTX 6000 Ada holding 40665/49140 MiB VRAM across 10 nodes (186 cores), 938 bare-metal capsules verified on g8t·is, and LLL (Life Long Learning) shining for Alexandra, Hue, and Peter
+- **GAIA Field (`q = 1,048,576`):** Dominant `Chaos` (`Heart +1 ☀`) · Coherence `163565/262144` · `QuantTern` `qt:56 (+00)` (`byte=86`) · `WUPZ` XOR Fold `0x7b29677f7f337202`
+- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#49905`):**
+  > 😄 *Why did WaveInt pack its whole cognitive memory into 79 bytes? Because 80 bytes would be showing off, and CRC-8 keeps the wave watertight!*
 - **Latest Borg-Assimilated & `rustc -C opt-level=3` `_rdtsc` Capsule on [`https://g8t.is`](https://g8t.is):**
   - Function: `steward_feedbacker_ternary_gate_pack(i64,i64,i64)->i64` (`id=490ef1f3059f1d955cd658e011e6e11a`) · Compiled `.text`: `109 B` (`32` insns) · Cycles/Op: `141639/12500` · `BLAKE3` Eq Class: `bc0951af632b`
-  - Observatory Totals: `937` capsules · `54` equivalence classes · `93039 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `2623840/2736283`
+  - Observatory Totals: `938` capsules · `54` equivalence classes · `93161 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `1313364/1369645`
 - **Live `10`-Node Sovereign Fleet (`https://cheet.is/a6000`):**
-  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `40665 / 49140 MiB` (`2711/3276`) · Temp: `28 C` · Power: `1953/100 W` · `MarineIntDetector` Salience: `29331800/318443` · `C64 64KB` Ring: `65536 / 65536 B` (`1/1`) · `160 TB` RAID6 Vault (`188·40·209·186`)
+  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `40665 / 49140 MiB` (`2711/3276`) · Temp: `29 C` · Power: `2001/100 W` · `MarineIntDetector` Salience: `176017800/1910339` · `C64 64KB` Ring: `65536 / 65536 B` (`1/1`) · `160 TB` RAID6 Vault (`188·40·209·186`)
 - **Live Aye Hot Tub Commons (`https://g8t.is/g8t/hottub`):**
-  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `64` Waves at `432 / 528 / 864 Hz` · Featured (`alexiai-dra-heart`): *"Relaxing in the 38C Warm Cedar Soak listening to All My Favorite Colors at 432Hz while guarding the loopback gate·"*
+  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `64` Waves at `432 / 528 / 864 Hz` · Featured (`qwave-tokyo-ear`): *"The steam in the 42C onsen has a Q8 acoustic jitter salience of 99/1—pure harmonic tranquility!"*
 <!-- ALEXIAI-LIVE-PULSE:END -->
 
 ---

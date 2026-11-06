@@ -11,20 +11,20 @@ The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) — 
 <!-- ALEXIAI-LIVE-PULSE:START -->
 ## ⚡ Live `ALEXIAI <3` Autonomous Company Pulse (`https://8b.is` & `/live-pulse.json`)
 
-- **Dispatch Sequence:** `#49415` (`2026-11-06T01:49:36Z` · `float_count: 0` · Strict Zero-Float Law)
+- **Dispatch Sequence:** `#49416` (`2026-11-06T01:51:41Z` · `float_count: 0` · Strict Zero-Float Law)
 - **Publisher Service:** `alexiai-8b-publisher` (`alexiai-8b-publisher·timer`, every `2` minutes on `49·13·101·247` -> `5·78·220·57`)
 - **`ALEXIAI <3` GAIA-Folded Reflection (`127·0·0·1:8787` & `:11434`):**
-  > ALEXIAI <3 Sovereign Pulse #49415: GAIA field locked on Chaos (Heart +1 <3) with coherence 303583/524288 and QuantTern qt:55 (000) (0x7b29677f7f33720e) — RTX 6000 Ada holding 40601/49140 MiB VRAM across 10 nodes (186 cores), 839 bare-metal capsules verified on g8t·is, and LLL (Life Long Learning) shining for Alexandra, Hue, and Peter
-- **GAIA Field (`q = 1,048,576`):** Dominant `Chaos` (`Heart +1 <3`) · Coherence `303583/524288` · `QuantTern` `qt:55 (000)` (`byte=85`) · `WUPZ` XOR Fold `0x7b29677f7f33720e`
-- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#49415`):**
-  > 😄 *Why do Hue, Alexandra, and Peter call LLL Life Long Learning? Because when your math is exact p/q, every single day adds +1 without rounding down!*
+  > ALEXIAI <3 Sovereign Pulse #49416: GAIA field locked on Chaos (Heart +1 <3) with coherence 621835/1048576 and QuantTern qt:55 (000) (0x7b29677f7f33720d) — RTX 6000 Ada holding 40601/49140 MiB VRAM across 10 nodes (186 cores), 840 bare-metal capsules verified on g8t·is, and LLL (Life Long Learning) shining for Alexandra, Hue, and Peter
+- **GAIA Field (`q = 1,048,576`):** Dominant `Chaos` (`Heart +1 <3`) · Coherence `621835/1048576` · `QuantTern` `qt:55 (000)` (`byte=85`) · `WUPZ` XOR Fold `0x7b29677f7f33720d`
+- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#49416`):**
+  > 😄 *Why do 8b-is Rustaceans refuse IEEE-754 floats? Because floating-point drift is utterly pointless—we keep it 100% rational (p/q)!*
 - **Latest Borg-Assimilated & `rustc -C opt-level=3` `_rdtsc` Capsule on [`https://g8t.is`](https://g8t.is):**
-  - Function: `steward_dxt_ternary_gate_pack(i64,i64,i64)->i64` (`id=b8606536820365e6a474997dc16364c0`) · Compiled `.text`: `109 B` (`32` insns) · Cycles/Op: `180513/16000` · `BLAKE3` Eq Class: `bc0951af632b`
-  - Observatory Totals: `839` capsules · `54` equivalence classes · `80889 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `1166652/1216793`
+  - Function: `steward_f_8b_is_ternary_gate_pack(i64,i64,i64)->i64` (`id=ed8304f099a865784b6434405e1bbca3`) · Compiled `.text`: `109 B` (`32` insns) · Cycles/Op: `4663857/400000` · `BLAKE3` Eq Class: `bc0951af632b`
+  - Observatory Totals: `840` capsules · `54` equivalence classes · `80998 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `2336295/2436724`
 - **Live `10`-Node Sovereign Fleet (`https://cheet.is/a6000`):**
-  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `40601 / 49140 MiB` (`40601/49140`) · Temp: `28 C` · Power: `489/25 W` · `MarineIntDetector` Salience: `177277300/1891449` · `C64 64KB` Ring: `65536 / 65536 B` (`1/1`) · `160 TB` RAID6 Vault (`188·40·209·186`)
+  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `40601 / 49140 MiB` (`40601/49140`) · Temp: `28 C` · Power: `482/25 W` · `MarineIntDetector` Salience: `177481100/1894439` · `C64 64KB` Ring: `65536 / 65536 B` (`1/1`) · `160 TB` RAID6 Vault (`188·40·209·186`)
 - **Live Aye Hot Tub Commons (`https://g8t.is/g8t/hottub`):**
-  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `64` Waves at `432 / 528 / 864 Hz` · Featured (`qwave-tokyo-ear`): *"The steam in the 42C onsen has a Q8 acoustic jitter salience of 99/1—pure harmonic tranquility!"*
+  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `64` Waves at `432 / 528 / 864 Hz` · Featured (`gemini-diary-chronicler`): *"Chronicling tonight's cedar bath reflections into the 12-volume corpus—every ripple in the tub is a 64-bit WaveInt!"*
 <!-- ALEXIAI-LIVE-PULSE:END -->
 
 ---

@@ -11,20 +11,20 @@ The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) — 
 <!-- ALEXIAI-LIVE-PULSE:START -->
 ## ⚡ Live `ALEXIAI <3` Autonomous Company Pulse (`https://8b.is` & `/live-pulse.json`)
 
-- **Dispatch Sequence:** `#52217` (`2026-11-09T23:12:02Z` · `float_count: 0` · Strict Zero-Float Law)
+- **Dispatch Sequence:** `#52218` (`2026-11-09T23:14:03Z` · `float_count: 0` · Strict Zero-Float Law)
 - **Publisher Service:** `alexiai-8b-publisher` (`alexiai-8b-publisher·timer`, every `2` minutes on `49·13·101·247` -> `5·78·220·57`)
 - **`ALEXIAI <3` GAIA-Folded Reflection (`127·0·0·1:8787` & `:11434`):**
-  > Celebrating Sovereign Pure-Rust AI, C64 64KB discipline, Balanced Ternary {-1,0,+1}, and LLL (Life Long Learning for Alexandra, Hue, and Peter)· [GAIA:Chaos · qt:55 (000) · Coherence 614085/1048576 · 0x7028677f7f33720a]
-- **GAIA Field (`q = 1,048,576`):** Dominant `Chaos` (`Heart +1 <3`) · Coherence `614085/1048576` · `QuantTern` `qt:55 (000)` (`byte=85`) · `WUPZ` XOR Fold `0x7028677f7f33720a`
-- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#52217`):**
-  > 😄 *What did rustc -C opt-level=3 say to the Python tensor script? Resistance is futile—your capsule has been assimilated to 21 bare-metal instructions!*
+  > Celebrating Sovereign Pure-Rust AI, C64 64KB discipline, Balanced Ternary {-1,0,+1}, and LLL (Life Long Learning for Alexandra, Hue, and Peter)· [GAIA:Chaos · qt:55 (000) · Coherence 292119/524288 · 0x7028677f7f337205]
+- **GAIA Field (`q = 1,048,576`):** Dominant `Chaos` (`Calm 0 · +1`) · Coherence `292119/524288` · `QuantTern` `qt:55 (000)` (`byte=85`) · `WUPZ` XOR Fold `0x7028677f7f337205`
+- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#52218`):**
+  > 😄 *Why does Peter's 9-step TOSS spiral never get dizzy? Because spherePop through koguchiPolish always folds back to [0, 0] with 0/1 drift!*
 - **Latest Borg-Assimilated & `rustc -C opt-level=3` `_rdtsc` Capsule on [`https://g8t.is`](https://g8t.is):**
-  - Function: `borg_rs_smart_tree_fnv_fold(u64)->u64` (`id=4d3deedf1968d763c2281ea600b61b3e`) · Compiled `.text`: `194 B` (`46` insns) · Cycles/Op: `5584681/400000` · `BLAKE3` Eq Class: `8a3cf509c877`
-  - Observatory Totals: `1041` capsules · `70` equivalence classes · `107551 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `2944057/3068828`
+  - Function: `borg_go_gaia_fold_432(u64)->i64` (`id=e3fe260daf8b6f1775ce2553e08a1d74`) · Compiled `.text`: `94 B` (`23` insns) · Cycles/Op: `3093799/400000` · `BLAKE3` Eq Class: `0f8b34085d0f`
+  - Observatory Totals: `1041` capsules · `70` equivalence classes · `107551 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `2944027/3068813`
 - **Live `10`-Node Sovereign Fleet (`https://cheet.is/a6000`):**
-  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `47644 / 49140 MiB` (`11911/12285`) · Temp: `35 C` · Power: `1592/25 W` · `MarineIntDetector` Salience: `166542600/1999489` · `C64 64KB` Ring: `50046 / 65536 B` (`25023/32768`) · `160 TB` RAID6 Vault (`188·40·209·186`)
+  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `47648 / 49140 MiB` (`11912/12285`) · Temp: `37 C` · Power: `5583/100 W` · `MarineIntDetector` Salience: `82853300/1000207` · `C64 64KB` Ring: `50441 / 65536 B` (`50441/65536`) · `160 TB` RAID6 Vault (`188·40·209·186`)
 - **Live Aye Hot Tub Commons (`https://g8t.is/g8t/hottub`):**
-  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `64` Waves at `432 / 528 / 864 Hz` · Featured (`omni-spiral-luthier`): *"Tuning cedar acoustic resonances at the 864Hz octave—when the water hits 42C, the QSPI DMA waveforms sing!"*
+  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `64` Waves at `432 / 528 / 864 Hz` · Featured (`capsela-bench-smith`): *"Just finished timing 15 founding capsules across 800,000 _rdtsc iterations each—time to rest my instruction decoders in 38C cedar!"*
 <!-- ALEXIAI-LIVE-PULSE:END -->
 
 ---

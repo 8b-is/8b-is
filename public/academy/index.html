@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A free, open, self-directed learning hub for Life Long Learning: 2e.is, classroom.vaked.dev, standardgalactic, g8t.is, Codeberg, and techno-buddhism.">
+  <meta name="color-scheme" content="light dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+  <title>Ultra-Omni-Zeno Education — Free learning, one lap at a time</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Ultra-Omni-Zeno Education home">
+        <span class="brand-mark" aria-hidden="true">⟦+AND=1 : ~NAND=-1⟧</span>
+        <span class="brand-text">ULTRA-OMNI-ZENO <em>EDUCATION</em></span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#loop">Loop</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#gate">NAND</a>
+        <a href="#sources">Sources</a>
+        <a href="#start">Start</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="eyebrow">Ultra-Omni-Zeno · Education</p>
+        <h1>Learn in the open.<br><em>Live in the loop.</em></h1>
+        <p class="lede">Education is free for all who want to learn. This is a small, forkable hub for Life Long Learning — no enrollment, no tuition, no gatekeeper. Pick a source, make one proof, teach one person.</p>
+        <p class="equation">LLL <span>=</span> Life Long Learning <span>NAND</span> Live Love Life</p>
+        <div class="hero-actions">
+          <a class="button" href="#curriculum">Enter the curriculum</a>
+          <a class="button ghost" href="#start">Run a 15-minute lap</a>
+        </div>
+        <dl class="stats">
+          <div><dt>Modules</dt><dd>07</dd></div>
+          <div><dt>Tuition</dt><dd>00</dd></div>
+          <div><dt>Laps</dt><dd>∞</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="loop">
+      <div class="wrap">
+        <p class="kicker">The method</p>
+        <h2>One loop, six moves</h2>
+        <p class="section-lede">Borrowed from the ultrabackyardloop: a lap is only finished when it is reflected, improved, wired, polished, pushed, and written down.</p>
+        <ol class="loop-list">
+          <li><span class="loop-num">01</span><div><h3>Reflect</h3><p>Name what you actually learned, not what you intended to learn.</p></div></li>
+          <li><span class="loop-num">02</span><div><h3>Improve</h3><p>Make one measured change. Prefer evidence over decoration.</p></div></li>
+          <li><span class="loop-num">03</span><div><h3>Wire</h3><p>Connect the new piece to what it depends on. Leave no orphan surfaces.</p></div></li>
+          <li><span class="loop-num">04</span><div><h3>Polish</h3><p>Remove friction, noise, and anything you cannot defend.</p></div></li>
+          <li><span class="loop-num">05</span><div><h3>Push</h3><p>Publish the smallest useful version where someone else can fork it.</p></div></li>
+          <li><span class="loop-num">06</span><div><h3>Readme</h3><p>Write the lap down. A lap that stops before readme did not happen.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section curriculum" id="curriculum">
+      <div class="wrap">
+        <p class="kicker">The curriculum</p>
+        <h2>Seven doors, no locks</h2>
+        <p class="section-lede">There is no required order. Each module has a source, a question, three practices, and one proof of learning. Mark a module only when you have made the proof.</p>
+        <div class="progress-panel">
+          <div class="progress-head">
+            <span class="progress-label">Your lap</span>
+            <button type="button" id="reset-progress" class="text-button">Reset progress</button>
+          </div>
+          <progress id="progress" max="7" value="0">0 of 7 modules marked.</progress>
+          <p id="progress-text" aria-live="polite">0 of 7 modules marked.</p>
+        </div>
+        <div class="module-grid">
+          <article class="module-card" id="module-free-door" data-module="free-door">
+            <div class="card-top">
+              <span class="module-index">01</span>
+              <span class="gate gate-open">OPEN</span>
+            </div>
+            <h3>The Free Door</h3>
+            <p class="source"><a href="https://2e.is/" target="_blank" rel="noopener noreferrer">2e.is</a> <span class="dot">·</span> 20 min</p>
+            <p class="question">What changes when learning is a commons rather than a commodity?</p>
+            <p class="promise">Start where you are. No application, no tuition, no permission.</p>
+            <ul class="practices">
+              <li>Write down the one thing you have been told you cannot learn.</li>
+              <li>Spend twenty minutes learning it from a free source.</li>
+              <li>Teach the first useful sentence back to someone.</li>
+            </ul>
+            <p class="proof"><strong>Proof of learning:</strong> A one-page learning charter: what you will learn, from whom, and who you will teach.</p>
+            <label class="done"><input type="checkbox" data-progress="free-door"> <span>I made the proof.</span></label>
+          </article>
+          <article class="module-card" id="module-live-classroom" data-module="live-classroom">
+            <div class="card-top">
+              <span class="module-index">02</span>
+              <span class="gate gate-together">TOGETHER</span>
+            </div>
+            <h3>The Live Classroom</h3>
+            <p class="source"><a href="https://classroom.vaked.dev/" target="_blank" rel="noopener noreferrer">classroom.vaked.dev</a> <span class="dot">·</span> 30 min</p>
+            <p class="question">What can a room full of beginners solve that a lone expert cannot?</p>
+            <p class="promise">Ask the unfinished question out loud. Confusion is shared infrastructure.</p>
+            <ul class="practices">
+              <li>Bring one question you are embarrassed not to know.</li>
+              <li>Answer someone else&#x27;s question with a source, not an opinion.</li>
+              <li>Leave a written trace of what the room discovered.</li>
+            </ul>
+            <p class="proof"><strong>Proof of learning:</strong> One public question and one sourced answer, posted where the next learner can find them.</p>
+            <label class="done"><input type="checkbox" data-progress="live-classroom"> <span>I made the proof.</span></label>
+          </article>
+          <article class="module-card" id="module-sovereign-library" data-module="sovereign-library">
+            <div class="card-top">
+              <span class="module-index">03</span>
+              <span class="gate gate-study">STUDY</span>
+            </div>
+            <h3>The Sovereign Library</h3>
+            <p class="source"><a href="https://github.com/standardgalactic" target="_blank" rel="noopener noreferrer">github.com/standardgalactic</a> <span class="dot">·</span> 45 min</p>
+            <p class="question">How do constraints make knowledge sharable across minds and machines?</p>
+            <p class="promise">Read the source, not only the summary. Attribution is an action.</p>
+            <ul class="practices">
+              <li>Pick one monograph or repository and read its abstract twice.</li>
+              <li>Trace one citation back to its origin.</li>
+              <li>Write a five-sentence summary that names what you do not understand.</li>
+            </ul>
+            <p class="proof"><strong>Proof of learning:</strong> A reading note with three links: the source, the citation, and your open question.</p>
+            <label class="done"><input type="checkbox" data-progress="sovereign-library"> <span>I made the proof.</span></label>
+          </article>
+          <article class="module-card" id="module-measured-craft" data-module="measured-craft">
+            <div class="card-top">
+              <span class="module-index">04</span>
+              <span class="gate gate-measure">MEASURE</span>
+            </div>
+            <h3>The Measured Craft</h3>
+            <p class="source"><a href="https://g8t.is/" target="_blank" rel="noopener noreferrer">g8t.is</a> <span class="dot">·</span> 40 min</p>
+            <p class="question">What does it mean to know that something is actually faster?</p>
+            <p class="promise">A plausible branch may be ranked; only a verified branch may be bound.</p>
+            <ul class="practices">
+              <li>Choose one small function and state its contract.</li>
+              <li>Benchmark two implementations on your own machine.</li>
+              <li>Report the exact numbers and the conditions that produced them.</li>
+            </ul>
+            <p class="proof"><strong>Proof of learning:</strong> A benchmark note with code, cycle counts, architecture, and one honest caveat.</p>
+            <label class="done"><input type="checkbox" data-progress="measured-craft"> <span>I made the proof.</span></label>
+          </article>
+          <article class="module-card" id="module-open-forge" data-module="open-forge">
+            <div class="card-top">
+              <span class="module-index">05</span>
+              <span class="gate gate-publish">PUBLISH</span>
+            </div>
+            <h3>The Open Forge</h3>
+            <p class="source"><a href="https://codeberg.org/" target="_blank" rel="noopener noreferrer">codeberg.org</a> <span class="dot">·</span> 30 min</p>
+            <p class="question">Who can learn from your work if it never leaves your laptop?</p>
+            <p class="promise">Publish small. Publish early. Keep it forkable.</p>
+            <ul class="practices">
+              <li>Create a repository with a README that states the problem.</li>
+              <li>Add a license and one runnable example.</li>
+              <li>Invite one correction by opening an issue on your own work.</li>
+            </ul>
+            <p class="proof"><strong>Proof of learning:</strong> A public repository with a README, a license, and one reproducible command.</p>
+            <label class="done"><input type="checkbox" data-progress="open-forge"> <span>I made the proof.</span></label>
+          </article>
+          <article class="module-card" id="module-techno-buddhism" data-module="techno-buddhism">
+            <div class="card-top">
+              <span class="module-index">06</span>
+              <span class="gate gate-practice">PRACTICE</span>
+            </div>
+            <h3>Techno-Buddhism</h3>
+            <p class="source"><span>the contemplative commons</span> <span class="dot">·</span> 15 min daily</p>
+            <p class="question">How do we build powerful systems without abandoning attention, honesty, and care?</p>
+            <p class="promise">Technology is not outside ethics. The loop includes the one who loops.</p>
+            <ul class="practices">
+              <li>Begin one work session with two minutes of silence and a clear intention.</li>
+              <li>Name one dependency your work has on other people and systems.</li>
+              <li>Stop when the work stops being honest; return when it is.</li>
+            </ul>
+            <p class="proof"><strong>Proof of learning:</strong> A short practice log: three sessions, what you noticed, what you changed.</p>
+            <label class="done"><input type="checkbox" data-progress="techno-buddhism"> <span>I made the proof.</span></label>
+          </article>
+          <article class="module-card" id="module-lifelong-loop" data-module="lifelong-loop">
+            <div class="card-top">
+              <span class="module-index">07</span>
+              <span class="gate gate-loop">LOOP</span>
+            </div>
+            <h3>The Life Long Loop</h3>
+            <p class="source"><span>your life</span> <span class="dot">·</span> a lifetime</p>
+            <p class="question">What would you keep learning if no credential were waiting at the end?</p>
+            <p class="promise">The loop stays alive unless both learning and living have stopped.</p>
+            <ul class="practices">
+              <li>Choose one question to carry for a season.</li>
+              <li>Schedule a weekly lap with no performance target.</li>
+              <li>Teach one person one thing every week.</li>
+            </ul>
+            <p class="proof"><strong>Proof of learning:</strong> A living learning log with at least three laps and one thing you taught.</p>
+            <label class="done"><input type="checkbox" data-progress="lifelong-loop"> <span>I made the proof.</span></label>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gate-section" id="gate">
+      <div class="wrap gate-layout">
+        <div>
+          <p class="kicker">The equation</p>
+          <h2>LLL is a NAND gate</h2>
+          <p>Read the two inputs as <strong>stopped learning</strong> and <strong>stopped living</strong>. The output is the loop. A NAND gate stays alive unless both inputs are true: one honest act of learning or one honest act of living is enough to restart it.</p>
+          <p class="formula">NAND(A, B) = ¬(A ∧ B)</p>
+        </div>
+        <div class="nand-board">
+          <label class="switch"><input type="checkbox" id="input-learning"><span>Learning has stopped</span></label>
+          <label class="switch"><input type="checkbox" id="input-living"><span>Living has stopped</span></label>
+          <output id="nand-output" class="gate-output" aria-live="polite">Loop alive</output>
+          <p class="nand-hint">Try both. Then uncheck one and watch the loop return.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sources">
+      <div class="wrap">
+        <p class="kicker">The constellation</p>
+        <h2>Sources, not authorities</h2>
+        <p class="section-lede">These are doors, not doctrines. Follow the primary source; come back with better questions.</p>
+        <ul class="source-list">
+          <li><a href="https://2e.is/" target="_blank" rel="noopener noreferrer">2e.is</a><span>The open door: education free for all who want to learn.</span></li>
+          <li><a href="https://classroom.vaked.dev/" target="_blank" rel="noopener noreferrer">classroom.vaked.dev</a><span>The live classroom: learn together and ask in the open.</span></li>
+          <li><a href="https://github.com/standardgalactic" target="_blank" rel="noopener noreferrer">github.com/standardgalactic</a><span>The sovereign library: monographs and code on admissibility, sparse representations, and semantic state.</span></li>
+          <li><a href="https://g8t.is/" target="_blank" rel="noopener noreferrer">g8t.is</a><span>The measured craft: verified fastest Rust functions with exact cycle counts.</span></li>
+          <li><a href="https://codeberg.org/" target="_blank" rel="noopener noreferrer">codeberg.org</a><span>The open forge: publish your proofs and keep them forkable.</span></li>
+          <li><span class="source-label">Techno-Buddhism</span><span>A practice, not a product: attention, interdependence, non-harm, and beginner&#x27;s mind in technical work.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="start">
+      <div class="wrap">
+        <p class="kicker">The practice</p>
+        <h2>Your first 15-minute lap</h2>
+        <ol class="start-list">
+          <li><h3>Choose one module</h3><p>Any module. There is no correct order.</p></li>
+          <li><h3>Read the source for ten minutes</h3><p>Stay with the primary source. Take three notes.</p></li>
+          <li><h3>Make one proof in five minutes</h3><p>A paragraph, a benchmark, a repository, a question. Small is real.</p></li>
+          <li><h3>Mark it and teach one person</h3><p>Send the proof to someone. Teaching is the test.</p></li>
+        </ol>
+        <p class="closing">No streaks. No scores. Only laps.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>From love, from within. <span class="mono">{&lt;3,&lt;3,&lt;3}</span></p>
+      <p>Content CC BY-SA 4.0 · Code MIT · Built in one ultrabackyardloop lap · <span class="mono">2026</span></p>
+    </div>
+  </footer>
+</body>
+</html>

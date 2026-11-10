@@ -70,7 +70,28 @@ FORK_DISABLE_WORKFLOW_PATTERNS = {
         "check_prs_if_on_staging.yml",
         "close_old_issues_and_prs.yml",
     ),
+    "oxicode": (
+        "daily-issues-recap.yml",
+        "daily-pr-recap.yml",
+        "stats.yml",
+        "triage.yml",
+        "duplicate-issues.yml",
+        "pr-management.yml",
+    ),
 }
+
+# Blacklisted Blacksmith runner/action patterns and their standard replacements
+BLACKSMITH_REPLACEMENTS = (
+    (re.compile(r"^(\s*runs-on:\s*)blacksmith-[\w.-]*macos-15(.*)$", re.MULTILINE), r"\1macos-15\2"),
+    (re.compile(r"^(\s*runs-on:\s*)blacksmith-[\w.-]*windows-2025(.*)$", re.MULTILINE), r"\1windows-2025\2"),
+    (re.compile(r"^(\s*runs-on:\s*)blacksmith-[\w.-]*ubuntu-2204(.*)$", re.MULTILINE), r"\1ubuntu-22.04\2"),
+    (re.compile(r"^(\s*runs-on:\s*)blacksmith-[\w.-]*ubuntu-2404-arm(.*)$", re.MULTILINE), r"\1ubuntu-24.04-arm\2"),
+    (re.compile(r"^(\s*runs-on:\s*)blacksmith(?:-[\w.-]+)?(.*)$", re.MULTILINE), r"\1ubuntu-24.04\2"),
+    (re.compile(r"useblacksmith/cache@v\d+"), "actions/cache@v4"),
+    (re.compile(r"useblacksmith/setup-docker-builder@v\d+"), "docker/setup-buildx-action@v3"),
+    (re.compile(r"useblacksmith/build-push-action@v\d+"), "docker/build-push-action@v6"),
+    (re.compile(r"actions/checkout@v7(?![.\d])"), "actions/checkout@v4"),
+)
 
 TRANSIENT_LOG_SIGNATURES = (
     "Work around spurious network errors in curl",
@@ -177,6 +198,63 @@ def save_rerun_history(history: dict[str, int]) -> None:
     HISTORY_FILE.write_text(json.dumps(history, indent=2) + "\n", encoding="utf-8")
 
 
+def enforce_blacksmith_blacklist(repo: str) -> list[str]:
+    """Scan all workflow/action YAML files in a repo and strip blacklisted Blacksmith runners/actions."""
+    repo_dir = WORKSPACE_ROOT / repo
+    if not repo_dir.is_dir():
+        return []
+
+    candidate_files: list[Path] = []
+    for base in (repo_dir / ".github", repo_dir / "entheai" / ".github"):
+        if base.is_dir():
+            candidate_files.extend(sorted(base.rglob("*.yml")))
+            candidate_files.extend(sorted(base.rglob("*.yaml")))
+
+    if not candidate_files:
+        return []
+
+    modified_rel_paths: list[str] = []
+    backups: dict[Path, str] = {}
+    for wf_file in candidate_files:
+        rel_path = str(wf_file.relative_to(repo_dir))
+        st = subprocess.run(
+            ["git", "status", "--porcelain", "--", rel_path],
+            cwd=repo_dir,
+            capture_output=True,
+            text=True,
+        )
+        if st.returncode != 0 or st.stdout.strip():
+            continue
+        original = wf_file.read_text(encoding="utf-8", errors="ignore")
+        updated = original
+        for pattern, replacement in BLACKSMITH_REPLACEMENTS:
+            updated = pattern.sub(replacement, updated)
+        if updated != original:
+            backups[wf_file] = original
+            wf_file.write_text(updated, encoding="utf-8")
+            modified_rel_paths.append(rel_path)
+
+    if not modified_rel_paths:
+        return []
+
+    subprocess.run(["git", "add", "--", *modified_rel_paths], cwd=repo_dir, check=False)
+    c = subprocess.run(
+        ["git", "commit", "-m", "ci: enforce blacklist against Blacksmith runners and actions"],
+        cwd=repo_dir,
+        capture_output=True,
+        text=True,
+    )
+    if c.returncode == 0:
+        p = subprocess.run(["git", "push", "origin", "HEAD"], cwd=repo_dir, capture_output=True, text=True)
+        if p.returncode == 0:
+            return [f"{p_rel}: stripped blacklisted Blacksmith runner/action" for p_rel in modified_rel_paths]
+        subprocess.run(["git", "reset", "--hard", "HEAD~1"], cwd=repo_dir, check=False)
+    else:
+        for wf_file, orig_text in backups.items():
+            wf_file.write_text(orig_text, encoding="utf-8")
+    return []
+
+
 def try_auto_fix_local_workflow(repo: str, wf_path: str, log_text: str) -> str | None:
     """Attempt a deterministic, safe local fix in /data/8b-is/<repo> if applicable."""
     repo_dir = WORKSPACE_ROOT / repo
@@ -271,6 +349,12 @@ def process_repo(gh: GitHubClient, repo: str, rerun_history: dict[str, int], cle
                 except Exception:
                     pass
 
+    # 1b. Enforce Blacksmith runner/action blacklist on local repository workflows
+    if apply_fixes:
+        bs_fixes = enforce_blacksmith_blacklist(repo)
+        if bs_fixes:
+            summary["auto_fixes_applied"].extend(bs_fixes)
+
     # Group completed runs by workflow path/name to find latest per workflow
     latest_by_wf = {}
     for r in runs:
@@ -300,6 +384,18 @@ def process_repo(gh: GitHubClient, repo: str, rerun_history: dict[str, int], cle
         is_latest = latest_by_wf.get(key, {}).get("id") == run_id
 
         if status != "completed":
+            # Cancel any queued/in-progress run that requests a blacklisted Blacksmith runner
+            if apply_fixes:
+                try:
+                    jobs = gh.request("GET", f"repos/8b-is/{repo}/actions/runs/{run_id}/jobs").get("jobs", [])
+                    if any(
+                        any("blacksmith" in str(lbl).lower() for lbl in (j.get("labels") or []))
+                        for j in jobs
+                    ):
+                        gh.request("POST", f"repos/8b-is/{repo}/actions/runs/{run_id}/cancel")
+                        summary["auto_fixes_applied"].append(f"{wf_path}: cancelled blacklisted Blacksmith run {run_id}")
+                except Exception:
+                    pass
             continue
 
         is_bad = conclusion in ("failure", "startup_failure", "timed_out", "action_required", "cancelled")

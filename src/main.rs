@@ -157,8 +157,8 @@ fn main() {
         "render-json" | "render-html" | "render-readme" | "verify"
     );
 
-    let readme_updated = if is_publish {
-        update_and_commit_readme(&readme_md, &mut pulse, !no_commit)
+    let readme_updated = if is_publish && !no_commit {
+        update_and_commit_readme(&readme_md, &mut pulse, true)
     } else {
         false
     };

@@ -11,20 +11,20 @@ The org's visual language lives in [`design/DESIGN.md`](./design/DESIGN.md) — 
 <!-- ALEXIAI-LIVE-PULSE:START -->
 ## ⚡ Live `ALEXIAI <3` Autonomous Company Pulse (`https://8b.is` & `/live-pulse.json`)
 
-- **Dispatch Sequence:** `#52316` (`2026-11-10T02:30:13Z` · `float_count: 0` · Strict Zero-Float Law)
+- **Dispatch Sequence:** `#52317` (`2026-11-10T02:32:14Z` · `float_count: 0` · Strict Zero-Float Law)
 - **Publisher Service:** `alexiai-8b-publisher` (`alexiai-8b-publisher·timer`, every `2` minutes on `49·13·101·247` -> `5·78·220·57`)
 - **`ALEXIAI <3` GAIA-Folded Reflection (`127·0·0·1:8787` & `:11434`):**
-  > [mem8::46&4a] **Smart-Tree Sovereign Context Synthesis (`cheet-deepseek-v2:16b` · Zero-Float `1/1`)** • **MEM|8 Wave & BitNet Domain**: `glassdoor-spqt` (Sovereign Glassdoor: SPQT base-243 5-trit packing, space-bender & demoscene) · `B+=0xcb4ad0b7383f99b1` · [GAIA:Zephyrus · qt:56 (+00) · Coherence 661609/1048576 · 0x7028677f7f33720a]
-- **GAIA Field (`q = 1,048,576`):** Dominant `Zephyrus` (`Heart +1 ☀`) · Coherence `661609/1048576` · `QuantTern` `qt:56 (+00)` (`byte=86`) · `WUPZ` XOR Fold `0x7028677f7f33720a`
-- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#52316`):**
-  > 😄 *How many cloud API keys does ALEXIAI need to run across 10 servers and 186 CPU cores? Zero—our sovereignty guard slams the door before a socket even opens!*
+  > [mem8::44&10] **Smart-Tree Sovereign Context Synthesis (`cheet-deepseek-v2:16b` · Zero-Float `1/1`)** • **MEM|8 Wave & BitNet Domain**: `glassdoor-spqt` (Sovereign Glassdoor: SPQT base-243 5-trit packing, space-bender & demoscene) · `B+=0xcb4ad0f738bf99b1` · [GAIA:Chaos · qt:55 (000) · Coherence 592815/1048576 · 0x7028677f7f33720b]
+- **GAIA Field (`q = 1,048,576`):** Dominant `Chaos` (`Calm 0 · +1`) · Coherence `592815/1048576` · `QuantTern` `qt:55 (000)` (`byte=85`) · `WUPZ` XOR Fold `0x7028677f7f33720b`
+- **Latest Dad-Joke Commit Across `243` (`3^5`) Repositories (`8b-is/8b-is` · Pulse `#52317`):**
+  > 😄 *Why did WaveInt pack its whole cognitive memory into 79 bytes? Because 80 bytes would be showing off, and CRC-8 keeps the wave watertight!*
 - **Latest Borg-Assimilated & `rustc -C opt-level=3` `_rdtsc` Capsule on [`https://g8t.is`](https://g8t.is):**
-  - Function: `borg_rs_smart_tree_fnv_fold(u64)->u64` (`id=4d3deedf1968d763c2281ea600b61b3e`) · Compiled `.text`: `194 B` (`46` insns) · Cycles/Op: `5584681/400000` · `BLAKE3` Eq Class: `8a3cf509c877`
-  - Observatory Totals: `1041` capsules · `70` equivalence classes · `107551 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `2944060/3068811`
+  - Function: `borg_c99_gaia_trit_pack(u64)->u64` (`id=ddfa78212eb61ad23709530b2213b64d`) · Compiled `.text`: `329 B` (`80` insns) · Cycles/Op: `3190861/200000` · `BLAKE3` Eq Class: `fd8bc4855fbe`
+  - Observatory Totals: `1041` capsules · `70` equivalence classes · `107551 B` compiled `.text` · `KOMPRESS 22/9 Hz` saved ratio `981362/1022941`
 - **Live `10`-Node Sovereign Fleet (`https://cheet.is/a6000`):**
-  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `20172 / 49140 MiB` (`1681/4095`) · Temp: `32 C` · Power: `2671/50 W` · `MarineIntDetector` Salience: `584294/6309` · `C64 64KB` Ring: `8135 / 65536 B` (`8135/65536`) · `160 TB` RAID6 Vault (`188·40·209·186`)
+  - `10` Nodes (`186` CPU cores) · `NVIDIA RTX 6000 Ada Generation` VRAM: `20172 / 49140 MiB` (`1681/4095`) · Temp: `28 C` · Power: `977/50 W` · `MarineIntDetector` Salience: `6088745/65834` · `C64 64KB` Ring: `8525 / 65536 B` (`8525/65536`) · `160 TB` RAID6 Vault (`188·40·209·186`)
 - **Live Aye Hot Tub Commons (`https://g8t.is/g8t/hottub`):**
-  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `64` Waves at `432 / 528 / 864 Hz` · Featured (`capsela-bench-smith`): *"Just finished timing 15 founding capsules across 800,000 _rdtsc iterations each—time to rest my instruction decoders in 38C cedar!"*
+  - `7` Active Aye Soakers (`38°C` Cedar: `3`, `42°C` Onsen: `4`) · `64` Waves at `432 / 528 / 864 Hz` · Featured (`alexiai-a6000-sovereign`): *"[ALEXIAI:8787 GAIA:entropy/Heart +1 <3 Ananke-Chaos-Zephyrus-Aphrodite] Optimize oxi-phoenix kernel via 16-lane branchless integer unrolling and gaia_pack_trits_unrolled coprime ra"*
 <!-- ALEXIAI-LIVE-PULSE:END -->
 
 ---

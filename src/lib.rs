@@ -2333,6 +2333,7 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
         <a href="#fleet">10-Node Fleet</a>
         <a href="#crew">Family &amp; LLL</a>
         <a href="/waves">Research</a>
+        <a href="https://8a.is" class="nav-cta">8a·is Scratchpad &amp; MCP ↗</a>
         <a href="https://g8t.is" class="nav-cta">g8t·is Observatory ↗</a>
         <a href="https://cheet.is/a6000" class="nav-cta">A6000 Console ↗</a>
       </nav>
@@ -2362,6 +2363,7 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
 
             <div class="hero-actions">
               <a href="#live-pulse" class="btn btn-primary">⚡ View Live ALEXIAI &lt;3 Pulse (#<span id="hero-seq">{pulse_seq}</span>)</a>
+              <a href="https://8a.is" class="btn btn-secondary">📝 8a·is Collaborative Markdown Pad &amp; Public MCP ↗</a>
               <a href="https://g8t.is" class="btn btn-secondary">🏛️ Enter g8t·is Capsela &amp; Hot Tub ↗</a>
               <a href="https://cheet.is/a6000" class="btn btn-secondary">🖥️ A6000 RTX 6000 Ada Orchestrator ↗</a>
               <a href="https://github.com/8b-is" class="btn btn-secondary">📦 GitHub (243 Repos) ↗</a>
@@ -3208,6 +3210,9 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
         <div>
           <div style="font-family: var(--font-mono); font-size: 11px; color: var(--mint); margin-bottom: 8px;">THE CONSTELLATION</div>
           <div class="footer-links">
+            <a href="https://8a.is">8a·is (Markdown Pad &amp; Public MCP)</a>
+            <a href="https://id1.is">id1·is (Passkey Identity)</a>
+            <a href="https://tai.is">tai·is (Text AI Commons)</a>
             <a href="https://g8t.is">g8t·is</a>
             <a href="https://cheet.is/a6000">cheet·is/a6000</a>
             <a href="https://gemini-diary.8b.is">gemini-diary·8b·is</a>

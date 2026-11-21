@@ -1233,6 +1233,110 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
       white-space: nowrap;
     }}
 
+    /* NotebookLM Visual Infographics Strip & Lightbox */
+    .notebook-strip {{
+      margin-top: 26px;
+      background: var(--bg-panel);
+      border: 1px solid var(--line-strong);
+      border-radius: 16px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }}
+
+    .infographic-grid {{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }}
+    @media (max-width: 1060px) {{
+      .infographic-grid {{ grid-template-columns: repeat(2, 1fr); }}
+    }}
+    @media (max-width: 620px) {{
+      .infographic-grid {{ grid-template-columns: 1fr; }}
+    }}
+
+    .infographic-card {{
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 150ms ease, transform 150ms ease;
+    }}
+    .infographic-card:hover {{
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }}
+
+    .infographic-thumb {{
+      border: 0;
+      padding: 0;
+      width: 100%;
+      background: var(--bg-elev);
+      cursor: zoom-in;
+      display: block;
+      position: relative;
+    }}
+    .infographic-thumb img {{
+      width: 100%;
+      height: 156px;
+      object-fit: cover;
+      display: block;
+    }}
+
+    .infographic-meta {{
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }}
+    .infographic-meta h4 {{
+      font-size: 14px;
+      line-height: 135%;
+      color: var(--ink);
+    }}
+    .infographic-meta p {{
+      font-size: 12px;
+      line-height: 145%;
+      color: var(--ink-soft);
+    }}
+
+    .lightbox {{
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(4, 8, 14, 92%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      gap: 12px;
+    }}
+    .lightbox[hidden] {{
+      display: none;
+    }}
+    .lightbox img {{
+      max-width: 96vw;
+      max-height: 82vh;
+      border-radius: 10px;
+      border: 1px solid var(--line-strong);
+      background: #ffffff;
+    }}
+    .lightbox-bar {{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: #eef3f8;
+      font-family: var(--font-mono);
+      font-size: 12px;
+    }}
+
     /* Live ALEXIAI <3 Pulse Console */
     .pulse-console-bar {{
       background: var(--bg-panel);
@@ -1967,20 +2071,21 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
             <div>
               <div class="eco-head">
                 <div>
-                  <div class="eco-kicker">HOME FIREWALL &amp; AUTOMATION</div>
-                  <h3 class="eco-title">AyeFire &amp; ayefire-cam</h3>
+                  <div class="eco-kicker">BARE-METAL ROUTER · FIREWALL · HOME</div>
+                  <h3 class="eco-title">AyeFire Router &amp; ayefire-cam</h3>
                 </div>
                 <span class="badge badge-coral">HOME GUARDIAN</span>
               </div>
               <p class="eco-desc">
-                Sovereign home firewall &amp; family protector: zero-initial-trust certificate friendship, live SSE alerts, IoT holds, and pure-Rust <code>ayefire-cam</code> (zero <code>ffmpeg</code>, <code>221,972</code> FPS Baseline JPEG retina &amp; UniFi Protect PTZ curiosity atlas).
+                <code>#![no_std]</code> bare-metal router &amp; family firewall: Morton-indexed <code>O(1)</code> routing, <code>73/100 Hz</code> wave-amplitude expiry (zero timer threads), zero-initial-trust cert friendship, live SSE alerts, and pure-Rust <code>ayefire-cam</code> (<code>221,972</code> FPS JPEG retina &amp; PTZ curiosity).
               </p>
               <div class="eco-why">
                 <strong>Why it matters:</strong> Protects kids and smart-home devices locally — explaining in plain English who and why every device in your house is talking.
               </div>
             </div>
             <div class="eco-links">
-              <a href="https://i1.is">i1·is / AyeFire Portal ↗</a>
+              <a href="/notebook/ayefire/">Architecture Studio ↗</a>
+              <a href="https://i1.is">i1·is Portal ↗</a>
               <a href="https://github.com/8b-is/aye">aye Repo ↗</a>
             </div>
           </article>
@@ -2288,6 +2393,7 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
           </div>
           <div style="display: flex; gap: 10px; flex-wrap: wrap;">
             <a href="https://www.youtube.com/@8bit-wraith" target="_blank" rel="noopener noreferrer" class="btn btn-primary">▶ Open @8bit-wraith on YouTube ↗</a>
+            <a href="/notebook/ayefire/" class="btn btn-amber">🔥 AyeFire NotebookLM Studio ↗</a>
             <a href="/podcasts" class="btn btn-secondary">🎙️ Full Podcast Shelf (/podcasts) ↗</a>
           </div>
         </div>
@@ -2378,6 +2484,16 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
               <audio id="pod-audio" controls preload="none"></audio>
             </div>
 
+            <button type="button" class="pod-item" data-pod-src="/notebook/ayefire/ayefire-clockless-router.mp3" data-pod-title="AyeFire: The Clockless Bare-Metal Rust Router">
+              <span>🔥 NEW · The Clockless Bare-Metal Rust Router (AyeFire)</span>
+              <small>Play ▶</small>
+            </button>
+
+            <button type="button" class="pod-item" data-pod-src="/notebook/ayefire/ayefire-conscious-router.mp3" data-pod-title="AyeFire: The Conscious Bare-Metal Rust Router">
+              <span>🧠 NEW · The Conscious Bare-Metal Rust Router (AyeFire)</span>
+              <small>Play ▶</small>
+            </button>
+
             <button type="button" class="pod-item" data-pod-src="/podcasts/O(1) AI_ Inside the Wild Architecture of Marine Algorithm and MEM-8's Emotionally Charged Memory.mp3" data-pod-title="O(1) AI: Marine Algorithm &amp; MEM|8">
               <span>⚡ O(1) AI: Marine Algorithm &amp; MEM|8 Memory</span>
               <small>Play ▶</small>
@@ -2409,11 +2525,67 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
             </button>
 
             <div style="display: flex; gap: 10px; flex-wrap: wrap; padding-top: 6px; border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: 12px;">
-              <a href="/podcasts">All 11 Podcasts ↗</a>
+              <a href="/notebook/ayefire/">AyeFire Studio ↗</a>
+              <a href="/podcasts">All Podcasts ↗</a>
               <a href="/phoenix/NoiseToHarmony.mp4">NoiseToHarmony.mp4 ↗</a>
               <a href="https://youtu.be/0r9uJafc9Sg" target="_blank" rel="noopener noreferrer">Phoenix Rising (YT) ↗</a>
-              <a href="https://youtu.be/1f7BIvTkEZc" target="_blank" rel="noopener noreferrer">Corporate Extraction (YT) ↗</a>
             </div>
+          </div>
+        </div>
+
+        <!-- NotebookLM Visual Infographics & AyeFire Deep-Dive Studio -->
+        <div class="notebook-strip" id="infographics">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+            <div>
+              <div class="eyebrow" style="margin-bottom: 4px;">🎨 NOTEBOOKLM VISUAL STUDIO · INFOGRAPHICS, VIDEO, MIND MAP &amp; FLASHCARDS</div>
+              <h3 style="font-size: 20px; color: var(--ink);">AyeFire Bare-Metal Router Architecture Gallery</h3>
+            </div>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <a href="/notebook/ayefire/" class="btn btn-amber">Open Interactive Mind Map &amp; 25 Flashcards ↗</a>
+              <a href="/notebook/ayefire/ayefire-zero-copy-slides.pptx" class="btn btn-secondary" download>Download Slides (.pptx)</a>
+            </div>
+          </div>
+
+          <div class="infographic-grid">
+            <article class="infographic-card">
+              <button type="button" class="infographic-thumb" data-zoom="/notebook/ayefire/ayefire-pipeline-infographic.png" data-caption="AyeFire Router: Bare-Metal Architecture &amp; 6-Stage Packet Processing Pipeline">
+                <img src="/notebook/ayefire/ayefire-pipeline-infographic.webp" alt="AyeFire Router Bare-Metal Architecture and 6-Stage Packet Processing Pipeline infographic" loading="lazy" />
+              </button>
+              <div class="infographic-meta">
+                <h4>AyeFire Architecture &amp; 6-Stage Pipeline</h4>
+                <p>Morton routing, wave decay, and VLAN → NAT → Egress hot path. Click to zoom.</p>
+              </div>
+            </article>
+
+            <article class="infographic-card">
+              <button type="button" class="infographic-thumb" data-zoom="/notebook/ayefire/ayefire-timeout-comparison.png" data-caption="Network Timeout Architectures: Timer Threads vs. AyeOS Wave Decay">
+                <img src="/notebook/ayefire/ayefire-timeout-comparison.webp" alt="Network Timeout Architectures: Timer Threads vs AyeOS Wave Decay infographic" loading="lazy" />
+              </button>
+              <div class="infographic-meta">
+                <h4>Timer Threads vs. AyeOS Wave Decay</h4>
+                <p>Why passive <code>73/100 Hz</code> heartbeat decay beats timer threads &amp; CPU spikes.</p>
+              </div>
+            </article>
+
+            <article class="infographic-card">
+              <button type="button" class="infographic-thumb" data-zoom="/notebook/ayefire/ayefire-baremetal-architecture.png" data-caption="AyeFire Router: Core Modules, Border Defense &amp; MEM8 Wave Mapping">
+                <img src="/notebook/ayefire/ayefire-baremetal-architecture.webp" alt="AyeFire Router Core System Modules and MEM8 Wave Mapping infographic" loading="lazy" />
+              </button>
+              <div class="infographic-meta">
+                <h4>Core Modules &amp; MEM|8 Wave Mapping</h4>
+                <p>802·1Q VLAN zones, emotional-valence ARP defense &amp; CognitiveGrid config.</p>
+              </div>
+            </article>
+
+            <article class="infographic-card">
+              <a href="/notebook/ayefire/#video" class="infographic-thumb" style="cursor: pointer;">
+                <img src="/notebook/ayefire/ayefire-video-poster.jpg" alt="Watch Building the AyeFire Pipeline Spatial Routing and Wave-Decay State video" loading="lazy" />
+              </a>
+              <div class="infographic-meta">
+                <h4>▶ Video: Spatial Routing &amp; Wave Decay</h4>
+                <p>Full NotebookLM video walkthrough + Mind Map, Flashcards &amp; 3 reports.</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
@@ -2915,6 +3087,7 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
         <div>
           <div class="footer-heading">8B·IS PAGES &amp; MEDIA</div>
           <div class="footer-links">
+            <a href="/notebook/ayefire/">/notebook/ayefire</a>
             <a href="/podcasts">/podcasts</a>
             <a href="/zencooker">/zencooker</a>
             <a href="/ayeos">/ayeos</a>
@@ -2962,6 +3135,16 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
       </div>
     </div>
   </footer>
+
+  <!-- Full-Resolution Infographic Lightbox Modal -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Full resolution infographic">
+    <img id="lightbox-img" src="" alt="" />
+    <div class="lightbox-bar">
+      <span id="lightbox-caption"></span>
+      <a id="lightbox-open" href="" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Open Full PNG ↗</a>
+      <button type="button" id="lightbox-close" class="btn btn-primary">Close (Esc)</button>
+    </div>
+  </div>
 
   <!-- Embedded Initial Live Pulse JSON (Zero Floats) -->
   <script id="embedded-live-pulse" type="application/json">{embedded_pulse_json}</script>
@@ -3542,6 +3725,34 @@ pub fn render_flagship_index_html(p: &CompanyPulseDispatch) -> String {
           }}
         }});
       }}
+
+      /* Infographic Full-Screen Lightbox */
+      var lb = document.getElementById("lightbox");
+      var lbImg = document.getElementById("lightbox-img");
+      var lbCap = document.getElementById("lightbox-caption");
+      var lbOpen = document.getElementById("lightbox-open");
+      var lbClose = document.getElementById("lightbox-close");
+      function openLightbox(src, cap) {{
+        if (!lb || !lbImg) return;
+        lbImg.src = src;
+        lbImg.alt = cap || "Infographic";
+        if (lbCap) lbCap.textContent = cap || "";
+        if (lbOpen) lbOpen.href = src;
+        lb.hidden = false;
+      }}
+      function closeLightbox() {{
+        if (lb) lb.hidden = true;
+      }}
+      var zoomBtns = document.querySelectorAll("[data-zoom]");
+      for (var zb = 0; zb < zoomBtns.length; zb += 1) {{
+        zoomBtns[zb].addEventListener("click", function (ev) {{
+          var b = ev.currentTarget;
+          openLightbox(b.getAttribute("data-zoom"), b.getAttribute("data-caption"));
+        }});
+      }}
+      if (lbClose) lbClose.addEventListener("click", closeLightbox);
+      if (lb) lb.addEventListener("click", function (ev) {{ if (ev.target === lb) closeLightbox(); }});
+      document.addEventListener("keydown", function (ev) {{ if (ev.key === "Escape") closeLightbox(); }});
 
       var searchInput = document.getElementById("repo-search-input");
       var filterBtns = document.querySelectorAll("#repo-filter-pills .filter-btn");

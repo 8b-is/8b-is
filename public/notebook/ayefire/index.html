@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en" data-theme="ink" data-scale="normal" data-motion="full">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#060a10" id="meta-theme-color" />
+  <meta name="description" content="AyeFire Bare-Metal Router Studio — NotebookLM Infographics, Video Explainer, Podcasts, Interactive Mind Map, Flashcards, and Slide Deck on 8b·is." />
+  <title>AyeFire Router NotebookLM Studio · 8b·is</title>
+  <link rel="icon" type="image/svg+xml" href="/sun.svg" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #060a10;
+      --bg-panel: #0b121c;
+      --bg-card: #101926;
+      --bg-card-hover: #152233;
+      --ink: #ecf3f8;
+      --ink-soft: #a4b7c9;
+      --ink-muted: #6e8399;
+      --accent: #4ecdc4;
+      --accent-2: #f39c12;
+      --accent-3: #2ecc71;
+      --accent-4: #38bdf8;
+      --accent-5: #e86f51;
+      --accent-ink: #041014;
+      --line: #1b2b3d;
+      --line-strong: #2a435e;
+      --shadow: rgba(0, 0, 0, 48%);
+      --header-bg: rgba(6, 10, 16, 90%);
+      --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-serif: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+      --font-mono: ui-monospace, "JetBrains Mono", "Fira Code", "SFMono-Regular", Menlo, Consolas, monospace;
+      --mint: var(--accent);
+      --gold: var(--accent-2);
+      --panel: var(--bg-panel);
+      --paper: var(--bg-card);
+      --dim: var(--ink-soft);
+      --mono: var(--font-mono);
+      --serif: var(--font-serif);
+    }
+    html[data-theme="paper"], html[data-theme="nordic"], html[data-theme="solar-light"] { color-scheme: light; }
+    html[data-theme="paper"] {
+      --bg: #faf7f2; --bg-panel: #f2ece2; --bg-card: #ffffff; --bg-card-hover: #f7f2e9;
+      --ink: #1a1d21; --ink-soft: #4c5157; --ink-muted: #6c6a63;
+      --accent: #0f766e; --accent-2: #b45309; --accent-3: #15803d; --accent-4: #0369a1; --accent-5: #c2410c;
+      --accent-ink: #ffffff; --line: #ddd4c5; --line-strong: #c2b6a1; --shadow: rgba(26, 29, 33, 12%);
+      --header-bg: rgba(250, 247, 242, 94%);
+    }
+    html[data-theme="nordic"] {
+      --bg: #f3f7fa; --bg-panel: #e6eef5; --bg-card: #ffffff; --bg-card-hover: #f1f6fa;
+      --ink: #132234; --ink-soft: #43576e; --ink-muted: #637991;
+      --accent: #0e7490; --accent-2: #b45309; --accent-3: #047857; --accent-4: #0284c7; --accent-5: #be123c;
+      --accent-ink: #ffffff; --line: #cfdbe6; --line-strong: #aec2d4; --shadow: rgba(19, 34, 52, 12%);
+      --header-bg: rgba(243, 247, 250, 94%);
+    }
+    html[data-theme="forest"] {
+      --bg: #08120e; --bg-panel: #0f1d17; --bg-card: #14271f; --bg-card-hover: #1a3328;
+      --ink: #e4f2eb; --ink-soft: #9ec0b0; --ink-muted: #6c9180;
+      --accent: #34d399; --accent-2: #e8b05c; --accent-3: #5eead4; --accent-4: #38bdf8; --accent-5: #f97316;
+      --accent-ink: #05120c; --line: #1f3a2e; --line-strong: #2f5745; --header-bg: rgba(8, 18, 14, 92%);
+    }
+    html[data-theme="vaked"] {
+      --bg: #14110e; --bg-panel: #1d1814; --bg-card: #251f19; --bg-card-hover: #2f2720;
+      --ink: #f3ece1; --ink-soft: #c5b6a1; --ink-muted: #938370;
+      --accent: #e8a33d; --accent-2: #52b788; --accent-3: #f2c879; --accent-4: #4ecdc4; --accent-5: #d96b43;
+      --accent-ink: #17120c; --line: #352c23; --line-strong: #4e4033; --header-bg: rgba(20, 17, 14, 92%);
+    }
+    html[data-theme="phosphor"] {
+      --bg: #050b06; --bg-panel: #0b150d; --bg-card: #102014; --bg-card-hover: #152b1b;
+      --ink: #daf5e0; --ink-soft: #8fc49c; --ink-muted: #5d8f69;
+      --accent: #39d98a; --accent-2: #f4a261; --accent-3: #4ecdc4; --accent-4: #80ed99; --accent-5: #e76f51;
+      --accent-ink: #041007; --line: #1c3823; --line-strong: #2c5737; --header-bg: rgba(5, 11, 6, 94%);
+    }
+    html[data-theme="solar-light"] {
+      --bg: #fdf6e3; --bg-panel: #eee8d5; --bg-card: #fffaf0; --bg-card-hover: #f5eedb;
+      --ink: #34444b; --ink-soft: #586e75; --ink-muted: #7b8c90;
+      --accent: #2aa198; --accent-2: #b58900; --accent-3: #859900; --accent-4: #268bd2; --accent-5: #cb4b16;
+      --accent-ink: #fdf6e3; --line: #dcd4bd; --line-strong: #bfb59b; --header-bg: rgba(253, 246, 227, 94%);
+    }
+    html[data-theme="contrast"] {
+      --bg: #000000; --bg-panel: #0b0b0b; --bg-card: #121212; --bg-card-hover: #1b1b1b;
+      --ink: #ffffff; --ink-soft: #d7e2ec; --ink-muted: #a6b4c2;
+      --accent: #00f0ff; --accent-2: #ffd166; --accent-3: #00ff88; --accent-4: #4cc9f0; --accent-5: #ff6b6b;
+      --accent-ink: #000000; --line: #383838; --line-strong: #6b6b6b; --header-bg: rgba(0, 0, 0, 96%);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { background: var(--bg); color: var(--ink); font-family: var(--font-sans); font-size: 16px; line-height: 162%; scroll-behavior: smooth; }
+    body { min-height: 100vh; background: var(--bg); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-4); text-decoration: underline; }
+    code { font-family: var(--font-mono); font-size: 90%; background: var(--bg-panel); border: 1px solid var(--line); border-radius: 5px; padding: 1px 5px; }
+    .container { max-width: 1220px; margin: 0 auto; padding: 0 24px; }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 80; background: var(--header-bg);
+      backdrop-filter: blur(12px); border-bottom: 1px solid var(--line);
+    }
+    .topbar-inner {
+      max-width: 1220px; margin: 0 auto; padding: 11px 24px;
+      display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap;
+    }
+    .brand { font-family: var(--font-mono); font-weight: 800; font-size: 20px; color: var(--ink); display: inline-flex; align-items: center; gap: 10px; }
+    .brand span { color: var(--accent); }
+    .nav { display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px; font-weight: 600; }
+    .nav a { color: var(--ink-soft); }
+    .nav a:hover { color: var(--accent); }
+    .theme-select {
+      height: 32px; padding: 0 8px; border-radius: 8px; border: 1px solid var(--line-strong);
+      background: var(--bg-card); color: var(--ink); font-family: var(--font-mono); font-size: 12px; cursor: pointer;
+    }
+
+    .hero { padding: 42px 0 34px; border-bottom: 1px solid var(--line); }
+    .eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-2); margin-bottom: 10px; }
+    h1 { font-size: 38px; line-height: 116%; letter-spacing: -1px; margin-bottom: 14px; }
+    .lead { font-size: 17px; color: var(--ink-soft); max-width: 780px; margin-bottom: 20px; }
+
+    .btn-row { display: flex; flex-wrap: wrap; gap: 10px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 7px; padding: 10px 16px; border-radius: 10px;
+      border: 1px solid var(--line-strong); background: var(--bg-card); color: var(--ink);
+      font-family: var(--font-mono); font-size: 12px; font-weight: 700; cursor: pointer; text-decoration: none;
+    }
+    .btn:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+    .btn-primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+    .btn-primary:hover { color: var(--accent-ink); opacity: 92%; }
+
+    .section { padding: 44px 0; border-bottom: 1px solid var(--line); }
+    .section h2 { font-size: 26px; margin-bottom: 8px; letter-spacing: -1px; }
+    .section-sub { color: var(--ink-soft); font-size: 15px; margin-bottom: 22px; max-width: 760px; }
+
+    /* Infographic Gallery */
+    .info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    @media (max-width: 920px) { .info-grid { grid-template-columns: 1fr; } }
+    .info-card {
+      background: var(--bg-card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .info-card:hover { border-color: var(--accent); }
+    .info-thumb-btn { border: 0; padding: 0; background: var(--bg-panel); cursor: zoom-in; display: block; width: 100%; }
+    .info-thumb-btn img { width: 100%; height: 220px; object-fit: cover; display: block; }
+    .info-body { padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+    .info-body h3 { font-size: 17px; color: var(--ink); }
+    .info-body p { font-size: 13px; color: var(--ink-soft); }
+    .info-actions { display: flex; justify-content: space-between; align-items: center; padding-top: 8px; border-top: 1px solid var(--line); font-family: var(--font-mono); font-size: 12px; }
+
+    /* Video + Podcasts Split */
+    .av-grid { display: grid; grid-template-columns: 7fr 5fr; gap: 22px; align-items: start; }
+    @media (max-width: 960px) { .av-grid { grid-template-columns: 1fr; } }
+    .card { background: var(--bg-card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; }
+    video { width: 100%; border-radius: 10px; background: #000000; display: block; border: 1px solid var(--line); }
+    audio { width: 100%; height: 40px; margin-top: 8px; }
+    .pod-box { background: var(--bg-panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px; margin-bottom: 14px; }
+    .pod-box h3 { font-size: 16px; margin-bottom: 4px; color: var(--ink); }
+    .pod-box p { font-size: 13px; color: var(--ink-soft); }
+
+    /* Interactive Mind Map + Flashcards */
+    .study-grid { display: grid; grid-template-columns: 6fr 6fr; gap: 22px; align-items: start; }
+    @media (max-width: 960px) { .study-grid { grid-template-columns: 1fr; } }
+    .tree-root ul { list-style: none; padding-left: 18px; border-left: 1px solid var(--line); margin: 6px 0 6px 8px; }
+    .tree-root details > summary {
+      cursor: pointer; padding: 5px 8px; border-radius: 7px; font-weight: 600; font-size: 14px; color: var(--ink);
+    }
+    .tree-root details > summary:hover { background: var(--bg-panel); color: var(--accent); }
+    .tree-leaf { padding: 4px 8px; font-size: 13px; color: var(--ink-soft); font-family: var(--font-mono); }
+
+    .flash-stage {
+      min-height: 220px; background: var(--bg-panel); border: 1px solid var(--line-strong);
+      border-radius: 14px; padding: 22px; display: flex; flex-direction: column; justify-content: space-between; gap: 16px;
+      cursor: pointer;
+    }
+    .flash-tag { font-family: var(--font-mono); font-size: 11px; color: var(--accent-2); text-transform: uppercase; letter-spacing: 1px; }
+    .flash-text { font-size: 17px; line-height: 155%; color: var(--ink); }
+    .flash-controls { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+
+    /* 5 Ideas Highlights */
+    .ideas-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+    @media (max-width: 1040px) { .ideas-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 620px) { .ideas-grid { grid-template-columns: 1fr; } }
+    .idea-card { background: var(--bg-panel); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+    .idea-card strong { font-family: var(--font-mono); font-size: 11px; color: var(--accent); }
+    .idea-card h3 { font-size: 15px; line-height: 135%; color: var(--ink); }
+    .idea-card p { font-size: 13px; color: var(--ink-soft); line-height: 150%; }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 999; background: rgba(4, 8, 14, 92%);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; gap: 12px;
+    }
+    .lightbox[hidden] { display: none; }
+    .lightbox img { max-width: 96vw; max-height: 82vh; border-radius: 10px; border: 1px solid var(--line-strong); background: #ffffff; }
+    .lightbox-bar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; color: #eef3f8; font-family: var(--font-mono); font-size: 13px; }
+
+    footer { padding: 34px 0 64px; font-family: var(--font-mono); font-size: 12px; color: var(--ink-muted); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="brand"><span style="color: var(--ink);">8b<span style="color: var(--accent);">.</span>is</span> <small style="font-size: 12px; color: var(--ink-muted);">/ NotebookLM Studio</small></a>
+      <nav class="nav" aria-label="Studio sections">
+        <a href="#infographics">Infographics</a>
+        <a href="#video">Video &amp; Podcasts</a>
+        <a href="#study">Mind Map &amp; Flashcards</a>
+        <a href="#downloads">Downloads</a>
+        <a href="/">← Back to 8b·is</a>
+      </nav>
+      <select id="theme-select" class="theme-select" aria-label="Choose color theme">
+        <option value="ink">Constellation Teal</option>
+        <option value="paper">Warm Paper</option>
+        <option value="nordic">Nordic Slate</option>
+        <option value="forest">Forest Hearth</option>
+        <option value="vaked">Tokyo Vaked</option>
+        <option value="phosphor">Phosphor C64</option>
+        <option value="solar-light">Solarized Light</option>
+        <option value="contrast">High Contrast</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="eyebrow">🔥 NOTEBOOKLM ARCHITECTURE STUDIO · AYEOS × AYEFIRE ROUTER</div>
+      <h1>AyeFire Bare-Metal Router: Spatial Routing &amp; Wave-Decay State</h1>
+      <p class="lead">
+        Explore the complete NotebookLM study studio for <code>ayefire-router</code> — our <code>#![no_std]</code> bare-metal Rust router for AyeOS that replaces legacy timer threads and static config files with <code>73/100 Hz</code> wave-amplitude decay, Morton-indexed <code>O(1)</code> lookups, emotional-valence ARP trust, and CognitiveGrid wave persistence.
+      </p>
+      <div class="btn-row">
+        <a href="#infographics" class="btn btn-primary">View 3 Infographics ↓</a>
+        <a href="#video" class="btn">▶ Watch Video Explainer</a>
+        <a href="#study" class="btn">🧠 Interactive Mind Map &amp; Flashcards</a>
+        <a href="ayefire-zero-copy-slides.pptx" class="btn" download>📊 Download Slide Deck (.pptx)</a>
+      </div>
+    </section>
+
+    <section id="infographics" class="section">
+      <h2>Architecture Infographics (Click to Zoom Full Resolution)</h2>
+      <p class="section-sub">Three visual blueprints explaining the AyeFire packet pipeline, wave-amplitude expiry versus traditional timer threads, and MEM|8 CognitiveGrid parameter mapping.</p>
+      <div class="info-grid">
+        <article class="info-card">
+          <button type="button" class="info-thumb-btn" data-zoom="ayefire-pipeline-infographic.png" data-caption="AyeFire Router: Bare-Metal Architecture &amp; 6-Stage Packet Pipeline">
+            <img src="ayefire-pipeline-infographic.webp" alt="AyeFire Router: Bare-Metal Architecture and 6-Stage Packet Processing Pipeline" loading="lazy" />
+          </button>
+          <div class="info-body">
+            <h3>1. Bare-Metal Architecture &amp; Packet Pipeline</h3>
+            <p>Morton-indexed routing, <code>/16</code> bitmap pre-filter, wave-based state decay, and the 6-stage VLAN → Fast-Path → Firewall → Stateful NAT → Route → Egress pipeline.</p>
+            <div class="info-actions">
+              <button type="button" class="btn" data-zoom="ayefire-pipeline-infographic.png" data-caption="AyeFire Router: Bare-Metal Architecture &amp; 6-Stage Packet Pipeline">Zoom ↗</button>
+              <a href="ayefire-pipeline-infographic.png" download>Full PNG</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <button type="button" class="info-thumb-btn" data-zoom="ayefire-timeout-comparison.png" data-caption="Network Timeout Architectures: Timer Threads vs. AyeOS Wave Decay">
+            <img src="ayefire-timeout-comparison.webp" alt="Network Timeout Architectures: Timer Threads vs AyeOS Wave Decay" loading="lazy" />
+          </button>
+          <div class="info-body">
+            <h3>2. Timer Threads vs. AyeOS Wave Decay</h3>
+            <p>Side-by-side comparison showing how passive wave amplitude decay on a batched <code>73/100 Hz</code> heartbeat eliminates timer threads, lock contention, and CPU idle spikes.</p>
+            <div class="info-actions">
+              <button type="button" class="btn" data-zoom="ayefire-timeout-comparison.png" data-caption="Network Timeout Architectures: Timer Threads vs. AyeOS Wave Decay">Zoom ↗</button>
+              <a href="ayefire-timeout-comparison.png" download>Full PNG</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="info-card">
+          <button type="button" class="info-thumb-btn" data-zoom="ayefire-baremetal-architecture.png" data-caption="AyeFire Router: Core Modules, Border Defense &amp; MEM8 Wave Parameter Mapping">
+            <img src="ayefire-baremetal-architecture.webp" alt="AyeFire Router: Bare-Metal Core Modules and MEM8 Wave Parameter Mapping" loading="lazy" />
+          </button>
+          <div class="info-body">
+            <h3>3. Core Modules &amp; MEM|8 Wave Mapping</h3>
+            <p>802·1Q VLAN isolation, Hairpin &amp; ICMP NAT, ARP spoofing defense via emotional valence, Marine anomaly sensors, and live CognitiveGrid wave serialization.</p>
+            <div class="info-actions">
+              <button type="button" class="btn" data-zoom="ayefire-baremetal-architecture.png" data-caption="AyeFire Router: Core Modules, Border Defense &amp; MEM8 Wave Parameter Mapping">Zoom ↗</button>
+              <a href="ayefire-baremetal-architecture.png" download>Full PNG</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="video" class="section">
+      <h2>Video Explainer &amp; Audio Deep-Dive Podcasts</h2>
+      <p class="section-sub">Watch the narrated NotebookLM pipeline explainer or listen to both full-length audio deep dives on clockless and conscious bare-metal Rust networking.</p>
+      <div class="av-grid">
+        <div class="card">
+          <div class="eyebrow" style="margin-bottom: 8px;">🎬 VIDEO EXPLAINER</div>
+          <h3 style="margin-bottom: 12px;">Building the AyeFire Pipeline: Spatial Routing &amp; Wave-Decay State</h3>
+          <video controls preload="metadata" poster="ayefire-video-poster.jpg">
+            <source src="ayefire-spatial-routing-video.mp4" type="video/mp4" />
+            Your browser does not support HTML5 video.
+          </video>
+          <div style="margin-top: 10px; font-family: var(--font-mono); font-size: 12px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+            <span style="color: var(--ink-muted);">Fast-start MP4 hosted on 8b·is</span>
+            <a href="ayefire-spatial-routing-video.mp4" download>Download MP4 ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="eyebrow" style="margin-bottom: 10px;">🎙️ NOTEBOOKLM AUDIO DEEP DIVES</div>
+          <div class="pod-box">
+            <h3>Episode 01 · The Clockless Bare-Metal Rust Router</h3>
+            <p>How Morton Z-curves, <code>[u64; 1024]</code> prefix bitmaps, and passive wave-amplitude decay replace legacy router timer threads.</p>
+            <audio controls preload="none" src="ayefire-clockless-router.mp3"></audio>
+          </div>
+          <div class="pod-box" style="margin-bottom: 0;">
+            <h3>Episode 02 · The Conscious Bare-Metal Rust Router</h3>
+            <p>Emotional-valence ARP spoofing defense, the <code>73/100 Hz</code> heartbeat tick, Marine anomaly detection, and live CognitiveGrid wave configuration.</p>
+            <audio controls preload="none" src="ayefire-conscious-router.mp3"></audio>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ideas" class="section">
+      <h2>5 Mind-Bending Ideas From the Wave-Powered Router</h2>
+      <p class="section-sub">Key insights distilled from the <a href="ayefire-5-ideas.md">full Markdown briefing ↗</a>.</p>
+      <div class="ideas-grid">
+        <article class="idea-card">
+          <strong>IDEA 01</strong>
+          <h3>Zero Timer Threads</h3>
+          <p>ARP entries &amp; DHCP leases decay passively as MEM|8 waves and prune deterministically on the <code>73/100 Hz</code> heartbeat tick.</p>
+        </article>
+        <article class="idea-card">
+          <strong>IDEA 02</strong>
+          <h3>ARP Trust as Valence</h3>
+          <p>Gateway trust lives on a continuous spectrum from spoofed (<code>-1</code>) to verified (<code>+1</code>), catching MAC-rebind attacks immediately.</p>
+        </article>
+        <article class="idea-card">
+          <strong>IDEA 03</strong>
+          <h3>Morton O(1) Lookups</h3>
+          <p>A <code>65,536</code>-bit <code>/16</code> bitmap pre-filter plus 2D Morton Z-curve clustering turns internet-bound route lookups into sub-microsecond <code>O(1)</code> hits.</p>
+        </article>
+        <article class="idea-card">
+          <strong>IDEA 04</strong>
+          <h3>Living Wave Configs</h3>
+          <p>No static <code>dhcpd.conf</code> files: adding a route creates a wave in the CognitiveGrid; removing it sets amplitude to <code>0</code>.</p>
+        </article>
+        <article class="idea-card">
+          <strong>IDEA 05</strong>
+          <h3>Unified Heartbeat</h3>
+          <p>ConnTrack, ARP, DHCP, Marine anomaly detection, and CognitiveGrid snapshots all synchronize under one calm biological rhythm.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="study" class="section">
+      <h2>Interactive Mind Map &amp; Study Flashcards</h2>
+      <p class="section-sub">Click branches to explore the full architecture tree or flip through all 25 routing flashcards directly in your browser.</p>
+      <div class="study-grid">
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; gap: 8px; flex-wrap: wrap;">
+            <span class="eyebrow" style="margin: 0;">🗺️ INTERACTIVE ARCHITECTURE MIND MAP</span>
+            <button type="button" id="toggle-map-btn" class="btn">Expand All</button>
+          </div>
+          <div id="mindmap-mount" class="tree-root">Loading mind map…</div>
+        </div>
+
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; gap: 8px; flex-wrap: wrap;">
+            <span class="eyebrow" style="margin: 0;">🃏 ROUTING FLASHCARDS</span>
+            <span id="flash-counter" style="font-family: var(--font-mono); font-size: 12px; color: var(--ink-muted);">Card 1 / 25</span>
+          </div>
+          <div class="flash-stage" id="flash-stage" tabindex="0" role="button" aria-label="Flip flashcard">
+            <div class="flash-tag" id="flash-side-tag">QUESTION · CLICK TO FLIP</div>
+            <div class="flash-text" id="flash-text">Loading flashcards…</div>
+            <div style="font-family: var(--font-mono); font-size: 11px; color: var(--ink-muted);">Tip: Press Space or click card to flip</div>
+          </div>
+          <div class="flash-controls">
+            <button type="button" id="flash-prev" class="btn">← Prev</button>
+            <button type="button" id="flash-flip" class="btn btn-primary">Flip Answer</button>
+            <button type="button" id="flash-next" class="btn">Next →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="downloads" class="section">
+      <h2>Complete Study Pack &amp; Source Downloads</h2>
+      <p class="section-sub">Every NotebookLM artifact from this session — open, portable, and ready for Anki, Markdown editors (`8a·is`), or offline study.</p>
+      <div class="btn-row">
+        <a href="ayefire-zero-copy-slides.pptx" class="btn btn-primary" download>📊 Slide Deck (.pptx)</a>
+        <a href="ayefire-5-ideas.md" class="btn">📄 5 Mind-Bending Ideas (.md)</a>
+        <a href="ayefire-mastering-guide.md" class="btn">📘 Mastering Spatial Routing (.md)</a>
+        <a href="ayefire-building-guide.md" class="btn">📗 Building Wave-Encoded Networking (.md)</a>
+        <a href="ayefire-flashcards.csv" class="btn" download>🃏 Anki Flashcards (.csv)</a>
+        <a href="ayefire-quiz.csv" class="btn" download>✅ Router Quiz (.csv)</a>
+        <a href="ayefire-mindmap.json" class="btn" download>🗺️ Mind Map (.json)</a>
+      </div>
+    </section>
+
+    <footer>
+      <span>8b·is NotebookLM Studio · AyeFire Bare-Metal Router · Exact p/q Math · Zero Floats</span>
+      <span><a href="/">8b·is Home</a> · <a href="/podcasts">All Podcasts</a> · <a href="https://www.youtube.com/@8bit-wraith" target="_blank" rel="noopener noreferrer">YouTube (@8bit-wraith)</a></span>
+    </footer>
+  </main>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Full resolution infographic">
+    <img id="lightbox-img" src="" alt="" />
+    <div class="lightbox-bar">
+      <span id="lightbox-caption"></span>
+      <a id="lightbox-open" href="" target="_blank" rel="noopener noreferrer" class="btn">Open Full PNG ↗</a>
+      <button type="button" id="lightbox-close" class="btn btn-primary">Close (Esc)</button>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      "use strict";
+      var THEMES = { "ink":"#060a10","paper":"#faf7f2","nordic":"#f3f7fa","forest":"#08120e","vaked":"#14110e","phosphor":"#050b06","solar-light":"#fdf6e3","contrast":"#000000" };
+      var sel = document.getElementById("theme-select");
+      var meta = document.getElementById("meta-theme-color");
+      function setTheme(t) {
+        var safe = THEMES[t] ? t : "ink";
+        document.documentElement.setAttribute("data-theme", safe);
+        if (sel) sel.value = safe;
+        if (meta) meta.setAttribute("content", THEMES[safe]);
+        try { localStorage.setItem("8b_theme", safe); } catch (e) {}
+      }
+      var initT = "ink";
+      try { initT = localStorage.getItem("8b_theme") || "ink"; } catch (e) {}
+      setTheme(initT);
+      if (sel) sel.addEventListener("change", function () { setTheme(sel.value); });
+
+      /* Lightbox */
+      var lb = document.getElementById("lightbox");
+      var lbImg = document.getElementById("lightbox-img");
+      var lbCap = document.getElementById("lightbox-caption");
+      var lbOpen = document.getElementById("lightbox-open");
+      var lbClose = document.getElementById("lightbox-close");
+      function openLb(src, cap) {
+        if (!lb || !lbImg) return;
+        lbImg.src = src;
+        lbImg.alt = cap || "Infographic";
+        if (lbCap) lbCap.textContent = cap || "";
+        if (lbOpen) lbOpen.href = src;
+        lb.hidden = false;
+      }
+      function closeLb() { if (lb) lb.hidden = true; }
+      var zoomBtns = document.querySelectorAll("[data-zoom]");
+      for (var z = 0; z < zoomBtns.length; z += 1) {
+        zoomBtns[z].addEventListener("click", function (ev) {
+          var b = ev.currentTarget;
+          openLb(b.getAttribute("data-zoom"), b.getAttribute("data-caption"));
+        });
+      }
+      if (lbClose) lbClose.addEventListener("click", closeLb);
+      if (lb) lb.addEventListener("click", function (ev) { if (ev.target === lb) closeLb(); });
+      document.addEventListener("keydown", function (ev) { if (ev.key === "Escape") closeLb(); });
+
+      /* Mind Map Renderer */
+      var mmMount = document.getElementById("mindmap-mount");
+      var mmExpanded = false;
+      function buildTree(node, depth) {
+        var li = document.createElement("li");
+        if (node.children && node.children.length > 0) {
+          var det = document.createElement("details");
+          if (depth < 2) det.open = true;
+          var sum = document.createElement("summary");
+          sum.textContent = node.name;
+          det.appendChild(sum);
+          var ul = document.createElement("ul");
+          for (var i = 0; i < node.children.length; i += 1) {
+            ul.appendChild(buildTree(node.children[i], depth + 1));
+          }
+          det.appendChild(ul);
+          li.appendChild(det);
+        } else {
+          var div = document.createElement("div");
+          div.className = "tree-leaf";
+          div.textContent = "• " + node.name;
+          li.appendChild(div);
+        }
+        return li;
+      }
+      fetch("ayefire-mindmap.json")
+        .then(function (r) { return r.json(); })
+        .then(function (tree) {
+          if (!mmMount) return;
+          mmMount.textContent = "";
+          var ul = document.createElement("ul");
+          ul.style.paddingLeft = "0";
+          ul.style.borderLeft = "0";
+          ul.appendChild(buildTree(tree, 0));
+          mmMount.appendChild(ul);
+        })
+        .catch(function () { if (mmMount) mmMount.textContent = "Mind map JSON available for download below."; });
+
+      var toggleMapBtn = document.getElementById("toggle-map-btn");
+      if (toggleMapBtn) {
+        toggleMapBtn.addEventListener("click", function () {
+          mmExpanded = !mmExpanded;
+          var dets = mmMount ? mmMount.querySelectorAll("details") : [];
+          for (var i = 0; i < dets.length; i += 1) dets[i].open = mmExpanded;
+          toggleMapBtn.textContent = mmExpanded ? "Collapse All" : "Expand All";
+        });
+      }
+
+      /* CSV Flashcard Deck Parser */
+      function cleanTex(s) {
+        return String(s || "")
+          .replace(/\\\(/g, "")
+          .replace(/\\\)/g, "")
+          .replace(/\\ge/g, ">=")
+          .replace(/\{,\}/g, ",");
+      }
+      function parseCsvRow(line) {
+        var out = [];
+        var cur = "";
+        var inQ = false;
+        for (var i = 0; i < line.length; i += 1) {
+          var ch = line.charAt(i);
+          if (ch === "\"") {
+            if (inQ && line.charAt(i + 1) === "\"") { cur += "\""; i += 1; }
+            else inQ = !inQ;
+          } else if (ch === "," && !inQ) {
+            out.push(cur); cur = "";
+          } else {
+            cur += ch;
+          }
+        }
+        out.push(cur);
+        return out;
+      }
+
+      var cards = [];
+      var cardIdx = 0;
+      var showingAns = false;
+      var fCounter = document.getElementById("flash-counter");
+      var fTag = document.getElementById("flash-side-tag");
+      var fText = document.getElementById("flash-text");
+      var fStage = document.getElementById("flash-stage");
+
+      function renderCard() {
+        if (!cards.length) return;
+        var c = cards[cardIdx];
+        if (fCounter) fCounter.textContent = "Card " + (cardIdx + 1) + " / " + cards.length;
+        if (fTag) fTag.textContent = showingAns ? "ANSWER · CLICK TO FLIP" : "QUESTION · CLICK TO FLIP";
+        if (fText) fText.textContent = showingAns ? c.a : c.q;
+      }
+
+      fetch("ayefire-flashcards.csv")
+        .then(function (r) { return r.text(); })
+        .then(function (txt) {
+          var lines = txt.split("\n");
+          for (var i = 0; i < lines.length; i += 1) {
+            var line = lines[i].trim();
+            if (!line || line.charAt(0) === "#" || line.charCodeAt(0) === 65279) continue;
+            var cols = parseCsvRow(line);
+            if (cols.length >= 2 && cols[0] && cols[1]) {
+              cards.push({ q: cleanTex(cols[0]), a: cleanTex(cols[1]) });
+            }
+          }
+          renderCard();
+        })
+        .catch(function () { if (fText) fText.textContent = "Download ayefire-flashcards.csv below to study in Anki."; });
+
+      function flipCard() { showingAns = !showingAns; renderCard(); }
+      if (fStage) {
+        fStage.addEventListener("click", flipCard);
+        fStage.addEventListener("keydown", function (ev) {
+          if (ev.key === " " || ev.key === "Enter") { ev.preventDefault(); flipCard(); }
+        });
+      }
+      var fFlip = document.getElementById("flash-flip");
+      var fPrev = document.getElementById("flash-prev");
+      var fNext = document.getElementById("flash-next");
+      if (fFlip) fFlip.addEventListener("click", flipCard);
+      if (fPrev) fPrev.addEventListener("click", function () {
+        if (!cards.length) return;
+        cardIdx = (cardIdx - 1 + cards.length) % cards.length;
+        showingAns = false;
+        renderCard();
+      });
+      if (fNext) fNext.addEventListener("click", function () {
+        if (!cards.length) return;
+        cardIdx = (cardIdx + 1) % cards.length;
+        showingAns = false;
+        renderCard();
+      });
+    })();
+  </script>
+  <script src="https://cheet.is/static/cheet.js" data-allow="style,note,scroll,avatar" async></script>
+</body>
+</html>
